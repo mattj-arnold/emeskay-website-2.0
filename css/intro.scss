@@ -1,8 +1,13 @@
 @use 'utilities';
 
 .intro {
-    display: flex;
-    justify-content: center;
-    background-color: utilities.$primary-color;
+    background-color: utilities.$primary-color-bg;
+    padding: utilities.$compact-padding;
     margin-bottom: utilities.$compact-margin-vertical;
+    border-radius: 24px;
+}
+
+section.intro p {
+    margin: 0px;
+    font-family: utilities.$copy;
 }
