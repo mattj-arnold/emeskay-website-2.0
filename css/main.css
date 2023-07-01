@@ -45,11 +45,66 @@ section.intro p {
   font-family: "Barlow", sans-serif;
 }
 
-.services {
-  display: flex;
-  justify-content: center;
-  background-color: #008080;
-  margin-bottom: 24px;
+section.services h2, h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 0px 16px;
+}
+
+section.services p {
+  margin: 0px 0px 16px 0px;
+  font-family: "Barlow", sans-serif;
+}
+
+.services-card {
+  background-color: #e6f2f2;
+  border-radius: 24px;
+  margin: 0px;
+  padding: 16px;
+}
+
+.rehab-card {
+  background-color: #800000;
+  border-radius: 24px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.injury-rehab-image {
+  height: 200px;
+  width: 100%;
+  border-radius: 24px;
+}
+
+div.rehab-card h3 {
+  color: white;
+}
+
+div.rehab-card p {
+  margin: 0px 16px;
+  color: white;
+}
+
+/* Injury Prevention Card */
+.prehab-card {
+  Background-color: #008080;
+  border-radius: 24px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.injury-prehab-image {
+  height: 200px;
+  width: 100%;
+  border-radius: 24px;
+}
+
+div.prehab-card h3 {
+  color: white;
+}
+
+div.prehab-card p {
+  margin: 0px 16px;
+  color: white;
 }
 
 .map {

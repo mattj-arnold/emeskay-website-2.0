@@ -1,8 +1,66 @@
 @use 'utilities';
 
-.services {
-    display: flex;
-    justify-content: center;
-    background-color: utilities.$primary-color;
-    margin-bottom: utilities.$compact-margin-vertical;
+section.services h2, h3 {
+    font-family: utilities.$heading;
+    padding: 0px utilities.$compact-padding;
+}
+
+section.services p {
+    margin: 0px 0px 16px 0px;
+    font-family: utilities.$copy;
+}
+
+.services-card {
+    background-color: utilities.$primary-color-bg;
+    border-radius: 24px;
+    margin: 0px;
+    padding: utilities.$compact-padding;
+}
+
+
+.rehab-card {
+    
+    background-color: utilities.$secondary-color;
+    border-radius: 24px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.injury-rehab-image {
+    height: 200px;
+    width: 100%;
+    border-radius: 24px;
+}
+
+div.rehab-card h3 {
+    color: white;
+}
+
+div.rehab-card p {
+    margin: 0px utilities.$compact-margin-horizontal;
+    color: white;
+}
+
+/* Injury Prevention Card */
+
+.prehab-card {
+    Background-color: utilities.$primary-color;
+    border-radius: 24px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.injury-prehab-image {
+    height: 200px;
+    width: 100%;
+    border-radius: 24px;
+}
+
+div.prehab-card h3 {
+    color: white;
+}
+
+div.prehab-card p {
+    margin: 0px utilities.$compact-margin-horizontal;
+    color: white;
 }
