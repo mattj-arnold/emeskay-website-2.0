@@ -5,10 +5,23 @@
 .hero {
     
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: utilities.$primary-color;
-    height: 100vh;
+    height: calc(100vh - 70px);
     margin-bottom: utilities.$compact-margin-vertical;
+    padding: 0px utilities.$compact-padding;
+  }
+
+  .heading {
+    font-family: utilities.$heading;
+    
+    color: white;
+  }
+
+  .subheading {
+    font-family: utilities.$copy;
+    
+    color: white;
   }
   

@@ -1,10 +1,12 @@
 @use 'utilities';
 
 header {
-    
     display: flex;
     justify-content: center;
-    background-color: utilities.$primary-color;
+    background-color: utilities.$bg-color;
     margin-bottom: utilities.$compact-margin-vertical;
+}
 
+.logo {
+    width: 160px;
 }
