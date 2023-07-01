@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008080;
+  height: 100vh;
+  margin-bottom: 24px;
+}/*# sourceMappingURL=hero.css.map */

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #008080;
+  margin-bottom: 24px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008080;
+  height: 100vh;
+  margin-bottom: 24px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  background-color: #008080;
+  margin-bottom: 24px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  background-color: #008080;
+  margin-bottom: 24px;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  background-color: #008080;
+  margin-bottom: 24px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #008080;
+}
+
+.page {
+  margin: 24px 16px;
+}/*# sourceMappingURL=main.css.map */

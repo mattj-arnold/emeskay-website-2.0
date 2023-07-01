@@ -1,0 +1,14 @@
+@use 'utilities';
+
+
+
+.hero {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: utilities.$primary-color;
+    height: 100vh;
+    margin-bottom: utilities.$compact-margin-vertical;
+  }
+  

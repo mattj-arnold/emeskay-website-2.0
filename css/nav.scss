@@ -1,0 +1,10 @@
+@use 'utilities';
+
+header {
+    
+    display: flex;
+    justify-content: center;
+    background-color: utilities.$primary-color;
+    margin-bottom: utilities.$compact-margin-vertical;
+
+}

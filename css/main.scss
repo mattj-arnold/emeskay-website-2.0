@@ -1,0 +1,12 @@
+@use 'utilities';
+@use 'nav';
+@use 'hero';
+@use 'intro';
+@use 'services';
+@use 'map';
+@use 'footer';
+
+.page {
+  margin: utilities.$compact-margin-vertical utilities.$compact-margin-horizontal;
+}
+
