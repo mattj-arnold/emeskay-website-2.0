@@ -20,4 +20,17 @@
 .subheading {
   font-family: "Barlow", sans-serif;
   color: white;
+}
+
+.elevated-button {
+  height: 80px;
+  width: 223.66px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #f2e6e6;
+  border: none;
+  border-radius: 40px;
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+  color: #800000;
 }/*# sourceMappingURL=hero.css.map */

@@ -24,4 +24,17 @@
     font-family: utilities.$copy;
     color: white;
   }
+
+  .elevated-button {
+    height: 80px;
+    width: 223.66px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: utilities.$secondary-color-bg;
+    border: none;
+    border-radius: 40px;
+    font-family: utilities.$copy;
+    font-size: 24px;
+    color: utilities.$secondary-color;
+  }
   

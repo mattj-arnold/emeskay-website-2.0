@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
 .map {
-  display: flex;
-  justify-content: center;
-  background-color: #008080;
   margin-bottom: 24px;
+}
+
+.map-heading {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.google-map {
+  border-radius: 24px;
 }/*# sourceMappingURL=map.css.map */

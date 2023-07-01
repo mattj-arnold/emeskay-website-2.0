@@ -33,6 +33,19 @@ header {
   color: white;
 }
 
+.elevated-button {
+  height: 80px;
+  width: 223.66px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #f2e6e6;
+  border: none;
+  border-radius: 40px;
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+  color: #800000;
+}
+
 .intro {
   background-color: #e6f2f2;
   padding: 16px;
@@ -108,16 +121,24 @@ div.prehab-card p {
 }
 
 .map {
-  display: flex;
-  justify-content: center;
-  background-color: #008080;
   margin-bottom: 24px;
 }
 
+.map-heading {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.google-map {
+  border-radius: 24px;
+}
+
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: #008080;
+  font-family: "Barlow", sans-serif;
+}
+
+footer a {
+  color: #800000;
+  text-decoration: none;
 }
 
 .page {

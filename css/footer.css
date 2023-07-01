@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: #008080;
+  font-family: "Barlow", sans-serif;
+}
+
+footer a {
+  color: #800000;
+  text-decoration: none;
 }/*# sourceMappingURL=footer.css.map */
