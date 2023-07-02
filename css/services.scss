@@ -11,7 +11,8 @@ section.services p {
 }
 
 .services-card {
-    background-color: utilities.$primary-color-bg;
+    background-color: utilities.$surface-variant;
+    color: utilities.$on-surface-variant;
     border-radius: 24px;
     margin: 0px;
     padding: utilities.$compact-padding;
@@ -20,7 +21,7 @@ section.services p {
 
 .rehab-card {
     
-    background-color: utilities.$secondary-color;
+    background-color: utilities.$tertiary-container;
     border-radius: 24px;
     padding-bottom: 16px;
     margin-bottom: 16px;
@@ -33,12 +34,12 @@ section.services p {
 }
 
 div.rehab-card h3 {
-    color: white;
+    color: utilities.$on-tertiary-container;
 }
 
 div.rehab-card p {
     margin: 0px utilities.$compact-margin-horizontal;
-    color: white;
+    color: utilities.$on-tertiary-container;
 }
 
 /* Injury Prevention Card */
