@@ -3,6 +3,7 @@
 section.services h2, h3 {
     font-family: utilities.$heading;
     padding: 0px utilities.$compact-padding;
+    margin: 0px 0px 8px 0px;
 }
 
 section.services p {
@@ -14,14 +15,14 @@ section.services p {
     background-color: utilities.$surface-variant;
     color: utilities.$on-surface-variant;
     border-radius: 24px;
-    margin: 0px;
+    margin: 0px 0px 24px 0px;
     padding: utilities.$compact-padding;
 }
 
 
 .rehab-card {
     
-    background-color: utilities.$tertiary-container;
+    background-color: utilities.$surface;
     border-radius: 24px;
     padding-bottom: 16px;
     margin-bottom: 16px;
@@ -31,21 +32,60 @@ section.services p {
     height: 200px;
     width: 100%;
     border-radius: 24px;
+    margin-bottom: 8px;
 }
 
 div.rehab-card h3 {
-    color: utilities.$on-tertiary-container;
+    color: utilities.$on-surface;
 }
 
 div.rehab-card p {
-    margin: 0px utilities.$compact-margin-horizontal;
-    color: utilities.$on-tertiary-container;
+    margin: 0px utilities.$compact-margin-horizontal 16px utilities.$compact-margin-horizontal;
+    color: utilities.$on-surface;
+}
+
+.rehab-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    margin: 0px 0px 0px 16px;
+}
+
+.rehab-book {
+    height: 40px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: utilities.$secondary-container;
+}
+
+button.rehab-book label {
+    font-family: utilities.$copy;
+    font-size: 14px;
+    color: utilities.$on-secondary-container;
+}
+
+.rehab-learn {
+    height: 40px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: utilities.$outline;
+    background-color: utilities.$surface;
+}
+
+button.rehab-learn label {
+    font-family: utilities.$copy;
+    font-size: 14px;
+    color: utilities.$primary;
 }
 
 /* Injury Prevention Card */
 
 .prehab-card {
-    Background-color: utilities.$primary-color;
+    background-color: utilities.$surface;
     border-radius: 24px;
     padding-bottom: 16px;
     margin-bottom: 16px;
@@ -55,13 +95,15 @@ div.rehab-card p {
     height: 200px;
     width: 100%;
     border-radius: 24px;
+    margin-bottom: 8px;
 }
 
 div.prehab-card h3 {
-    color: white;
+    color: utilities.$on-surface;
+    margin-bottom: 8px;
 }
 
 div.prehab-card p {
     margin: 0px utilities.$compact-margin-horizontal;
-    color: white;
+    color: utilities.$on-surface;
 }

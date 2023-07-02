@@ -1,9 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
 footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  padding: 0px 16px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+.emeskay-address {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  color: #006a6a;
 }
 
 footer a {
-  color: #800000;
+  color: #b22b1d;
   text-decoration: none;
 }/*# sourceMappingURL=footer.css.map */

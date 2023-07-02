@@ -1,10 +1,25 @@
 @use 'utilities';
 
 footer {
-    font-family: utilities.$copy;    
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: utilities.$copy;
+    font-size: 14px;
+    padding: 0px 16px;   
+}
+
+footer p {
+    margin: 0px;
+}
+
+.emeskay-address {
+    font-family: utilities.$heading;
+    font-size: 16px;
+    color: utilities.$primary;
 }
 
 footer a {
-    color: utilities.$secondary-color;
+    color: utilities.$tertiary;
     text-decoration: none;
 }

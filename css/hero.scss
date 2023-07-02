@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: utilities.$primary-color;
+    align-items: center;
+    background-color: utilities.$primary;
     height: calc(100vh - 70px);
     margin-bottom: utilities.$compact-margin-vertical;
     padding: 0px utilities.$compact-padding;
@@ -18,23 +19,14 @@
   .heading {
     font-family: utilities.$heading;
     color: white;
+    margin: 0px 0px 8px 0px;
   }
 
   .subheading {
     font-family: utilities.$copy;
     color: white;
+    margin: 0px 0px 16px 0px;
   }
 
-  .elevated-button {
-    height: 80px;
-    width: 223.66px;
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: utilities.$secondary-color-bg;
-    border: none;
-    border-radius: 40px;
-    font-family: utilities.$copy;
-    font-size: 24px;
-    color: utilities.$secondary-color;
-  }
+
   
