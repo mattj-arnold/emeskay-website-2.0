@@ -132,7 +132,6 @@ button.rehab-learn label {
   background-color: #fafdfc;
   border-radius: 24px;
   padding-bottom: 16px;
-  margin-bottom: 16px;
 }
 
 .injury-prehab-image {
@@ -148,8 +147,46 @@ div.prehab-card h3 {
 }
 
 div.prehab-card p {
-  margin: 0px 16px;
+  margin: 0px 16px 16px 16px;
   color: #191c1c;
+}
+
+.prehab-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  margin: 0px 0px 0px 16px;
+}
+
+.prehab-book {
+  height: 40px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  border: none;
+  background-color: #d6e3ff;
+}
+
+button.prehab-book label {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  color: #001b3d;
+}
+
+.prehab-learn {
+  height: 40px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #6f7979;
+  background-color: #fafdfc;
+}
+
+button.prehab-learn label {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  color: #006a6a;
 }
 
 .map {
@@ -182,7 +219,7 @@ footer p {
 .emeskay-address {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
-  color: #006a6a;
+  color: #191c1c;
 }
 
 footer a {
