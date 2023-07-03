@@ -55,13 +55,13 @@ div.rehab-card p {
   padding: 0px 24px;
   border-radius: 20px;
   border: none;
-  background-color: #d6e3ff;
+  background-color: #ffdad4;
 }
 
 button.rehab-book label {
   font-family: "Barlow", sans-serif;
   font-size: 14px;
-  color: #001b3d;
+  color: #410000;
 }
 
 .rehab-learn {
@@ -117,13 +117,13 @@ div.prehab-card p {
   padding: 0px 24px;
   border-radius: 20px;
   border: none;
-  background-color: #d6e3ff;
+  background-color: #ffdad4;
 }
 
 button.prehab-book label {
   font-family: "Barlow", sans-serif;
   font-size: 14px;
-  color: #001b3d;
+  color: #410000;
 }
 
 .prehab-learn {
