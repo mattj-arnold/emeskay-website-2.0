@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
-.intro {
+.intro-card {
   background-color: #dae5e4;
   padding: 24px;
   margin: 0px 8px 24px 8px;
@@ -7,7 +7,7 @@
 }
 
 section.intro h2 {
-  margin: 0px;
+  margin: 0px 16px 8px 16px;
   font-family: "Barlow Condensed", sans-serif;
   color: #191c1c;
 }

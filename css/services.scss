@@ -1,7 +1,7 @@
 @use 'utilities';
 
 .services {
-    padding: 24px 8px;
+    padding: 0px 8px;
 }
 
 section.services h2, h3 {
@@ -39,8 +39,10 @@ div.services-card p {
 .injury-rehab-image {
     height: 200px;
     width: 100%;
+    object-fit: cover;
     border-radius: 24px;
     margin-bottom: 8px;
+    
 }
 
 div.rehab-card h3 {
@@ -101,6 +103,7 @@ button.rehab-learn label {
 .injury-prehab-image {
     height: 200px;
     width: 100%;
+    object-fit: cover;
     border-radius: 24px;
     margin-bottom: 8px;
 }

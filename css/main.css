@@ -46,7 +46,7 @@ nav {
   margin: 0px 0px 16px 0px;
 }
 
-.intro {
+.intro-card {
   background-color: #dae5e4;
   padding: 24px;
   margin: 0px 8px 24px 8px;
@@ -54,7 +54,7 @@ nav {
 }
 
 section.intro h2 {
-  margin: 0px;
+  margin: 0px 16px 8px 16px;
   font-family: "Barlow Condensed", sans-serif;
   color: #191c1c;
 }
@@ -66,7 +66,7 @@ section.intro p {
 }
 
 .services {
-  padding: 24px 8px;
+  padding: 0px 8px;
 }
 
 section.services h2, h3 {
@@ -99,6 +99,8 @@ div.services-card p {
 .injury-rehab-image {
   height: 200px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 24px;
   margin-bottom: 8px;
 }
@@ -160,6 +162,8 @@ button.rehab-learn label {
 .injury-prehab-image {
   height: 200px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 24px;
   margin-bottom: 8px;
 }
@@ -230,7 +234,7 @@ button.prehab-learn label {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 4;
+  grid-template-rows: auto;
   gap: 16px;
   font-family: "Barlow", sans-serif;
   font-size: 14px;
@@ -327,6 +331,7 @@ body {
   position: fixed;
   bottom: 16px;
   width: 100%;
+  max-width: 599px;
 }
 
 div.extended-fab-container a {
@@ -354,4 +359,14 @@ div.extended-fab-container a {
 
 .material-symbols-rounded {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: auto 599px auto;
+  }
+  .page {
+    grid-column-start: 2;
+  }
 }/*# sourceMappingURL=main.css.map */

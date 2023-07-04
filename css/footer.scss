@@ -5,7 +5,7 @@
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 4;
+    grid-template-rows: auto;
     gap: 16px;
     font-family: utilities.$copy;
     font-size: 14px;

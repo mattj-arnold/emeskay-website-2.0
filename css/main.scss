@@ -16,10 +16,12 @@ body {
   position: fixed;
   bottom: 16px;
   width: 100%;
+  max-width: 599px;
 }
 
 div.extended-fab-container a {
   text-decoration: none;
+  
 }
 
 .extended-fab {
@@ -49,7 +51,16 @@ div.extended-fab-container a {
   'opsz' 20
 }
 
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: auto 599px auto;
+  }
 
+  .page {
+    grid-column-start: 2;
+  }
+}
 
 
 
