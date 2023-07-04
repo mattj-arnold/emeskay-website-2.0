@@ -2,12 +2,19 @@
 
 .intro {
     background-color: utilities.$surface-variant;
-    padding: utilities.$compact-padding;
-    margin-bottom: utilities.$compact-margin-vertical;
+    padding: 24px;
+    margin: 0px 8px utilities.$compact-margin-vertical 8px;
     border-radius: 24px;
+}
+
+section.intro h2 {
+    margin: 0px;
+    font-family: utilities.$heading;
+    color: utilities.$on-background;
 }
 
 section.intro p {
     margin: 0px;
     font-family: utilities.$copy;
+    color: utilities.$on-surface-variant;
 }

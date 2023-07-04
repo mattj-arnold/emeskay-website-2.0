@@ -1,24 +1,28 @@
 @use 'utilities';
 
+
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
+    grid-template-rows: 4;
+    gap: 16px;
     font-family: utilities.$copy;
     font-size: 14px;
-    padding: 0px;
-    margin-bottom: 88px;
-    background-color: utilities.$surface-variant;
+    padding: 16px;
+    background-color: utilities.$on-surface-variant;
+    color: utilities.$surface-variant;
 }
 
 footer p {
     margin: 0px;
 }
 
-.emeskay-address {
-    font-family: utilities.$heading;
-    font-size: 16px;
-    color: utilities.$on-background;
+.logo-footer {
+    height: 24px;
+    width: fit-content;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
 
 .address {
@@ -30,11 +34,26 @@ footer p {
 }
 
 .contact {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.social {
     grid-column: 2;
     grid-row: 2;
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+div.social h3 {
+    font-family: utilities.$heading;
+    margin: 0px;
+    padding: 0px;
 }
 
 .whatsapp, .email, .fb, .insta {
@@ -43,22 +62,35 @@ footer p {
     gap: 8px;
 }
 
+
 .pp {
-    grid-column: 1;
-    grid-row: 3;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    padding-left: 20px;
+    
 }
 
 .tos {
-    grid-column: 2;
-    grid-row: 3;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    
 }
 
 .copyright {
-    grid-column: span 2;
-    grid-row: 4;
+    grid-column-start: span 2;
+    grid-row-start: 5;
+    padding-left: 20px;
+    
 }
 
 footer a {
-    color: utilities.$primary;
+    color: utilities.$primary-container;
     text-decoration: none;
+}
+
+.fill {
+    height: 88px;
+    background-color: utilities.$on-surface-variant;
+    grid-column: span 2;
+    grid-row: 5;
 }

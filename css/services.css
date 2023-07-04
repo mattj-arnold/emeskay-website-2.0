@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+.services {
+  padding: 24px 8px;
+}
+
 section.services h2, h3 {
   font-family: "Barlow Condensed", sans-serif;
   padding: 0px 16px;
   margin: 0px 0px 8px 0px;
 }
 
-section.services p {
-  margin: 0px 0px 16px 0px;
-  font-family: "Barlow", sans-serif;
-}
-
 .services-card {
   background-color: #dae5e4;
   color: #3f4948;
   border-radius: 24px;
-  margin: 0px 0px 24px 0px;
-  padding: 16px;
+  margin-bottom: 24px;
+  padding: 8px;
+}
+
+div.services-card p {
+  margin: 16px;
+  font-family: "Barlow", sans-serif;
+  color: #3f4948;
 }
 
 .rehab-card {

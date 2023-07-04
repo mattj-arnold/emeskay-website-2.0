@@ -1,9 +1,19 @@
 @use 'utilities';
 
 header {
+    height: 52px;
+}
+
+nav {
+    width: 100%;
+    max-height: 80px;
+    position: fixed;
     display: flex;
-    justify-content: center;
-    margin-bottom: utilities.$compact-margin-vertical;
+    justify-content: flex-start;
+    gap: 8px;
+    background-color: utilities.$background;
+    padding: 12px 16px 16px 16px;
+
 }
 
 .logo {

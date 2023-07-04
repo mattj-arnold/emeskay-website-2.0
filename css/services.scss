@@ -1,22 +1,30 @@
 @use 'utilities';
 
+.services {
+    padding: 24px 8px;
+}
+
 section.services h2, h3 {
     font-family: utilities.$heading;
     padding: 0px utilities.$compact-padding;
     margin: 0px 0px 8px 0px;
 }
 
-section.services p {
-    margin: 0px 0px 16px 0px;
-    font-family: utilities.$copy;
-}
+
 
 .services-card {
     background-color: utilities.$surface-variant;
     color: utilities.$on-surface-variant;
     border-radius: 24px;
-    margin: 0px 0px 24px 0px;
-    padding: utilities.$compact-padding;
+    margin-bottom: 24px;
+    padding: 8px;
+    
+}
+
+div.services-card p {
+    margin: 16px;
+    font-family: utilities.$copy;
+    color: utilities.$on-surface-variant;
 }
 
 
