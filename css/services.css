@@ -31,8 +31,9 @@ div.services-card p {
 }
 
 .injury-rehab-image {
-  height: 200px;
   width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
@@ -94,8 +95,9 @@ button.rehab-learn label {
 }
 
 .injury-prehab-image {
-  height: 200px;
   width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
