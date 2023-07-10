@@ -246,7 +246,7 @@ footer {
   padding: 16px;
   background-color: #3f4948;
   color: #dae5e4;
-  border-radius: 16px;
+  border-radius: 16px 16px 0px 0px;
 }
 
 footer p {
