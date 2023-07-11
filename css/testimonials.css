@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+.testimonials {
+  margin: 0px 0px 24px 0px;
+  padding: 0px 0px 0px 8px;
+  color: #3f4948;
+}
+
+section.testimonials h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #191c1c;
+  margin: 0px 0px 8px 0px;
+  padding: 0px 0px 0px 16px;
+}
+
+.slider {
+  /* line them up horizontally */
+  display: flex;
+  /* allow for scrolling */
+  overflow-x: auto;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  background-color: #dae5e4;
+  margin-right: 8px;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+div.slider h3 {
+  margin: 8px 0px 8px 0px;
+  padding: 0px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+div.slider p {
+  margin: 8px 0px 0px 0px;
+  padding: 0px;
+  font-family: "Barlow", sans-serif;
+}
+
+.testimonial-images {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}/*# sourceMappingURL=testimonials.css.map */
