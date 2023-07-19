@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+header {
+  height: 52px;
+}
+
+nav {
+  width: 100%;
+  max-height: 80px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  background-color: #fafdfc;
+  padding: 12px 16px 16px 16px;
+}
+
+.logo {
+  height: 24px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #006a6a;
+  height: calc(100vh - 52px);
+  margin-bottom: 24px;
+  padding: 0px 24px;
+  background-image: url(../images/hero-image.jpg);
+  background-size: cover;
+  border-radius: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.heading {
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  margin: 0px 0px 8px 0px;
+}
+
+.subheading {
+  font-family: "Barlow", sans-serif;
+  color: white;
+  margin: 0px 0px 16px 0px;
+}
+
+.intro-card {
+  background-color: #dae5e4;
+  padding: 24px;
+  margin: 0px 8px 24px 8px;
+  border-radius: 24px;
+}
+
+section.intro h2 {
+  margin: 0px 16px 8px 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #191c1c;
+}
+
+section.intro p {
+  margin: 0px;
+  font-family: "Barlow", sans-serif;
+  color: #3f4948;
+}
+
+.services {
+  padding: 0px 8px;
+}
+
+section.services h2, h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 0px 16px;
+  margin: 0px 0px 8px 0px;
+}
+
+.services-card {
+  background-color: #dae5e4;
+  color: #3f4948;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  padding: 8px;
+}
+
+div.services-card p {
+  margin: 16px;
+  font-family: "Barlow", sans-serif;
+  color: #3f4948;
+}
+
+.rehab-card {
+  background-color: #fafdfc;
+  border-radius: 24px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.injury-rehab-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 8px;
+}
+
+div.rehab-card h3 {
+  color: #191c1c;
+}
+
+div.rehab-card p {
+  margin: 0px 16px 16px 16px;
+  color: #191c1c;
+}
+
+.rehab-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  margin: 0px 0px 0px 16px;
+}
+
+.rehab-book {
+  height: 40px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffdad4;
+}
+
+button.rehab-book label {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  color: #410000;
+}
+
+.rehab-learn {
+  height: 40px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #6f7979;
+  background-color: #fafdfc;
+}
+
+button.rehab-learn label {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  color: #006a6a;
+}
+
+/* Injury Prevention Card */
+.prehab-card {
+  background-color: #fafdfc;
+  border-radius: 24px;
+  padding-bottom: 16px;
+}
+
+.injury-prehab-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 8px;
+}
+
+div.prehab-card h3 {
+  color: #191c1c;
+  margin-bottom: 8px;
+}
+
+div.prehab-card p {
+  margin: 0px 16px 16px 16px;
+  color: #191c1c;
+}
+
+.prehab-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  margin: 0px 0px 0px 16px;
+}
+
+.prehab-book {
+  height: 40px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ffdad4;
+}
+
+button.prehab-book label {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  color: #410000;
+}
+
+.prehab-learn {
+  height: 40px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #6f7979;
+  background-color: #fafdfc;
+}
+
+button.prehab-learn label {
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  color: #006a6a;
+}
+
+.testimonials {
+  margin: 0px 0px 24px 0px;
+  padding: 0px 0px 0px 8px;
+  color: #3f4948;
+}
+
+section.testimonials h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #191c1c;
+  margin: 0px 0px 8px 0px;
+  padding: 0px 0px 0px 16px;
+}
+
+.slider {
+  /* line them up horizontally */
+  display: flex;
+  /* allow for scrolling */
+  overflow-x: auto;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  background-color: #dae5e4;
+  margin-right: 8px;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+div.slider h3 {
+  margin: 8px 0px 8px 0px;
+  padding: 0px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+div.slider p {
+  margin: 8px 0px 0px 0px;
+  padding: 0px;
+  font-family: "Barlow", sans-serif;
+}
+
+.testimonial-images {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.partners {
+  padding: 0px 8px;
+  margin: 0px 0px 24px 0px;
+}
+
+section.partners h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #191c1c;
+  margin: 0px 0px 8px 0px;
+  padding: 0px 0px 0px 16px;
+}
+
+.sto-card {
+  background-color: #dae5e4;
+  border-radius: 12px;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+div.sto-card p {
+  font-family: "Barlow", sans-serif;
+  color: #191c1c;
+  margin: 0px;
+  padding: 0px 16px;
+}
+
+.sto-logo-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fafdfc;
+  border-radius: 12px;
+  border: 1px solid #6f7979;
+  margin-bottom: 8px;
+  padding: 8px;
+  aspect-ratio: 16/9;
+}
+
+.sto-logo {
+  max-width: 286px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.map {
+  margin-bottom: 24px;
+  padding: 0px 8px;
+}
+
+.map-heading {
+  font-family: "Barlow Condensed", sans-serif;
+  margin: 0px 0px 8px 0px;
+  padding: 0px 16px;
+}
+
+.google-map {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 24px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 16px;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  padding: 16px;
+  background-color: #3f4948;
+  color: #dae5e4;
+  border-radius: 16px 16px 0px 0px;
+}
+
+footer p {
+  margin: 0px;
+}
+
+.logo-footer {
+  height: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.address {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: flex;
+  gap: 8px;
+  align-items: first baseline;
+}
+
+.contact {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.social {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+div.social h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.whatsapp, .email, .fb, .insta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pp {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  padding-left: 20px;
+}
+
+.tos {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.copyright {
+  grid-column-start: span 2;
+  grid-row-start: 5;
+  padding-left: 20px;
+}
+
+footer a {
+  color: #6ff7f6;
+  text-decoration: none;
+}
+
+.fill {
+  height: 88px;
+  background-color: #3f4948;
+  grid-column: span 2;
+  grid-row: 5;
+}
+
+body {
+  background-color: #fafdfc;
+}
+
+.extended-fab-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 16px;
+  width: 100%;
+  max-width: 599px;
+}
+
+div.extended-fab-container a {
+  text-decoration: none;
+}
+
+.extended-fab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 56px;
+  min-width: 80px;
+  padding-left: 16px;
+  padding-right: 24px;
+  background-color: #6ff7f6;
+  border: none;
+  border-radius: 16px;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  color: #002020;
+  box-shadow: 0px 3px 1px -2px #808080;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: auto 599px auto;
+  }
+  .page {
+    grid-column-start: 2;
+  }
+}
+html {
+  font-family: "Barlow", sans-serif;
+}
+
+.title-card {
+  margin: 0px 8px 8px 8px;
+  padding: 8px;
+  border-radius: 24px;
+  background-color: #006a6a;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.title-card h1, div.title-card p {
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px 8px;
+}
+
+.map {
+  margin-bottom: 16px;
+}
+
+.contact-cards {
+  padding: 0px 8px;
+  margin-bottom: 16px;
+}
+
+section.contact-cards h2, section.contact-cards p {
+  margin: 0px;
+  padding: 0px 8px;
+}
+
+section.contact-cards h2 {
+  margin-bottom: 8px;
+}
+
+.address-card {
+  margin-bottom: 8px;
+  padding: 16px;
+  border-radius: 24px;
+  background-color: #dae5e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.phone-card {
+  margin-bottom: 8px;
+  padding: 16px;
+  border-radius: 24px;
+  background-color: #dae5e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.email-card {
+  margin: 0px;
+  padding: 16px;
+  border-radius: 24px;
+  background-color: #dae5e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+h3 {
+  margin: 0px 0px 8px 0px;
+  padding-left: 8px;
+}
+
+p {
+  margin: 0px 8px 8px 8px;
+  padding: 0px;
+  font-family: "Barlow", sans-serif;
+  color: #3f4948;
+}
+
+.find-me {
+  padding: 0px 8px;
+  margin: 0px 0px 16px 0px;
+}
+
+section.find-me h2 {
+  margin: 0px 0px 8px 0px;
+  padding: 0px 8px;
+}
+
+section.hours h2 {
+  padding: 0px;
+  margin: 0px 0px 8px 0px;
+}
+
+section.hours p {
+  padding: 0px;
+  margin: 0px 0px 8px 0px;
+}
+
+.hours {
+  padding: 16px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+thead th:nth-child(1) {
+  width: 50%;
+}
+
+thead th:nth-child(2) {
+  width: 50%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+thead {
+  background-color: #006a6a;
+  color: #ffffff;
+}
+
+tbody {
+  background-color: #dae5e4;
+  color: #191c1c;
+}/*# sourceMappingURL=contact.css.map */
