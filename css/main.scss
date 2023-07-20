@@ -1,4 +1,6 @@
+@use './normalize.css';
 @use 'utilities';
+@use './layout/header';
 @use 'nav';
 @use 'hero';
 @use 'intro';
@@ -8,8 +10,46 @@
 @use 'map';
 @use 'footer';
 
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+  *,
+  *::before,
+  *::after {
+      -webkit-box-sizing: inherit;
+         -moz-box-sizing: inherit;
+              box-sizing: inherit;
+  }
+
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: utilities.$background;
+}
+
+header {
+  height: 73px;
+}
+
+.burger-logo-container {
+  width: 100%;
+  max-height: 80px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  background-color: utilities.$background;
+  padding: 28px 12px 16px 28px;
+
+}
+
+.logo {
+  height: 24px;
 }
 
 .extended-fab-container {

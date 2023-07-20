@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap');
+
+$display-small-font: 'Barlow Condensed', sans-serif;
+
+$label-small-font: 'Barlow', sans-serif;
+$label-small-line-height: 16;
+$label-small-size: 11px;
+$label-small-tracking: 0.5px;
+$label-small-weight: 500;
+$label-small: #{$label-small-weight} #{$label-small-size}/#{$label-small-line-height} #{$label-small-font};
