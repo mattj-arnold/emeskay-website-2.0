@@ -1,0 +1,7 @@
+//Import normalise.css
+@import './normalize.css';
+
+@use './base/reset' as *;
+
+@use './pages/home';
+@use './pages/contact';

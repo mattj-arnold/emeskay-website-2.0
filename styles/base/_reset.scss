@@ -1,29 +1,16 @@
-@use './normalize.css';
-@use 'utilities';
-@use 'nav';
-@use 'hero';
-@use 'intro';
-@use 'services';
-@use 'testimonials';
-@use 'partners';
-@use 'map';
-@use 'footer';
-@use 'base/typography';
-@use './pages/contact';
-
 html {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-  *,
-  *::before,
-  *::after {
-      -webkit-box-sizing: inherit;
-         -moz-box-sizing: inherit;
-              box-sizing: inherit;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
   }
+  
+    *,
+    *::before,
+    *::after {
+        -webkit-box-sizing: inherit;
+           -moz-box-sizing: inherit;
+                box-sizing: inherit;
+    }
 
 h1 {
   font: typography.$display-medium;
@@ -57,6 +44,7 @@ a {
 
 body {
   background-color: utilities.$background;
+  padding: 12px;
 }
 
 

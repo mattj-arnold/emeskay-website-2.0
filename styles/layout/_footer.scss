@@ -1,4 +1,5 @@
-@use 'utilities';
+@use '../base/typography' as *;
+@use '../base/utilities' as *;
 
 footer {
     display: grid;

@@ -1,0 +1,330 @@
+@use '../base/typography' as *;
+@use '../base/utilities' as *;
+
+//Hero
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: utilities.$primary;
+    height: calc(100vh - 81px);
+    margin-bottom: utilities.$compact-margin-vertical;
+    padding: 0px 24px;
+    background-image: url(../images/hero-image.jpg);
+    background-size: cover;
+    border-radius: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .heading {
+    font-family: utilities.$heading;
+    color: white;
+    margin: 0px 0px 8px 0px;
+  }
+
+  .subheading {
+    font-family: utilities.$copy;
+    color: white;
+    margin: 0px 0px 16px 0px;
+  }
+
+  //Intro
+
+  .intro-card {
+    background-color: utilities.$surface-variant;
+    padding: 24px;
+    margin: 0px 8px utilities.$compact-margin-vertical 8px;
+    border-radius: 24px;
+}
+
+section.intro h2 {
+    margin: 0px 16px 8px 16px;
+    font-family: utilities.$heading;
+    color: utilities.$on-background;
+}
+
+section.intro p {
+    margin: 0px;
+    font-family: utilities.$copy;
+    color: utilities.$on-surface-variant;
+}
+
+//Services
+
+.services {
+    padding: 0px 8px;
+}
+
+section.services h2, h3 {
+    font-family: utilities.$heading;
+    padding: 0px utilities.$compact-padding;
+    margin: 0px 0px 8px 0px;
+}
+
+.services-card {
+    background-color: utilities.$surface-variant;
+    color: utilities.$on-surface-variant;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    padding: 8px;
+}
+
+div.services-card p {
+    margin: 16px;
+    font-family: utilities.$copy;
+    color: utilities.$on-surface-variant;
+}
+
+.rehab-card {
+    
+    background-color: utilities.$surface;
+    border-radius: 24px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.injury-rehab-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+div.rehab-card h3 {
+    color: utilities.$on-surface;
+}
+
+div.rehab-card p {
+    margin: 0px utilities.$compact-margin-horizontal 16px utilities.$compact-margin-horizontal;
+    color: utilities.$on-surface;
+}
+
+.rehab-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    margin: 0px 0px 0px 16px;
+}
+
+.rehab-book {
+    height: 40px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: utilities.$secondary-container;
+}
+
+button.rehab-book label {
+    font-family: utilities.$copy;
+    font-size: 14px;
+    color: utilities.$on-secondary-container;
+}
+
+.rehab-learn {
+    height: 40px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: utilities.$outline;
+    background-color: utilities.$surface;
+}
+
+button.rehab-learn label {
+    font-family: utilities.$copy;
+    font-size: 14px;
+    color: utilities.$primary;
+}
+
+/* Injury Prevention Card */
+
+.prehab-card {
+    background-color: utilities.$surface;
+    border-radius: 24px;
+    padding-bottom: 16px;
+}
+
+.injury-prehab-image {
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+div.prehab-card h3 {
+    color: utilities.$on-surface;
+    margin-bottom: 8px;
+}
+
+div.prehab-card p {
+    margin: 0px utilities.$compact-margin-horizontal 16px 16px;
+    color: utilities.$on-surface;
+}
+
+.prehab-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    margin: 0px 0px 0px 16px;
+}
+
+.prehab-book {
+    height: 40px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border: none;
+    background-color: utilities.$secondary-container;
+}
+
+button.prehab-book label {
+    font-family: utilities.$copy;
+    font-size: 14px;
+    color: utilities.$on-secondary-container;
+}
+
+.prehab-learn {
+    height: 40px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: utilities.$outline;
+    background-color: utilities.$surface;
+}
+
+button.prehab-learn label {
+    font-family: utilities.$copy;
+    font-size: 14px;
+    color: utilities.$primary;
+}
+
+//Testimonials
+
+.testimonials {
+    margin: 0px 0px 24px 0px;
+    padding: 0px 0px 0px 8px;
+    color: utilities.$on-surface-variant;
+}
+
+section.testimonials h2 {
+    font-family: utilities.$heading;
+    color: utilities.$on-surface;
+    margin: 0px 0px 8px 0px;
+    padding: 0px 0px 0px 16px;
+}
+
+.slider {
+    /* line them up horizontally */
+    display: flex;
+  
+    /* allow for scrolling */
+    overflow-x: auto;
+  
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+  }
+  .slider > div {
+    /* make sure the width is honored */
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    background-color: utilities.$surface-variant;
+    margin-right: 8px;
+    padding: 16px;
+    border-radius: 12px;
+    
+  }
+
+  div.slider h3 {
+    margin: 8px 0px 8px 0px;
+    padding: 0px;
+    font-family: utilities.$heading;
+  }
+
+  div.slider p {
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+    font-family: utilities.$copy;
+  }
+
+  .testimonial-images {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  //Partners
+
+  .partners {
+    padding: 0px 8px;
+    margin: 0px 0px 24px 0px;
+}
+
+section.partners h2 {
+    font-family: utilities.$heading;
+    color: utilities.$on-surface;
+    margin: 0px 0px 8px 0px;
+    padding: 0px 0px 0px 16px;
+}
+
+.sto-card {
+    background-color: utilities.$surface-variant;
+    border-radius: 12px;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+div.sto-card p {
+    font-family: utilities.$copy;
+    color: utilities.$on-surface;
+    margin: 0px;
+    padding: 0px 16px;
+}
+
+.sto-logo-container {
+    display: flex;
+    justify-content: center;
+    background-color: utilities.$surface;
+    border-radius: 12px;
+    border: 1px solid utilities.$outline;
+    margin-bottom: 8px;
+    padding: 8px;
+    aspect-ratio: 16/9;
+}
+
+.sto-logo {
+    max-width: 286px; 
+    object-fit: scale-down;
+}
+
+//Map
+
+.map {
+    margin-bottom: utilities.$compact-margin-vertical;
+    padding: 0px 8px;
+}
+
+.map-heading {
+    font-family: utilities.$heading;
+    margin: 0px 0px 8px 0px;
+    padding: 0px 16px;
+}
+
+.google-map {
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 24px;
+    
+}

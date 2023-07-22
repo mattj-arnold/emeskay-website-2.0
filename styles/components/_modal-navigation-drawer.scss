@@ -1,5 +1,5 @@
-@use 'utilities';
-@use 'base/typography';
+@use 'utilities' as *;
+@use 'base/typography' as *;
 
 #sidebar {
     position: fixed;

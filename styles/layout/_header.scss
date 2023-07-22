@@ -1,4 +1,6 @@
-@use 'components/modal-navigation-drawer';
+@use '../base/typography' as *;
+@use '../base/utilities' as *;
+@use '../components/modal-navigation-drawer';
 
 header {
     height: 73px;

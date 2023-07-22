@@ -1,4 +1,5 @@
-@use '../layout/header';
+@use '../base/typography' as *;
+@use '../base/utilities' as *;
 
 html {
     font-family: utilities.$copy;
