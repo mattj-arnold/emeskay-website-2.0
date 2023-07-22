@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+/* h1 */
+/* h2 */
+/* h3 */
+/* p */
+html {
+  font-family: "Barlow", sans-serif;
+}
+
+.title-card {
+  margin: 0px 8px 16px 8px;
+  padding: 16px;
+  border-radius: 24px;
+  background-image: url(../images/contact-image.jpg);
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  gap: 8px;
+}
+
+div.title-card h1, div.title-card p {
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px 8px;
+  color: #3f4948;
+}
+
+.map {
+  margin-bottom: 16px;
+}
+
+.contact-cards {
+  padding: 0px 8px;
+  margin-bottom: 16px;
+}
+
+.contact-cards h3, .contact-cards p {
+  padding: 0;
+}
+
+.address-card {
+  margin-bottom: 8px;
+  padding: 0px 0px 0px 20px;
+  border-radius: 24px;
+  background-color: #fafdfc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 12px;
+  color: #191c1c;
+}
+
+.phone-card, .email-card {
+  margin-bottom: 8px;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: #dae5e4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 12px;
+  color: #3f4948;
+}
+
+.find-me {
+  padding: 0px 8px;
+  margin: 0px 0px 16px 0px;
+}
+
+section.find-me h2 {
+  margin: 0px 0px 8px 0px;
+  padding: 0px 8px;
+}
+
+.walk-through {
+  border-radius: 24px;
+}
+
+.google-map {
+  margin: 0px 0px 8px 0px;
+}
+
+.icon-h3-container {
+  display: flex;
+  padding: 0px 0px 0px 28px;
+  margin: 0px 0px 8px 0px;
+  gap: 12px;
+}
+
+.icon-h3-container h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+section.hours h2 {
+  padding: 0px;
+  margin: 0px 0px 8px 0px;
+}
+
+section.hours p {
+  padding: 0px;
+  margin: 0px 0px 8px 0px;
+}
+
+.hours {
+  padding: 16px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+thead th:nth-child(1) {
+  width: 50%;
+}
+
+thead th:nth-child(2) {
+  width: 50%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+thead {
+  background-color: #006a6a;
+  color: #ffffff;
+}
+
+tbody {
+  background-color: #dae5e4;
+  color: #191c1c;
+}/*# sourceMappingURL=contact.css.map */

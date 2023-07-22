@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap');
 
-$display-small-font: 'Barlow Condensed', sans-serif;
+/* h1 */
+$display-medium-size: 45px;
+$display-medium-line-height: 1;
+$display-medium-font: 'Barlow Condensed', sans-serif;
+$display-medium: #{$display-medium-size}/#{$display-medium-line-height} #{$display-medium-font};
 
-$label-small-font: 'Barlow', sans-serif;
-$label-small-line-height: 16;
-$label-small-size: 11px;
-$label-small-tracking: 0.5px;
-$label-small-weight: 500;
-$label-small: #{$label-small-weight} #{$label-small-size}/#{$label-small-line-height} #{$label-small-font};
+/* h2 */
+$headline-large-size: 32px;
+$headline-large-line-heaight: 1.1;
+$headline-large-font: 'Barlow Condensed', sans-serif;
+$headline-large: #{$headline-large-size}/#{$headline-large-line-heaight} #{$headline-large-font};
+
+/* h3 */
+$headline-small-size: 24px;
+$headline-small-line-heaight: 1.2;
+$headline-small-font: 'Barlow Condensed', sans-serif;
+$headline-small: #{$headline-small-size}/#{$headline-small-line-heaight} #{$headline-small-font};
+
+/* p */
+$body-large-size: 16px;
+$body-large-line-height: 1.2;
+$body-large-font: 'Barlow', sans-serif;
+$body-large: #{$body-large-size}/#{$body-large-line-height} #{$body-large-font};

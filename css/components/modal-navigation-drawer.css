@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
+/* h1 */
+/* h2 */
+/* h3 */
+/* p */
 #sidebar {
   position: fixed;
   width: 360px;
@@ -59,18 +63,4 @@
   color: #3f4948;
   font-family: "barlow", sans-serif;
   font-size: 18px;
-}
-
-/*#sidebar .toggle-btn {
-    position: absolute;
-    top: 30px;
-    left: 330px;
-}
-
-.toggle-btn span {
-    width: 45px;
-    height: 4px;
-    background-color: #000;
-    display: block;
-    margin-top: 4px;
-}*//*# sourceMappingURL=modal-navigation-drawer.css.map */
+}/*# sourceMappingURL=modal-navigation-drawer.css.map */

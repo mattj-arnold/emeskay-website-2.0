@@ -1,5 +1,5 @@
-@use '../utilities';
-@use '../base/typography';
+@use 'utilities';
+@use 'base/typography';
 
 #sidebar {
     position: fixed;
@@ -69,18 +69,3 @@
     font-family: 'barlow', sans-serif;
     font-size: 18px;
 }
-
-
-/*#sidebar .toggle-btn {
-    position: absolute;
-    top: 30px;
-    left: 330px;
-}
-
-.toggle-btn span {
-    width: 45px;
-    height: 4px;
-    background-color: #000;
-    display: block;
-    margin-top: 4px;
-}*/
