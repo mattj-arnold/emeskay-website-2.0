@@ -23,3 +23,9 @@ $body-large-size: 16px;
 $body-large-line-height: 1.3;
 $body-large-font: 'Barlow', sans-serif;
 $body-large: #{$body-large-size}/#{$body-large-line-height} #{$body-large-font};
+
+/* label */
+$label-large-size: 14px;
+$label-large-line-height: 1.4;
+$label-large-font: 'Barlow', sans-serif;
+$label-large: #{$label-large-size}/#{$label-large-line-height} #{$label-large-font};

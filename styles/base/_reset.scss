@@ -1,3 +1,6 @@
+@use 'utilities';
+@use 'typography';
+
 html {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -12,46 +15,59 @@ html {
                 box-sizing: inherit;
     }
 
+    
+
+
+
+body {
+   background-color: utilities.$surface;
+  }
+
 h1 {
   font: typography.$display-medium;
-  margin: 0;
-  padding: 0;
+  color: utilities.$on-surface;
+  margin: 0px 0px 8px 0px;
+  padding: 0px 16px;
 }
 
 h2 {
   font: typography.$headline-large;
+  color: utilities.$on-surface;
   margin: 0px 0px 8px 0px;
-  padding: 0px 0px 0px 28px;
+  padding: 0px 16px;
 }
 
 h3 {
   font: typography.$headline-small;
+  color: utilities.$on-surface;
   margin: 0px 0px 8px 0px;
-  padding: 0px 0px 0px 28px;
+  padding: 0px 16px;
 }
 
 p {
   font: typography.$body-large;
+  color: utilities.$on-surface;
   margin: 0px 0px 8px 0px;
-  padding: 0px 0px 0px 28px;
+  padding: 0px 16px;
 }
 
 a {
+  font: typography.$body-large;
+  color: utilities.$primary;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background-color: utilities.$background;
-  padding: 12px;
-}
 
 
 
 
 
-@media (min-width: 600px) {
+
+
+
+/*@media (min-width: 600px) {
   body {
     display: grid;
     grid-template-columns: auto 599px auto;
@@ -60,4 +76,4 @@ body {
   .page {
     grid-column-start: 2;
   }
-}
+}*/

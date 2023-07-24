@@ -1,5 +1,5 @@
-@use '../base/typography' as *;
-@use '../base/utilities' as *;
+@use '../base/typography';
+@use '../base/utilities';
 
 footer {
     display: grid;
@@ -9,9 +9,10 @@ footer {
     font-family: utilities.$copy;
     font-size: 14px;
     padding: 16px;
-    background-color: utilities.$on-surface-variant;
-    color: utilities.$surface-variant;
+    background-color: utilities.$tertiary-container;
+    color: utilities.$on-tertiary-container;
     border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
 }
 
 footer p {

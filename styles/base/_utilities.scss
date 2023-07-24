@@ -1,6 +1,7 @@
 $heading: 'Barlow Condensed', sans-serif;
 $copy: 'Barlow', sans-serif;
 
+//Colour
 $primary: #006a6a;
 $on-primary: #ffffff;
 $primary-container: #6ff7f6;
@@ -11,10 +12,10 @@ $on-secondary: #ffffff;
 $secondary-container: #ffdad4;
 $on-secondary-container: #410000;
 
-$tertiary: #4b607c;
+$tertiary: #7445b4;
 $on-tertiary: #ffffff;
-$tertiary-container: #d3e4ff;
-$on-tertiary-container: #041c35;
+$tertiary-container: #eddcff;
+$on-tertiary-container: #290055;
 
 $error: #ba1a1a;
 $on-error: #ffffff;
@@ -23,8 +24,12 @@ $on-error-container: #410002;
 
 $background: #fafdfc;
 $on-background: #191c1c;
-$surface: #fafdfc;
+$surface: #f7faf9;
 $on-surface: #191c1c;
+
+$surface-container-low: #eff1f0;
+$surface-container: #eff1f0;
+$surface-container-highest: #e0e3e2;
 
 $outline: #6f7979;
 $surface-variant: #dae5e4;
@@ -34,3 +39,7 @@ $compact-margin-vertical: 24px;
 $compact-margin-horizontal: 16px;
 
 $compact-padding: 16px;
+
+//Shape
+$large-end-shape: 0px 16px 16px 0px;
+$extra-large-shape: 28px;

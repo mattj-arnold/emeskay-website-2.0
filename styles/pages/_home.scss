@@ -1,5 +1,6 @@
-@use '../base/typography' as *;
 @use '../base/utilities' as *;
+@use '../layout/header';
+@use '../layout/footer';
 
 //Hero
 
@@ -8,79 +9,58 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: utilities.$primary;
-    height: calc(100vh - 81px);
-    margin-bottom: utilities.$compact-margin-vertical;
-    padding: 0px 24px;
+    background-color: $primary;
+    height: calc(100vh - 88px);
+    padding: 0px 16px;
     background-image: url(../images/hero-image.jpg);
     background-size: cover;
-    border-radius: 16px;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-
-  .heading {
-    font-family: utilities.$heading;
-    color: white;
-    margin: 0px 0px 8px 0px;
-  }
-
-  .subheading {
-    font-family: utilities.$copy;
-    color: white;
+    border-radius: $extra-large-shape;
     margin: 0px 0px 16px 0px;
   }
 
-  //Intro
+  .heading {
+    padding: 0;
+    color: $surface;
+  }
 
-  .intro-card {
-    background-color: utilities.$surface-variant;
-    padding: 24px;
-    margin: 0px 8px utilities.$compact-margin-vertical 8px;
-    border-radius: 24px;
-}
+  .subheading {
+    margin: 0;
+    padding: 0;
+    color: $surface;
+  }
 
-section.intro h2 {
-    margin: 0px 16px 8px 16px;
-    font-family: utilities.$heading;
-    color: utilities.$on-background;
-}
-
-section.intro p {
-    margin: 0px;
-    font-family: utilities.$copy;
-    color: utilities.$on-surface-variant;
+//Intro
+.intro {
+    margin-bottom: 16px;
 }
 
 //Services
 
-.services {
-    padding: 0px 8px;
-}
+
 
 section.services h2, h3 {
-    font-family: utilities.$heading;
-    padding: 0px utilities.$compact-padding;
+    font-family: $heading;
+    padding: 0px $compact-padding;
     margin: 0px 0px 8px 0px;
 }
 
-.services-card {
-    background-color: utilities.$surface-variant;
-    color: utilities.$on-surface-variant;
+/*.services-card {
+    background-color: $surface-container;
+    color: $on-surface-variant;
     border-radius: 24px;
     margin-bottom: 24px;
     padding: 8px;
-}
+}*/
 
 div.services-card p {
     margin: 16px;
-    font-family: utilities.$copy;
-    color: utilities.$on-surface-variant;
+    font-family: $copy;
+    color: $on-surface-variant;
 }
 
 .rehab-card {
     
-    background-color: utilities.$surface;
+    background-color: $surface-container-highest;
     border-radius: 24px;
     padding-bottom: 16px;
     margin-bottom: 16px;
@@ -96,18 +76,18 @@ div.services-card p {
 }
 
 div.rehab-card h3 {
-    color: utilities.$on-surface;
+    color: $on-surface;
 }
 
 div.rehab-card p {
-    margin: 0px utilities.$compact-margin-horizontal 16px utilities.$compact-margin-horizontal;
-    color: utilities.$on-surface;
+    margin: 0px $compact-margin-horizontal 16px $compact-margin-horizontal;
+    color: $on-surface;
 }
 
 .rehab-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
     margin: 0px 0px 0px 16px;
@@ -118,13 +98,13 @@ div.rehab-card p {
     padding: 0px 24px;
     border-radius: 20px;
     border: none;
-    background-color: utilities.$secondary-container;
+    background-color: $secondary-container;
 }
 
 button.rehab-book label {
-    font-family: utilities.$copy;
+    font-family: $copy;
     font-size: 14px;
-    color: utilities.$on-secondary-container;
+    color: $on-secondary-container;
 }
 
 .rehab-learn {
@@ -132,20 +112,20 @@ button.rehab-book label {
     padding: 0px 24px;
     border-radius: 20px;
     border-width: 1px;
-    border-color: utilities.$outline;
-    background-color: utilities.$surface;
+    border-color: $outline;
+    background-color: $surface;
 }
 
 button.rehab-learn label {
-    font-family: utilities.$copy;
+    font-family: $copy;
     font-size: 14px;
-    color: utilities.$primary;
+    color: $primary;
 }
 
 /* Injury Prevention Card */
 
 .prehab-card {
-    background-color: utilities.$surface;
+    background-color: $surface-container-highest;
     border-radius: 24px;
     padding-bottom: 16px;
 }
@@ -161,19 +141,19 @@ button.rehab-learn label {
 }
 
 div.prehab-card h3 {
-    color: utilities.$on-surface;
+    color: $on-surface;
     margin-bottom: 8px;
 }
 
 div.prehab-card p {
-    margin: 0px utilities.$compact-margin-horizontal 16px 16px;
-    color: utilities.$on-surface;
+    margin: 0px $compact-margin-horizontal 16px 16px;
+    color: $on-surface;
 }
 
 .prehab-buttons {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     gap: 8px;
     margin: 0px 0px 0px 16px;
@@ -184,13 +164,13 @@ div.prehab-card p {
     padding: 0px 24px;
     border-radius: 20px;
     border: none;
-    background-color: utilities.$secondary-container;
+    background-color: $secondary-container;
 }
 
 button.prehab-book label {
-    font-family: utilities.$copy;
+    font-family: $copy;
     font-size: 14px;
-    color: utilities.$on-secondary-container;
+    color: $on-secondary-container;
 }
 
 .prehab-learn {
@@ -198,14 +178,14 @@ button.prehab-book label {
     padding: 0px 24px;
     border-radius: 20px;
     border-width: 1px;
-    border-color: utilities.$outline;
-    background-color: utilities.$surface;
+    border-color: $outline;
+    background-color: $surface;
 }
 
 button.prehab-learn label {
-    font-family: utilities.$copy;
+    font-family: $copy;
     font-size: 14px;
-    color: utilities.$primary;
+    color: $primary;
 }
 
 //Testimonials
@@ -213,12 +193,12 @@ button.prehab-learn label {
 .testimonials {
     margin: 0px 0px 24px 0px;
     padding: 0px 0px 0px 8px;
-    color: utilities.$on-surface-variant;
+    color: $on-surface-variant;
 }
 
 section.testimonials h2 {
-    font-family: utilities.$heading;
-    color: utilities.$on-surface;
+    font-family: $heading;
+    color: $on-surface;
     margin: 0px 0px 8px 0px;
     padding: 0px 0px 0px 16px;
 }
@@ -238,7 +218,7 @@ section.testimonials h2 {
     flex-shrink: 0;
     width: 300px;
     height: 300px;
-    background-color: utilities.$surface-variant;
+    background-color: $surface-container-highest;
     margin-right: 8px;
     padding: 16px;
     border-radius: 12px;
@@ -248,13 +228,13 @@ section.testimonials h2 {
   div.slider h3 {
     margin: 8px 0px 8px 0px;
     padding: 0px;
-    font-family: utilities.$heading;
+    font-family: $heading;
   }
 
   div.slider p {
     margin: 8px 0px 0px 0px;
     padding: 0px;
-    font-family: utilities.$copy;
+    font-family: $copy;
   }
 
   .testimonial-images {
@@ -271,22 +251,22 @@ section.testimonials h2 {
 }
 
 section.partners h2 {
-    font-family: utilities.$heading;
-    color: utilities.$on-surface;
+    font-family: $heading;
+    color: $on-surface;
     margin: 0px 0px 8px 0px;
     padding: 0px 0px 0px 16px;
 }
 
 .sto-card {
-    background-color: utilities.$surface-variant;
+    background-color: $surface-container-highest;
     border-radius: 12px;
     width: 100%;
     padding-bottom: 16px;
 }
 
 div.sto-card p {
-    font-family: utilities.$copy;
-    color: utilities.$on-surface;
+    font-family: $copy;
+    color: $on-surface;
     margin: 0px;
     padding: 0px 16px;
 }
@@ -294,9 +274,9 @@ div.sto-card p {
 .sto-logo-container {
     display: flex;
     justify-content: center;
-    background-color: utilities.$surface;
+    background-color: $surface;
     border-radius: 12px;
-    border: 1px solid utilities.$outline;
+    border: 1px solid $outline;
     margin-bottom: 8px;
     padding: 8px;
     aspect-ratio: 16/9;
@@ -310,12 +290,12 @@ div.sto-card p {
 //Map
 
 .map {
-    margin-bottom: utilities.$compact-margin-vertical;
+    margin-bottom: $compact-margin-vertical;
     padding: 0px 8px;
 }
 
 .map-heading {
-    font-family: utilities.$heading;
+    font-family: $heading;
     margin: 0px 0px 8px 0px;
     padding: 0px 16px;
 }
