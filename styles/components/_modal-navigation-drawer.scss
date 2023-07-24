@@ -31,6 +31,10 @@
     margin-bottom: 16px;
 }
 
+.toggle-btn {
+    cursor: pointer;
+}
+
 .model-navigation-drawer-logo {
     height: 24px;
 }
@@ -50,15 +54,6 @@
     background-color: $secondary-container;
     color: $on-secondary-container
 }
-
-.active-indicator:hover {
-    background-color: $tertiary-container;
-    color: $on-tertiary-container;
-}
-
-
-
-
 
 .modal-navigation-drawer-label {
     color: $on-surface-variant;
