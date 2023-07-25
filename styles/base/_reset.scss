@@ -1,5 +1,5 @@
-@use 'utilities';
-@use 'typography';
+@use 'utilities' as *;
+@use 'typography' as *;
 
 html {
     -webkit-box-sizing: border-box;
@@ -20,45 +20,49 @@ html {
 
 
 body {
-   background-color: utilities.$surface;
+   background-color: $surface;
   }
 
 h1 {
-  font: typography.$display-medium;
-  color: utilities.$on-surface;
-  margin: 0px 0px 8px 0px;
+  font: $display-medium;
+  color: $on-surface;
+  margin: 0;
   padding: 0px 16px;
 }
 
 h2 {
-  font: typography.$headline-large;
-  color: utilities.$on-surface;
-  margin: 0px 0px 8px 0px;
+  font: $headline-large;
+  color: $on-surface;
+  margin: 0;
   padding: 0px 16px;
 }
 
 h3 {
-  font: typography.$headline-small;
-  color: utilities.$on-surface;
-  margin: 0px 0px 8px 0px;
+  font: $headline-small;
+  color: $on-surface;
+  margin: 0;
   padding: 0px 16px;
 }
 
 p {
-  font: typography.$body-large;
-  color: utilities.$on-surface;
-  margin: 0px 0px 8px 0px;
+  font: $body-large;
+  color: $on-surface;
+  margin: 0;
   padding: 0px 16px;
 }
 
 a {
-  font: typography.$body-large;
-  color: utilities.$primary;
+  font: $body-large;
+  color: $primary;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: $on-primary-container
+}
 
 
 
@@ -67,7 +71,8 @@ a {
 
 
 
-/*@media (min-width: 600px) {
+
+@media (min-width: 600px) {
   body {
     display: grid;
     grid-template-columns: auto 599px auto;
@@ -76,4 +81,4 @@ a {
   .page {
     grid-column-start: 2;
   }
-}*/
+}

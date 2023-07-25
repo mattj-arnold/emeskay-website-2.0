@@ -1,22 +1,30 @@
-@use '../base/typography';
-@use '../base/utilities';
+@use '../base/typography' as *;
+@use '../base/utilities' as *;
 
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 16px;
-    font-family: utilities.$copy;
-    font-size: 14px;
-    padding: 16px;
-    background-color: utilities.$tertiary-container;
-    color: utilities.$on-tertiary-container;
-    border-radius: 16px 16px 0px 0px;
+    padding: 12px 16px 12px 16px;
+    background-color: $surface-container;
     overflow: hidden;
+}
+
+footer h3 {
+    font: $body-large;
+    color: $on-surface-variant;
 }
 
 footer p {
     margin: 0px;
+    color: $on-surface-variant;
+    font: $label-large;
+    padding: 0;
+}
+
+footer a {
+    font: $label-large;
 }
 
 .logo-footer {
@@ -24,73 +32,64 @@ footer p {
     width: fit-content;
     grid-column-start: 1;
     grid-row-start: 1;
+    grid-row-end: 2;
+    padding-left: 16px;
 }
 
-.address {
+.contact-info {
     grid-column-start: 1;
     grid-row-start: 2;
     display: flex;
-    gap: 8px;
-    align-items:first baseline;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.contact {
-    grid-column-start: 1;
-    grid-row-start: 3;
+.address {
+    padding-left: 16px;
+}
+
+.whatsapp-container {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
+    gap: 16px;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.email-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-left: 16px;
 }
 
 .social {
-    grid-column: 2;
-    grid-row: 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 div.social h3 {
-    font-family: utilities.$heading;
-    margin: 0px;
     padding: 0px;
+    color: $on-surface-variant;
 }
 
-.whatsapp, .email, .fb, .insta {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.pp {
+.legal {
     grid-column-start: 1;
-    grid-row-start: 4;
-    padding-left: 20px;
-    
+    grid-row-start: 3;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.tos {
-    grid-column-start: 2;
-    grid-row-start: 4;
-    
-}
-
-.copyright {
-    grid-column-start: span 2;
-    grid-row-start: 5;
-    padding-left: 20px;
-    
-}
-
-footer a {
-    color: utilities.$primary-container;
-    text-decoration: none;
-}
-
-.fill {
-    height: 88px;
-    background-color: utilities.$on-surface-variant;
-    grid-column: span 2;
-    grid-row: 5;
+.legal h3 {
+    padding: 0;
 }

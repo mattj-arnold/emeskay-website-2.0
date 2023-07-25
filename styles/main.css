@@ -312,6 +312,7 @@ template {
 /* h2 */
 /* h3 */
 /* p */
+/* title */
 /* label */
 html {
   box-sizing: border-box;
@@ -330,28 +331,28 @@ body {
 h1 {
   font: 45px/1 Barlow Condensed, sans-serif;
   color: #191c1c;
-  margin: 0px 0px 8px 0px;
+  margin: 0;
   padding: 0px 16px;
 }
 
 h2 {
   font: 32px/1.1 Barlow Condensed, sans-serif;
   color: #191c1c;
-  margin: 0px 0px 8px 0px;
+  margin: 0;
   padding: 0px 16px;
 }
 
 h3 {
   font: 24px/1.2 Barlow Condensed, sans-serif;
   color: #191c1c;
-  margin: 0px 0px 8px 0px;
+  margin: 0;
   padding: 0px 16px;
 }
 
 p {
   font: 16px/1.3 Barlow, sans-serif;
   color: #191c1c;
-  margin: 0px 0px 8px 0px;
+  margin: 0;
   padding: 0px 16px;
 }
 
@@ -363,16 +364,20 @@ a {
   padding: 0;
 }
 
-/*@media (min-width: 600px) {
+a:hover {
+  text-decoration: underline;
+  color: #002020;
+}
+
+@media (min-width: 600px) {
   body {
     display: grid;
     grid-template-columns: auto 599px auto;
   }
-
   .page {
     grid-column-start: 2;
   }
-}*/
+}
 .top-app-bar {
   width: 100vw;
   height: 64px;
@@ -460,9 +465,10 @@ a {
 
 .extended-fab-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   bottom: 16px;
+  right: 16px;
   width: 100vw;
 }
 
@@ -493,17 +499,25 @@ footer {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 16px;
-  font-family: "Barlow", sans-serif;
-  font-size: 14px;
-  padding: 16px;
-  background-color: #eddcff;
-  color: #290055;
-  border-radius: 16px 16px 0px 0px;
+  padding: 12px 16px 12px 16px;
+  background-color: #eff1f0;
   overflow: hidden;
+}
+
+footer h3 {
+  font: 16px/1.3 Barlow, sans-serif;
+  color: #3f4948;
 }
 
 footer p {
   margin: 0px;
+  color: #3f4948;
+  font: 14px/1.4 Barlow, sans-serif;
+  padding: 0;
+}
+
+footer a {
+  font: 14px/1.4 Barlow, sans-serif;
 }
 
 .logo-footer {
@@ -512,72 +526,66 @@ footer p {
   width: fit-content;
   grid-column-start: 1;
   grid-row-start: 1;
+  grid-row-end: 2;
+  padding-left: 16px;
 }
 
-.address {
+.contact-info {
   grid-column-start: 1;
   grid-row-start: 2;
   display: flex;
-  gap: 8px;
-  align-items: first baseline;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.contact {
-  grid-column-start: 1;
-  grid-row-start: 3;
+.address {
+  padding-left: 16px;
+}
+
+.whatsapp-container {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: flex-start;
+  gap: 16px;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.email-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-left: 16px;
 }
 
 .social {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column-start: 2;
+  grid-row-start: 2;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 div.social h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  margin: 0px;
   padding: 0px;
+  color: #3f4948;
 }
 
-.whatsapp, .email, .fb, .insta {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.pp {
+.legal {
   grid-column-start: 1;
-  grid-row-start: 4;
-  padding-left: 20px;
+  grid-row-start: 3;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.tos {
-  grid-column-start: 2;
-  grid-row-start: 4;
-}
-
-.copyright {
-  grid-column-start: span 2;
-  grid-row-start: 5;
-  padding-left: 20px;
-}
-
-footer a {
-  color: #6ff7f6;
-  text-decoration: none;
-}
-
-.fill {
-  height: 88px;
-  background-color: #3f4948;
-  grid-column: span 2;
-  grid-row: 5;
+.legal h3 {
+  padding: 0;
 }
 
 .hero {
@@ -609,7 +617,7 @@ footer a {
   margin-bottom: 16px;
 }
 
-section.services h2, h3 {
+section.services h2, .services h3 {
   font-family: "Barlow Condensed", sans-serif;
   padding: 0px 16px;
   margin: 0px 0px 8px 0px;
