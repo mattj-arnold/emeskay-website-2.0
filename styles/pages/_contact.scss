@@ -4,7 +4,7 @@
 @use '../layout/footer';
 
 .title-card {
-    margin: 0px 8px 16px 8px;
+    margin: 0px 0px 16px 0px;
     padding: 16px;
     border-radius: 24px;
     background-image: url(../images/contact-image.jpg);
@@ -76,9 +76,7 @@ section.find-me h2 {
     border-radius: 24px;
 }
 
-.google-map {
-  margin: 0px 0px 8px 0px;
-}
+
 
 .icon-h3-container {
   display: flex;

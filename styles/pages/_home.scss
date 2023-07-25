@@ -10,78 +10,60 @@
     justify-content: center;
     align-items: center;
     background-color: $primary;
-    height: calc(100vh - 88px);
+    height: calc(100vh - 80px);
     padding: 0px 16px;
     background-image: url(../images/hero-image.jpg);
     background-size: cover;
-    border-radius: $extra-large-shape;
+    border-radius: $large-shape;
     margin: 0px 0px 16px 0px;
-  }
+    gap: 8px;
+}
 
-  .heading {
+.heading {
     padding: 0;
     color: $surface;
-  }
+}
 
-  .subheading {
+.subheading {
     margin: 0;
     padding: 0;
     color: $surface;
-  }
+}
 
 //Intro
 .intro {
-    margin-bottom: 16px;
+    margin: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 //Services
-
-
-
-section.services h2, .services h3 {
-    font-family: $heading;
-    padding: 0px $compact-padding;
-    margin: 0px 0px 8px 0px;
-}
-
-/*.services-card {
-    background-color: $surface-container;
-    color: $on-surface-variant;
-    border-radius: 24px;
-    margin-bottom: 24px;
-    padding: 8px;
-}*/
-
-div.services-card p {
-    margin: 16px;
-    font-family: $copy;
-    color: $on-surface-variant;
-}
-
-.rehab-card {
-    
-    background-color: $surface-container-highest;
-    border-radius: 24px;
-    padding-bottom: 16px;
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     margin-bottom: 16px;
 }
 
-.injury-rehab-image {
+.rehab-card {  
+    background-color: $surface-container-highest;
+    border-radius: $medium-shape;
+}
+
+.rehab-card-image {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: 24px;
-    margin-bottom: 8px;
+    border-radius: $medium-shape;
 }
 
-div.rehab-card h3 {
-    color: $on-surface;
-}
-
-div.rehab-card p {
-    margin: 0px $compact-margin-horizontal 16px $compact-margin-horizontal;
-    color: $on-surface;
+.content-container {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .rehab-buttons {
@@ -90,7 +72,6 @@ div.rehab-card p {
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
-    margin: 0px 0px 0px 16px;
 }
 
 .rehab-book {
@@ -126,28 +107,15 @@ button.rehab-learn label {
 
 .prehab-card {
     background-color: $surface-container-highest;
-    border-radius: 24px;
-    padding-bottom: 16px;
+    border-radius: $medium-shape;
 }
 
 .injury-prehab-image {
-
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
     object-fit: cover;
-    border-radius: 24px;
-    margin-bottom: 8px;
-}
-
-div.prehab-card h3 {
-    color: $on-surface;
-    margin-bottom: 8px;
-}
-
-div.prehab-card p {
-    margin: 0px $compact-margin-horizontal 16px 16px;
-    color: $on-surface;
+    border-radius: $medium-shape;
 }
 
 .prehab-buttons {
@@ -156,7 +124,6 @@ div.prehab-card p {
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
-    margin: 0px 0px 0px 16px;
 }
 
 .prehab-book {
@@ -191,93 +158,94 @@ button.prehab-learn label {
 //Testimonials
 
 .testimonials {
-    margin: 0px 0px 24px 0px;
-    padding: 0px 0px 0px 8px;
-    color: $on-surface-variant;
+    margin: 0px 0px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-section.testimonials h2 {
-    font-family: $heading;
-    color: $on-surface;
-    margin: 0px 0px 8px 0px;
-    padding: 0px 0px 0px 16px;
+.testimonials h2 {
+    margin-left: 16px;
 }
 
 .slider {
     /* line them up horizontally */
     display: flex;
+    gap: 8px;
   
     /* allow for scrolling */
     overflow-x: auto;
   
     /* make it smooth on iOS */
     -webkit-overflow-scrolling: touch;
-  }
-  .slider > div {
+}
+
+.slider > div {
     /* make sure the width is honored */
     flex-shrink: 0;
     width: 300px;
     height: 300px;
     background-color: $surface-container-highest;
-    margin-right: 8px;
     padding: 16px;
-    border-radius: 12px;
-    
-  }
+    border-radius: $medium-shape;
+}
 
-  div.slider h3 {
-    margin: 8px 0px 8px 0px;
-    padding: 0px;
-    font-family: $heading;
-  }
-
-  div.slider p {
+div.slider p {
     margin: 8px 0px 0px 0px;
     padding: 0px;
     font-family: $copy;
-  }
+}
 
-  .testimonial-images {
+.img-name-stars-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.name-stars-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.testimonial-images {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-  }
+}
 
-  //Partners
+//Partners
 
-  .partners {
-    padding: 0px 8px;
-    margin: 0px 0px 24px 0px;
+.partners {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px 0px 16px 0px;
 }
 
 section.partners h2 {
-    font-family: $heading;
-    color: $on-surface;
-    margin: 0px 0px 8px 0px;
     padding: 0px 0px 0px 16px;
 }
 
 .sto-card {
     background-color: $surface-container-highest;
-    border-radius: 12px;
+    border-radius: $medium-shape;
     width: 100%;
-    padding-bottom: 16px;
 }
 
-div.sto-card p {
-    font-family: $copy;
-    color: $on-surface;
-    margin: 0px;
-    padding: 0px 16px;
+.sto-content {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.sto-logo-container {
+.sto-logo-wrapper {
     display: flex;
     justify-content: center;
     background-color: $surface;
-    border-radius: 12px;
+    border-radius: $medium-shape;
     border: 1px solid $outline;
-    margin-bottom: 8px;
     padding: 8px;
     aspect-ratio: 16/9;
 }
@@ -289,22 +257,21 @@ div.sto-card p {
 
 //Map
 
-.map {
-    margin-bottom: $compact-margin-vertical;
-    padding: 0px 8px;
+.home-map {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .map-heading {
-    font-family: $heading;
-    margin: 0px 0px 8px 0px;
-    padding: 0px 16px;
+    margin: 0px 16px;
 }
 
 .google-map {
-
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
-    border-radius: 24px;
+    border-radius: $medium-shape;
     
 }

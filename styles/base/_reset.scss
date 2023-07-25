@@ -15,40 +15,44 @@ html {
                 box-sizing: inherit;
     }
 
-    
-
-
-
 body {
-   background-color: $surface;
+  background-color: $surface;
   }
+
+header {
+  height: 64px;
+}
+
+main {
+  margin: 0px 16px;
+}
 
 h1 {
   font: $display-medium;
   color: $on-surface;
   margin: 0;
-  padding: 0px 16px;
+  padding: 0;
 }
 
 h2 {
   font: $headline-large;
   color: $on-surface;
   margin: 0;
-  padding: 0px 16px;
+  padding: 0;
 }
 
 h3 {
   font: $headline-small;
   color: $on-surface;
   margin: 0;
-  padding: 0px 16px;
+  padding: 0;
 }
 
 p {
   font: $body-large;
   color: $on-surface;
   margin: 0;
-  padding: 0px 16px;
+  padding: 0;
 }
 
 a {
@@ -63,14 +67,6 @@ a:hover {
   text-decoration: underline;
   color: $on-primary-container
 }
-
-
-
-
-
-
-
-
 
 @media (min-width: 600px) {
   body {

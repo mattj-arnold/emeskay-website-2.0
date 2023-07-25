@@ -42,24 +42,19 @@ footer a {
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
-
-.address {
-    padding-left: 16px;
+    margin-left: 16px;
 }
 
 .whatsapp-container {
     display: flex;
     gap: 16px;
     align-items: center;
-    padding-left: 16px;
 }
 
 .email-container {
     display: flex;
     gap: 16px;
     align-items: center;
-    padding-left: 16px;
 }
 
 .social {
@@ -84,7 +79,7 @@ div.social h3 {
 .legal {
     grid-column-start: 1;
     grid-row-start: 3;
-    padding-left: 16px;
+    margin-left: 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;

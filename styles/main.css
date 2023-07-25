@@ -328,32 +328,40 @@ body {
   background-color: #f7faf9;
 }
 
+header {
+  height: 64px;
+}
+
+main {
+  margin: 0px 16px;
+}
+
 h1 {
   font: 45px/1 Barlow Condensed, sans-serif;
   color: #191c1c;
   margin: 0;
-  padding: 0px 16px;
+  padding: 0;
 }
 
 h2 {
   font: 32px/1.1 Barlow Condensed, sans-serif;
   color: #191c1c;
   margin: 0;
-  padding: 0px 16px;
+  padding: 0;
 }
 
 h3 {
   font: 24px/1.2 Barlow Condensed, sans-serif;
   color: #191c1c;
   margin: 0;
-  padding: 0px 16px;
+  padding: 0;
 }
 
 p {
   font: 16px/1.3 Barlow, sans-serif;
   color: #191c1c;
   margin: 0;
-  padding: 0px 16px;
+  padding: 0;
 }
 
 a {
@@ -536,24 +544,19 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.address {
-  padding-left: 16px;
+  margin-left: 16px;
 }
 
 .whatsapp-container {
   display: flex;
   gap: 16px;
   align-items: center;
-  padding-left: 16px;
 }
 
 .email-container {
   display: flex;
   gap: 16px;
   align-items: center;
-  padding-left: 16px;
 }
 
 .social {
@@ -578,7 +581,7 @@ div.social h3 {
 .legal {
   grid-column-start: 1;
   grid-row-start: 3;
-  padding-left: 16px;
+  margin-left: 16px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -594,12 +597,13 @@ div.social h3 {
   justify-content: center;
   align-items: center;
   background-color: #006a6a;
-  height: calc(100vh - 88px);
+  height: calc(100vh - 80px);
   padding: 0px 16px;
   background-image: url(../images/hero-image.jpg);
   background-size: cover;
-  border-radius: 28px;
+  border-radius: 16px;
   margin: 0px 0px 16px 0px;
+  gap: 8px;
 }
 
 .heading {
@@ -614,52 +618,38 @@ div.social h3 {
 }
 
 .intro {
+  margin: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin-bottom: 16px;
-}
-
-section.services h2, .services h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  padding: 0px 16px;
-  margin: 0px 0px 8px 0px;
-}
-
-/*.services-card {
-    background-color: $surface-container;
-    color: $on-surface-variant;
-    border-radius: 24px;
-    margin-bottom: 24px;
-    padding: 8px;
-}*/
-div.services-card p {
-  margin: 16px;
-  font-family: "Barlow", sans-serif;
-  color: #3f4948;
 }
 
 .rehab-card {
   background-color: #e0e3e2;
-  border-radius: 24px;
-  padding-bottom: 16px;
-  margin-bottom: 16px;
+  border-radius: 12px;
 }
 
-.injury-rehab-image {
+.rehab-card-image {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 24px;
-  margin-bottom: 8px;
+  border-radius: 12px;
 }
 
-div.rehab-card h3 {
-  color: #191c1c;
-}
-
-div.rehab-card p {
-  margin: 0px 16px 16px 16px;
-  color: #191c1c;
+.content-container {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .rehab-buttons {
@@ -668,7 +658,6 @@ div.rehab-card p {
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
-  margin: 0px 0px 0px 16px;
 }
 
 .rehab-book {
@@ -703,8 +692,7 @@ button.rehab-learn label {
 /* Injury Prevention Card */
 .prehab-card {
   background-color: #e0e3e2;
-  border-radius: 24px;
-  padding-bottom: 16px;
+  border-radius: 12px;
 }
 
 .injury-prehab-image {
@@ -713,18 +701,7 @@ button.rehab-learn label {
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 24px;
-  margin-bottom: 8px;
-}
-
-div.prehab-card h3 {
-  color: #191c1c;
-  margin-bottom: 8px;
-}
-
-div.prehab-card p {
-  margin: 0px 16px 16px 16px;
-  color: #191c1c;
+  border-radius: 12px;
 }
 
 .prehab-buttons {
@@ -733,7 +710,6 @@ div.prehab-card p {
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
-  margin: 0px 0px 0px 16px;
 }
 
 .prehab-book {
@@ -766,21 +742,20 @@ button.prehab-learn label {
 }
 
 .testimonials {
-  margin: 0px 0px 24px 0px;
-  padding: 0px 0px 0px 8px;
-  color: #3f4948;
+  margin: 0px 0px 16px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-section.testimonials h2 {
-  font-family: "Barlow Condensed", sans-serif;
-  color: #191c1c;
-  margin: 0px 0px 8px 0px;
-  padding: 0px 0px 0px 16px;
+.testimonials h2 {
+  margin-left: 16px;
 }
 
 .slider {
   /* line them up horizontally */
   display: flex;
+  gap: 8px;
   /* allow for scrolling */
   overflow-x: auto;
   /* make it smooth on iOS */
@@ -793,21 +768,26 @@ section.testimonials h2 {
   width: 300px;
   height: 300px;
   background-color: #e0e3e2;
-  margin-right: 8px;
   padding: 16px;
   border-radius: 12px;
-}
-
-div.slider h3 {
-  margin: 8px 0px 8px 0px;
-  padding: 0px;
-  font-family: "Barlow Condensed", sans-serif;
 }
 
 div.slider p {
   margin: 8px 0px 0px 0px;
   padding: 0px;
   font-family: "Barlow", sans-serif;
+}
+
+.img-name-stars-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.name-stars-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .testimonial-images {
@@ -817,14 +797,13 @@ div.slider p {
 }
 
 .partners {
-  padding: 0px 8px;
-  margin: 0px 0px 24px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0px 0px 16px 0px;
 }
 
 section.partners h2 {
-  font-family: "Barlow Condensed", sans-serif;
-  color: #191c1c;
-  margin: 0px 0px 8px 0px;
   padding: 0px 0px 0px 16px;
 }
 
@@ -832,23 +811,21 @@ section.partners h2 {
   background-color: #e0e3e2;
   border-radius: 12px;
   width: 100%;
-  padding-bottom: 16px;
 }
 
-div.sto-card p {
-  font-family: "Barlow", sans-serif;
-  color: #191c1c;
-  margin: 0px;
-  padding: 0px 16px;
+.sto-content {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.sto-logo-container {
+.sto-logo-wrapper {
   display: flex;
   justify-content: center;
   background-color: #f7faf9;
   border-radius: 12px;
   border: 1px solid #6f7979;
-  margin-bottom: 8px;
   padding: 8px;
   aspect-ratio: 16/9;
 }
@@ -859,26 +836,26 @@ div.sto-card p {
      object-fit: scale-down;
 }
 
-.map {
-  margin-bottom: 24px;
-  padding: 0px 8px;
+.home-map {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .map-heading {
-  font-family: "Barlow Condensed", sans-serif;
-  margin: 0px 0px 8px 0px;
-  padding: 0px 16px;
+  margin: 0px 16px;
 }
 
 .google-map {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
-  border-radius: 24px;
+  border-radius: 12px;
 }
 
 .title-card {
-  margin: 0px 8px 16px 8px;
+  margin: 0px 0px 16px 0px;
   padding: 16px;
   border-radius: 24px;
   background-image: url(../images/contact-image.jpg);
@@ -946,10 +923,6 @@ section.find-me h2 {
 
 .walk-through {
   border-radius: 24px;
-}
-
-.google-map {
-  margin: 0px 0px 8px 0px;
 }
 
 .icon-h3-container {
