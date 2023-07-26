@@ -74,8 +74,8 @@
 </head>
 <body>
     
-        
-        <header>
+        <!--CHANGE HOME-HEADER-->
+        <header class="home-header">
             <div class="top-app-bar" id="appBar">
                 <div class="toggle-btn" onclick="show()">
                     <span class="material-symbols-rounded">
@@ -128,27 +128,32 @@
                 </a>
             </div>
         </header>
-    
     <!--Main-->
-    <main>
-        <div class="title-card">
-            <h1>Hello, how are you today?</h1>
-            <p>Got a question or need some advice? Contact me via WhatsApp, email or arrange a callback.</p>
-        </div>
-        <h2>Contact info</h2>
-                
-        <section class="contact-cards">  
-            <div class="address-card">
-                <i class="fa-solid fa-location-dot fa-xl"></i>
-                <div>
-                <h3>Address</h3>
-                
-                <p>Moss Side Leisure Centre<br>
-                    Moss Ln E<br>
-                    Moss Side<br>
-                    Manchester M15 5NN</p>
+    <main class="contact-main">
+        <header class="contact-header">
+            <img src="./images/contact-image.jpg" class="clinic-room-image" alt="Interior photograph of a clinic room with treatment couch" />
+            <hgroup class="contact-heading">
+                <h1>Got a question or need some advice?</h1>
+            <p>Chat on WhatsApp, send me an email or schedule a callback.</p>
+            </hgroup>
+        </header>
+            
+
+        <section class="contact-contact-info">
+            <div class="contact-info-address-card-container">
+                <h2>Contact info</h2>
+                <div class="address-card">
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Moss Side Leisure Centre<br>
+                            Moss Ln E<br>
+                            Moss Side<br>
+                            Manchester M15 5NN</p>
+                    </div>
+                </div>
             </div>
-            </div>
+
             <div class="phone-card">
                 <i class="fa-brands fa-whatsapp fa-xl"></i>
                 <div>
@@ -168,7 +173,7 @@
         
 
         <!--Map-->
-        <section class="map">
+        <section class="how-to-find-me">
             <h2>How to find me</h2>
             <p>Emeskay operates a sports rehab clinic within Moss Side Leisure Centre. The clinic is conveniantly located just south of the city centre. It is also very accesable from Old Trafford, Salford Quays, Chorlton and Didsbury.</p>
             <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.436124882779!2d-2.2501825237156714!3d53.46066537232267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1f73a1f2efd%3A0x87e3baa00cb86016!2sMoss%20Side%20Leisure%20Centre!5e0!3m2!1sen!2suk!4v1688546504060!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -179,12 +184,31 @@
                 <h3>By car</h3>
             </div>
             <p>If arriving by car, parking is free inside the Hulme High Street Carpark, a 200 total space carpark attached to the leisure centre. The carpark may be accessed via Pennymead Close.</p>
-            <h3>By tram</h3>
+
+            <div class="icon-h3-container">
+                <span class="material-symbols-rounded">
+                    tram
+                </span>
+                <h3>By tram</h3>
+            </div>
             <p>The closest metrolink tram stop is Deansgate-Castlefield (23 minutes walk away).</p>
-            <h3>By train</h3>
+
+            <div class="icon-h3-container">
+                <span class="material-symbols-rounded">
+                    train
+                </span>
+                <h3>By train</h3>
+            </div>
             <p>The closest train stations are Deansgate-Castlefield and Oxford Road.</p>
-            <h3>By bike</h3>
+
+            <div class="icon-h3-container">
+                <span class="material-symbols-rounded">
+                    directions_bike
+                </span>
+                <h3>By bike</h3>
+            </div>
             <p>Bike storage for 25 bikes is available at the leisure centre.</p>
+
             <h3>When you arrive</h3>
             <p>Walk to reception and let them know you are there to see me. They will let you through the gate and then you need to turn right and walk up the steps toward the gym. At the top of the steps you will see the entrance to the clinic room on your left, immediately opposite the entrance to the gym.</p>
             <video class="walk-through"
@@ -206,44 +230,116 @@
         <section class="hours"> 
             <h2>Clinic opening times</h2>
             <p>Treatments are by appointment only. Please book in advance.</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Day</th>
-                            <th scope="col">Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday</td>
-                            <td>9 am-2:15 pm</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>9 am-2:15 pm</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>2:15 pm-7:30 pm</td>
-                        </tr>
-                        <tr>
-                            <td>Thursday</td>
-                            <td>9 am-2:15 pm</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>2:15 pm-7:30 pm</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td>9 am-1 pm</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td>9 am-1 pm</td>
-                        </tr>
-                        </tbody>
-                </table>
+
+            <ul class="two-line-list">
+                <li>
+                    <div class="leading-icon-container">
+                    <span class="material-symbols-rounded">
+                        event_available
+                    </span>
+                    </div>
+                    <div>
+                        Monday
+                        <p>
+                            9 am-2:15 pm
+                        </p>
+                    </div>
+                </li>
+
+                <hr class="divider">
+
+                <li>
+                    <div class="leading-icon-container">
+                    <span class="material-symbols-rounded">
+                        event_available
+                    </span>
+                    </div>
+                    <div>
+                    Tuesday
+                    <p>
+                        9 am-2:15 pm
+                    </p>
+                </div>
+                </li>
+                <hr class="divider">
+                <li>
+                    <div class="leading-icon-container">
+                    <span class="material-symbols-rounded">
+                        event_available
+                    </span>
+                    </div>
+                    <div>
+                    Wednesday
+                    <p>
+                        2:15 pm-7:30 pm
+                    </p>
+                </div>
+                </li>
+                <hr class="divider">
+                <li>
+                    <div class="leading-icon-container">
+                    <span class="material-symbols-rounded">
+                        event_available
+                    </span>
+                    </div>
+                    <div>
+                    Thursday
+                    <p>
+                        9 am-2:15 pm
+                    </p>
+                </div>
+                </li>
+                <hr class="divider">
+                <li>
+                    <div class="leading-icon-container">
+                    <span class="material-symbols-rounded">
+                        event_available
+                    </span>
+                    </div>
+                    <div>
+                    Friday
+                    <p>
+                        2:15 pm-7:30 pm
+                    </p>
+                </div>
+                </li>
+                <hr class="divider">
+                <li>
+                    <div class="leading-icon-container">
+                    <span class="material-symbols-rounded">
+                        event_available
+                    </span>
+                    </div>
+                    <div>
+                    Saturday
+                    <p>
+                        9 am-1 pm
+                    </p>
+                </div>
+                </li>
+                <hr class="divider">
+                <li>
+                    <div class="leading-icon-container">
+                    <span class="material-symbols-rounded">
+                        event_available
+                    </span>
+                    </div>
+                    <div>
+                    Sunday
+                    <p>
+                        9 am-1 pm
+                    </p>
+                </div>
+                </li>
+            </ul>
+
+
+
+
+
+
+
+               
             
                 
             
@@ -281,7 +377,8 @@
             <p><a href="#">Privacy Policy</a></p>
             <p><a href="#">Terms of Service</a></p>
             <p>Copyright © 2023 Emeskay Sports Therapy</p>
-        </div>
+        
     </footer>
+    </div>
 </body>
 </html>

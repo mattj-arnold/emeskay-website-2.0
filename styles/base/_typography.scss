@@ -24,6 +24,12 @@ $body-large-line-height: 1.3;
 $body-large-font: 'Barlow', sans-serif;
 $body-large: #{$body-large-size}/#{$body-large-line-height} #{$body-large-font};
 
+// .supporting-text
+$body-medium-size: 14px;
+$body-medium-line-height: 1.3;
+$body-medium-font: 'Barlow', sans-serif;
+$body-medium: #{$body-medium-size}/#{$body-medium-line-height} #{$body-medium-font};
+
 /* title */
 $title-large-size: 22px;
 $title-large-line-height: 1.2;

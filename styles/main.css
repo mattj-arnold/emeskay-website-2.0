@@ -328,10 +328,6 @@ body {
   background-color: #f7faf9;
 }
 
-header {
-  height: 64px;
-}
-
 main {
   margin: 0px 16px;
 }
@@ -377,13 +373,26 @@ a:hover {
   color: #002020;
 }
 
+hr {
+  margin: 0;
+  border: 0;
+}
+
 @media (min-width: 600px) {
   body {
     display: grid;
-    grid-template-columns: auto 599px auto;
+    grid-template-columns: 1 fr;
   }
-  .page {
-    grid-column-start: 2;
+  main {
+    margin: 0px 24px;
+  }
+}
+@media (min-width: 840px) {
+  body {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
   }
 }
 .top-app-bar {
@@ -591,6 +600,10 @@ div.social h3 {
   padding: 0;
 }
 
+.home-header {
+  height: 64px;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -669,8 +682,6 @@ div.social h3 {
 }
 
 button.rehab-book label {
-  font-family: "Barlow", sans-serif;
-  font-size: 14px;
   color: #410000;
 }
 
@@ -684,8 +695,6 @@ button.rehab-book label {
 }
 
 button.rehab-learn label {
-  font-family: "Barlow", sans-serif;
-  font-size: 14px;
   color: #006a6a;
 }
 
@@ -721,8 +730,6 @@ button.rehab-learn label {
 }
 
 button.prehab-book label {
-  font-family: "Barlow", sans-serif;
-  font-size: 14px;
   color: #410000;
 }
 
@@ -736,8 +743,6 @@ button.prehab-book label {
 }
 
 button.prehab-learn label {
-  font-family: "Barlow", sans-serif;
-  font-size: 14px;
   color: #006a6a;
 }
 
@@ -775,7 +780,6 @@ button.prehab-learn label {
 div.slider p {
   margin: 8px 0px 0px 0px;
   padding: 0px;
-  font-family: "Barlow", sans-serif;
 }
 
 .img-name-stars-container {
@@ -854,17 +858,28 @@ section.partners h2 {
   border-radius: 12px;
 }
 
-.title-card {
-  margin: 0px 0px 16px 0px;
-  padding: 16px;
-  border-radius: 24px;
-  background-image: url(../images/contact-image.jpg);
-  aspect-ratio: 16/9;
+.contact-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-size: cover;
-  gap: 8px;
+  gap: 16px;
+}
+
+.clinic-room-image {
+  border-radius: 12px;
+  aspect-ratio: 16/9;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.contact-heading {
+  margin: 0px 16px;
+}
+
+.contact-heading > h1 {
+  margin-bottom: 8px;
 }
 
 div.title-card h1, div.title-card p {
@@ -874,13 +889,17 @@ div.title-card h1, div.title-card p {
   color: #3f4948;
 }
 
-.map {
-  margin-bottom: 16px;
+.contact-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.contact-cards {
-  padding: 0px 8px;
-  margin-bottom: 16px;
+.contact-info-address-card-container {
+  margin: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .contact-cards h3, .contact-cards p {
@@ -888,109 +907,103 @@ div.title-card h1, div.title-card p {
 }
 
 .address-card {
-  margin-bottom: 8px;
-  padding: 0px 0px 0px 20px;
-  border-radius: 24px;
+  border-radius: 12px;
   background-color: #f7faf9;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  gap: 12px;
+  gap: 16px;
   color: #191c1c;
 }
 
 .phone-card, .email-card {
-  margin-bottom: 8px;
-  padding: 20px;
-  border-radius: 24px;
+  padding: 16px;
+  border-radius: 12px;
   background-color: #dae5e4;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  gap: 12px;
+  gap: 16px;
   color: #3f4948;
 }
 
-.find-me {
-  padding: 0px 8px;
-  margin: 0px 0px 16px 0px;
+.address-card h3, .phone-card h3, .email-card h3 {
+  margin-bottom: 8px;
 }
 
-section.find-me h2 {
-  margin: 0px 0px 8px 0px;
-  padding: 0px 8px;
+.how-to-find-me {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.walk-through {
-  border-radius: 24px;
+.how-to-find-me h2, .how-to-find-me p {
+  margin: 0px 16px;
 }
 
 .icon-h3-container {
   display: flex;
-  padding: 0px 0px 0px 28px;
-  margin: 0px 0px 8px 0px;
-  gap: 12px;
+  margin: 0px 16px;
+  gap: 16px;
+  align-items: center;
 }
 
-.icon-h3-container h3 {
-  padding: 0px;
-  margin: 0px;
+.how-to-find-me > h3 {
+  margin: 0px 16px;
 }
 
-section.hours h2 {
-  padding: 0px;
-  margin: 0px 0px 8px 0px;
-}
-
-section.hours p {
-  padding: 0px;
-  margin: 0px 0px 8px 0px;
+.walk-through {
+  border-radius: 12px;
 }
 
 .hours {
-  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
-table {
-  table-layout: fixed;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 1px;
-  border-radius: 24px;
-  overflow: hidden;
+.hours > h2, .hours > p {
+  margin: 0px 16px;
 }
 
-thead th:nth-child(1) {
-  width: 50%;
+ul {
+  margin: 8px 0px;
+  padding-inline-start: 0px;
 }
 
-thead th:nth-child(2) {
-  width: 50%;
+li {
+  background-color: #f7faf9;
+  height: 72px;
+  padding: 8px 24px 8px 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font: 16px/1.3 Barlow, sans-serif;
+  color: #191c1c;
 }
 
-th,
-td {
-  padding: 20px;
-}
-
-th {
-  letter-spacing: 2px;
-}
-
-td {
-  letter-spacing: 1px;
-}
-
-tbody td {
-  text-align: center;
-}
-
-thead {
+.leading-icon-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
   background-color: #006a6a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
 }
 
-tbody {
-  background-color: #dae5e4;
-  color: #191c1c;
+.leading-icons {
+  color: #f7faf9;
+}
+
+p {
+  color: #3f4948;
+  font: 14px/1.3 Barlow, sans-serif;
+}
+
+.divider {
+  border-top: 1px solid #dae5e4;
+  margin: 0px 24px 0px 16px;
 }/*# sourceMappingURL=main.css.map */

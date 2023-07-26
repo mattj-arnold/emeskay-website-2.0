@@ -2,6 +2,10 @@
 @use '../layout/header';
 @use '../layout/footer';
 
+.home-header {
+    height: 64px;
+  }
+
 //Hero
 
 .hero {
@@ -83,8 +87,6 @@
 }
 
 button.rehab-book label {
-    font-family: $copy;
-    font-size: 14px;
     color: $on-secondary-container;
 }
 
@@ -98,8 +100,6 @@ button.rehab-book label {
 }
 
 button.rehab-learn label {
-    font-family: $copy;
-    font-size: 14px;
     color: $primary;
 }
 
@@ -135,8 +135,6 @@ button.rehab-learn label {
 }
 
 button.prehab-book label {
-    font-family: $copy;
-    font-size: 14px;
     color: $on-secondary-container;
 }
 
@@ -150,8 +148,6 @@ button.prehab-book label {
 }
 
 button.prehab-learn label {
-    font-family: $copy;
-    font-size: 14px;
     color: $primary;
 }
 
@@ -193,7 +189,6 @@ button.prehab-learn label {
 div.slider p {
     margin: 8px 0px 0px 0px;
     padding: 0px;
-    font-family: $copy;
 }
 
 .img-name-stars-container {

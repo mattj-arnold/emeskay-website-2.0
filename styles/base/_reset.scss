@@ -19,9 +19,7 @@ body {
   background-color: $surface;
   }
 
-header {
-  height: 64px;
-}
+
 
 main {
   margin: 0px 16px;
@@ -68,13 +66,28 @@ a:hover {
   color: $on-primary-container
 }
 
+hr {
+  margin: 0;
+  border: 0;
+}
+
 @media (min-width: 600px) {
   body {
     display: grid;
-    grid-template-columns: auto 599px auto;
+    grid-template-columns: 1 fr;
   }
 
-  .page {
-    grid-column-start: 2;
+  main {
+    margin: 0px 24px;
   }
+}
+
+@media (min-width: 840px) {
+  body {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    column-gap: 24px;
+  }
+
+ 
 }

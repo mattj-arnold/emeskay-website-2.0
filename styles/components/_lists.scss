@@ -1,0 +1,48 @@
+@use '../base/utilities' as *;
+@use '../base/typography' as *;
+
+//Two Line List
+
+
+@mixin two-line-list {
+    ul {
+        margin: 8px 0px;
+        padding-inline-start: 0px;
+    }
+    
+    li {
+        background-color: $surface;
+        height: 72px;
+        padding: 8px 24px 8px 16px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        font: $body-large;
+        color: $on-surface;
+    }
+
+    .leading-icon-container {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $on-primary;
+    }
+
+    .leading-icons {
+        color: $surface;
+    }
+    
+    p {
+        color: $on-surface-variant;
+        font: $body-medium;
+    }
+
+    .divider {
+        border-top: 1px solid $surface-variant;
+        margin: 0px 24px 0px 16px;
+    }
+}
