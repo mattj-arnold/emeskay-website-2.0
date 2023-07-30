@@ -70,24 +70,3 @@ hr {
   margin: 0;
   border: 0;
 }
-
-@media (min-width: 600px) {
-  body {
-    display: grid;
-    grid-template-columns: 1 fr;
-  }
-
-  main {
-    margin: 0px 24px;
-  }
-}
-
-@media (min-width: 840px) {
-  body {
-    display: grid;
-    grid-template-columns: 80px 1fr 1fr;
-    column-gap: 24px;
-  }
-
- 
-}

@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap');
 
-/* h1 */
+/* Display Large */
+$display-large-size: 57px;
+$display-large-line-height: 1;
+$display-large-font: 'Barlow Condensed', sans-serif;
+$display-large: #{$display-large-size}/#{$display-large-line-height} #{$display-large-font};
+
+/* Display Medium */
 $display-medium-size: 45px;
 $display-medium-line-height: 1;
 $display-medium-font: 'Barlow Condensed', sans-serif;
 $display-medium: #{$display-medium-size}/#{$display-medium-line-height} #{$display-medium-font};
+
+/* Display Small */
+$display-small-size: 36px;
+$display-small-line-height: 1;
+$display-small-font: 'Barlow Condensed', sans-serif;
+$display-small: #{$display-small-size}/#{$display-small-line-height} #{$display-small-font};
 
 /* h2 */
 $headline-large-size: 32px;

@@ -1,3 +1,8 @@
 @use '../components/top-app-bar';
 @use '../components/modal-navigation-drawer';
 @use '../components/extended-fab';
+@use '../components/navigation-rail';
+
+.navigation-rail {
+    display: none;
+}

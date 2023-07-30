@@ -58,13 +58,14 @@ div.title-card h1, div.title-card p{
     justify-content: flex-start;
     align-items: baseline;
     gap: 16px;
-    color: $on-surface;
+    background-color: $surface-container;
+    padding: 16px;
 }
 
 .phone-card, .email-card{
     padding: 16px;
     border-radius: $medium-shape;
-    background-color: $surface-variant;
+    background-color: $surface-container;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
@@ -93,8 +94,29 @@ div.title-card h1, div.title-card p{
   align-items: center;
 }
 
-.how-to-find-me > h3 {
+.how-to-find-me > h3, {
   margin: 0px 16px;
+}
+
+#when-you-arrive-container {
+  background-color: $surface-container-highest;
+  border-radius: $medium-shape;
+
+  grid-column: 1/11;
+  display: grid;
+  gap: 24px;
+  grid-row: 6/7;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: auto;
+}
+
+.when-you-arrive-header {
+  grid-column: 6/12;
+    grid-row: 1/2;
+}
+
+.when-you-arrive-header > p {
+  margin: 0;
 }
 
 .walk-through {

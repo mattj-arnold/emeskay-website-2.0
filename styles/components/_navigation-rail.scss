@@ -1,0 +1,75 @@
+@use '../base/typography' as *;
+@use '../base/utilities' as *;
+
+@mixin navigation-rail {    
+    .navigation-rail {
+        width: 80px;
+        height: 100vh;
+        background-color: $surface-container;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: fixed;
+        padding-top: 12px;
+    }
+
+    #nav-rail-logo {
+        width: 56px;
+        margin-left: 12px;
+    }
+
+    .fab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        Background-color: $primary-container;
+        height: 56px;
+        border-radius: 16px;
+        width: 56px;
+        margin: 0px 12px;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .fab-icon {
+        font-size: 24px;
+        color: $on-primary-container;
+    }
+
+    .nav-rail-destinations {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+    }
+
+    .nav-rail-icon-label-container {
+        display: flex;
+        flex-direction: column;
+        width: 80px;
+        height: 56px;
+        gap: 4px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .nav-rail-active-indicator {
+        width: 56px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .active {
+        background-color: $secondary-container;
+        color: $on-secondary-container;
+        border-radius: 16px;
+    }
+    
+    .nav-rail-label {
+        color: $on-surface-variant;
+        font: $label-large;
+    }
+}
