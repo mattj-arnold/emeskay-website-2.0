@@ -53,19 +53,18 @@ div.title-card h1, div.title-card p{
 
 .address-card {
     border-radius: $medium-shape;
-    background-color: $surface;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
     gap: 16px;
-    background-color: $surface-container;
+    background-color: $surface-container-highest;
     padding: 16px;
 }
 
 .phone-card, .email-card{
     padding: 16px;
     border-radius: $medium-shape;
-    background-color: $surface-container;
+    background-color: $surface-container-highest;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
@@ -87,6 +86,30 @@ div.title-card h1, div.title-card p{
   margin: 0px 16px;
 }
 
+#by-car-container {
+  background-color: $surface-container-highest;
+  padding: 16px;
+  border-radius: $medium-shape;
+}
+
+#by-tram-container {
+  background-color: $surface-container-highest;
+  padding: 16px;
+  border-radius: $medium-shape;
+}
+
+#by-train-container {
+  background-color: $surface-container-highest;
+  padding: 16px;
+  border-radius: $medium-shape;
+}
+
+#by-bike-container {
+  background-color: $surface-container-highest;
+  padding: 16px;
+  border-radius: $medium-shape;
+}
+
 .icon-h3-container {
   display: flex;
   margin: 0px 16px;
@@ -94,7 +117,7 @@ div.title-card h1, div.title-card p{
   align-items: center;
 }
 
-.how-to-find-me > h3, {
+.how-to-find-me > h3 {
   margin: 0px 16px;
 }
 

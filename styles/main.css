@@ -897,19 +897,18 @@ div.title-card h1, div.title-card p {
 
 .address-card {
   border-radius: 12px;
-  background-color: #f7faf9;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   gap: 16px;
-  background-color: #eff1f0;
+  background-color: #e0e3e2;
   padding: 16px;
 }
 
 .phone-card, .email-card {
   padding: 16px;
   border-radius: 12px;
-  background-color: #eff1f0;
+  background-color: #e0e3e2;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -929,6 +928,30 @@ div.title-card h1, div.title-card p {
 
 .how-to-find-me h2, .how-to-find-me p {
   margin: 0px 16px;
+}
+
+#by-car-container {
+  background-color: #e0e3e2;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+#by-tram-container {
+  background-color: #e0e3e2;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+#by-train-container {
+  background-color: #e0e3e2;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+#by-bike-container {
+  background-color: #e0e3e2;
+  padding: 16px;
+  border-radius: 12px;
 }
 
 .icon-h3-container {
@@ -1171,8 +1194,8 @@ p {
     grid-row: 1/2;
   }
   .how-to-find-me > .google-map {
-    grid-column: 6/11;
-    grid-row: 1/2;
+    grid-column: 1/6;
+    grid-row: 2/3;
     border: 0;
   }
   #by-car-container {
@@ -1194,8 +1217,12 @@ p {
   #when-you-arrive-container {
     grid-column: 1/6;
     grid-row: 5/6;
+    gap: 0;
+    grid-template-columns: repeat(5, 1fr);
   }
   .when-you-arrive-header {
+    grid-column: 1/6;
+    grid-row: 1/2;
     padding: 16px;
   }
   #when-you-arrive-header > p {
@@ -1203,7 +1230,7 @@ p {
   }
   .walk-through {
     grid-column: 1/6;
-    grid-row: 5/6;
+    grid-row: 2/3;
   }
   .hours {
     display: grid;
