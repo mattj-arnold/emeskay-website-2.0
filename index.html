@@ -12,7 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emeskay Sports Therapy</title>
+    <title>Contact - Emeskay Sports Therapy</title>
     <meta name="description" content="Emeskay Sports Therapy is a sports injury clinic in Manchester. We provide powerful manual therapy techniques and exercise prescription in order to treat sports-related and musculoskeletal pain." />
     <script type="application/ld+json">
         {
@@ -71,8 +71,7 @@
     <script src="https://kit.fontawesome.com/220cb0543d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-    <!--CHANGE window-header-->
+<body class="window" id="contact-window">
     <header class="window-header">
         <div class="top-app-bar" id="appBar">
             <div class="toggle-btn" onclick="show()">
@@ -81,51 +80,86 @@
                 </span>
             </div>
             <img class="logo" src="./images/emeskay-logo-website-top-app-bar.png" alt="Emeskay logo" />
-        </div>
-
-        <!--Modal Navigation Drawer-->
-        <nav>
-            <div id="sidebar">
-                <div class="headline-container">
-                    <div class="toggle-btn" onclick="show()">
-                        <span class="material-symbols-rounded">
-                            menu_open
-                        </span>
-                    </div> 
-                    <img class="model-navigation-drawer-logo" src="./images/emeskay-logo-website-model-navigation-drawer.png" alt="Emeskay logo." />
+            </div>
+    
+            <!--Modal Navigation Drawer-->
+            <nav class="navigation" id="contact-navigation">
+                <div id="sidebar">
+                    <div class="headline-container">
+                        <div class="toggle-btn" onclick="show()">
+                            <span class="material-symbols-rounded">
+                                menu_open
+                            </span>
+                        </div> 
+                        <img class="model-navigation-drawer-logo" src="./images/emeskay-logo-website-model-navigation-drawer.png" alt="Emeskay logo." />
+                    </div>
+                    <a href="./index.html">
+                        <div class="active-indicator" class="home">
+                            <span class="material-symbols-rounded">
+                                home
+                            </span>
+                            <div class="modal-navigation-drawer-label">Home</div>
+                        </div>
+                    </a>
+                    <a href="./contact.html">
+                        <div class="active-indicator active" class="contact">
+                            <span class="material-symbols-rounded">
+                                contact_page
+                            </span>
+                            <div class="modal-navigation-drawer-label">Contact</div>
+                        </div>
+                    </a>
                 </div>
-                <a href="./index.html">
-                    <div class="active-indicator active" class="home">
-                        <span class="material-symbols-rounded">
-                            home
+                <script src="./main.js"></script>
+
+                <!--Navigation Rail-->
+                <div class="navigation-rail">
+                    <img src="./images/emeskay-logo-website-top-app-bar.png" id="nav-rail-logo" />
+                    <a href="https://app.rehabguru.com/appointments/d46ed75c4c00969246d2ecd765363815%3A437f6f2c94772fb506ee2311d28f4db0f1dc7c88b6fdb7c0c31905dbb8bc3dd7">
+                    <button class="fab">
+                        <span class="material-symbols-rounded fab-icon">
+                            open_in_new
                         </span>
-                        <div class="modal-navigation-drawer-label">Home</div>
+                    </button>
+                    <div class="nav-rail-label nav-rail-book-now">Book now</div>
+                    </a>
+                    <div class="nav-rail-destinations">
+                        <a href="./index.html">
+                            <div class="nav-rail-icon-label-container" class="home">
+                                <div class="nav-rail-active-indicator">
+                                    <span class="material-symbols-rounded">
+                                        home
+                                    </span>
+                                </div>
+                                <div class="nav-rail-label">Home</div>
+                            </div>
+                        </a>
+                        <a href="./contact.html">
+                            <div class="nav-rail-icon-label-container" class="contact">
+                                <div class="nav-rail-active-indicator active">
+                                    <span class="material-symbols-rounded">
+                                        contact_page
+                                    </span>
+                                </div>
+                                <div class="nav-rail-label">Contact</div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                <a href="./contact.html">
-                    <div class="active-indicator" class="contact">
+                </div>
+            </nav>
+            
+            <!--Extended FAB-->
+            <div class="extended-fab-container">
+                <a href="https://app.rehabguru.com/appointments/d46ed75c4c00969246d2ecd765363815%3A437f6f2c94772fb506ee2311d28f4db0f1dc7c88b6fdb7c0c31905dbb8bc3dd7">
+                    <button class="extended-fab">
                         <span class="material-symbols-rounded">
-                            contact_page
+                            open_in_new
                         </span>
-                        <div class="modal-navigation-drawer-label">Contact</div>
-                    </div>
+                        <label>Book now</label>
+                    </button>
                 </a>
             </div>
-            <script src="./main.js"></script>
-        </nav>
-        
-        <!--Extended FAB-->
-        <div class="extended-fab-container">
-            <a href="https://app.rehabguru.com/appointments/d46ed75c4c00969246d2ecd765363815%3A437f6f2c94772fb506ee2311d28f4db0f1dc7c88b6fdb7c0c31905dbb8bc3dd7">
-                <button class="extended-fab">
-                    <span class="material-symbols-rounded">
-                        open_in_new
-                    </span>
-                    <label>Book now</label>
-                </button>
-            </a>
-        </div>
-    </header>
+        </header>
     <main>
 
             <!--Hero-->
