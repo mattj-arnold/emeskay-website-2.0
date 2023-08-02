@@ -5,6 +5,6 @@
 @use 'pages/contact';
 @use 'base/media-queries' as *;
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 840px) {
     @include expanded;
 }

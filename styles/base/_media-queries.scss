@@ -43,12 +43,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    padding: 24px;
+    gap: 0;
+    margin: 0;
   }
 
   section.intro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
+    margin: 0px 24px;
   }
 
   section.intro > h2 {
@@ -64,11 +68,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    margin: 0;
   }
 
   div.content-container {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin: 0px 24px;
   }
 
   div.rehab-card {
@@ -76,20 +82,30 @@
     grid-column: 1/2;
   }
 
+  div.rehab-card .content-container, div.prehab-card .content-container {
+    margin: 24px;
+  }
+
   div.prehab-card {
     grid-column: 2/3;
     grid-row: 2/3;
+  }
+
+  section.testimonials {
+    margin: 0;
   }
 
   section.partners {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    margin: 0;
   }
 
   section.partners > h2 {
     grid-column: 1/2;
     grid-row: 1/2;
+    padding: 0px 24px;
   }
 
   div.sto-card {
@@ -97,10 +113,15 @@
     grid-row: 2/3;
   }
 
+  div.sto-content {
+    margin: 24px;
+  }
+
   section.home-map {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    margin: 0;
   }
 
   h2.map-heading {
@@ -112,6 +133,10 @@
     border: 0;
     grid-column: 1/2;
     grid-row: 2/3;
+  }
+
+  section.home-map > h2 {
+    margin: 0px 24px;
   }
 
     /* Contact page */
@@ -181,7 +206,7 @@
     margin: 0px 0px 0px 24px;
     }
 
-    .card-container {
+    div.card-container {
       display: grid;
     grid-template-rows: auto;
     grid-column: 1/11;
@@ -192,7 +217,7 @@
 
     
 
-    .address-car {
+    .address-card {
       grid-column: 1/2;
     grid-row: 1/2;
     }

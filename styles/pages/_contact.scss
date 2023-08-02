@@ -10,6 +10,12 @@
   gap: 16px;
 }
 
+div.pane#contact-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .clinic-room-image {
   border-radius: $medium-shape;
   aspect-ratio: 16 / 9;
@@ -34,10 +40,14 @@ div.title-card h1, div.title-card p{
     color: $on-surface-variant;
 }
 
-.contact-contact-info {
+.contact-info-section {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.contact-info-header {
+  margin: 0px 16px;
 }
 
 .contact-info-address-card-container {
@@ -49,6 +59,12 @@ div.title-card h1, div.title-card p{
 
 .contact-cards h3, .contact-cards p {
   padding: 0;
+}
+
+div.card-container {
+  display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .address-card {
@@ -82,8 +98,15 @@ div.title-card h1, div.title-card p{
   gap: 8px;
 }
 
-.how-to-find-me h2, .how-to-find-me p {
+.how-to-find-me-section-header {
   margin: 0px 16px;
+}
+
+
+.direction-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 #by-car-container {
@@ -112,7 +135,7 @@ div.title-card h1, div.title-card p{
 
 .icon-h3-container {
   display: flex;
-  margin: 0px 16px;
+  margin: 0;
   gap: 16px;
   align-items: center;
 }
@@ -125,17 +148,13 @@ div.title-card h1, div.title-card p{
   background-color: $surface-container-highest;
   border-radius: $medium-shape;
 
-  grid-column: 1/11;
-  display: grid;
-  gap: 24px;
-  grid-row: 6/7;
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .when-you-arrive-header {
-  grid-column: 6/12;
-    grid-row: 1/2;
+  margin: 16px 16px 0px 16px;
 }
 
 .when-you-arrive-header > p {
@@ -153,7 +172,7 @@ div.title-card h1, div.title-card p{
   margin-bottom: 16px;
 }
 
-.hours > h2, .hours > p {
+.hours-section-header {
   margin: 0px 16px;
 }
 
