@@ -238,7 +238,7 @@ section.partners h2 {
 .sto-logo-wrapper {
     display: flex;
     justify-content: center;
-    background-color: $surface;
+    background-color: #ffffff;
     border-radius: $medium-shape;
     border: 1px solid $outline;
     padding: 8px;
@@ -246,7 +246,7 @@ section.partners h2 {
 }
 
 .sto-logo {
-    max-width: 286px; 
+   max-width: 100%;
     object-fit: scale-down;
 }
 
