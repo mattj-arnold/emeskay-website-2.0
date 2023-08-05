@@ -19,8 +19,10 @@
     }
 
     #nav-rail-logo {
-        width: 56px;
-        margin-left: 12px;
+        padding: 0px 12px;
+    max-inline-size: 100%;
+    block-size: auto;
+        
     }
 
     .fab {
