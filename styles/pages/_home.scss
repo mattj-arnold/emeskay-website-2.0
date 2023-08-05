@@ -207,6 +207,8 @@ div.slider p {
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 //Partners
@@ -247,7 +249,8 @@ section.partners h2 {
 
 .sto-logo {
    max-width: 100%;
-    object-fit: scale-down;
+    aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 //Map
@@ -268,5 +271,6 @@ section.partners h2 {
     height: auto;
     aspect-ratio: 16/9;
     border-radius: $medium-shape;
+  object-fit: cover;
     
 }
