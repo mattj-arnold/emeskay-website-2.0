@@ -2,9 +2,13 @@
 @use '../base/utilities' as *;
 @use '../base/typography' as *;
 
+@mixin medium {
+  .hero {
+    background-image: url(../images/hero/hero-medium.jpeg);
+  }
+}
+
 @mixin expanded {
-    
-  
   body {
       display: grid;
       grid-template-columns: minmax(80px, 1fr) repeat(11, 1fr);
@@ -46,6 +50,10 @@
     padding: 24px;
     gap: 0;
     margin: 0;
+  }
+
+  .hero {
+    background-image: url(../images/hero/hero-expanded.jpeg);
   }
 
   section.intro {

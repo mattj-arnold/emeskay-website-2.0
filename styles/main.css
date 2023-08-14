@@ -609,7 +609,7 @@ div.social h3 {
   background-color: #006a6a;
   height: calc(100vh - 80px);
   padding: 0px 16px;
-  background-image: url(../images/hero-image.jpg);
+  background-image: url(../images/hero/hero-compact.jpeg);
   background-size: cover;
   border-radius: 16px;
   margin: 0px 0px 16px 0px;
@@ -1168,6 +1168,9 @@ p {
     padding: 24px;
     gap: 0;
     margin: 0;
+  }
+  .hero {
+    background-image: url(../images/hero/hero-expanded.jpeg);
   }
   section.intro {
     display: grid;
