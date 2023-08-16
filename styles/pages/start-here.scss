@@ -1,0 +1,13 @@
+@use '../normalize.css';
+@use '../base/reset';
+@use '../layout/header';
+@use '../layout/footer';
+@use '../base/media-queries' as *;
+
+@media screen and (min-width: 600px) and (max-width: 839px) {
+    @include medium;
+}
+
+@media screen and (min-width: 840px) {
+    @include expanded;
+}
