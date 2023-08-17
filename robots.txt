@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: / # Disallow all URLs
+
+User-agent: *
+Allow: / # Allow all URLs for other search engines that respect "Allow" directive

@@ -1,0 +1,11 @@
+# netlify.toml
+
+# This command will create a robots.txt file in the published directory
+[build]
+  command = "echo 'No build command needed'"
+  publish = "./" # Use "./" to publish from the root directory
+
+[[headers]]
+  for = "/robots.txt"
+    [headers.values]
+    Content-Type = "text/plain"
