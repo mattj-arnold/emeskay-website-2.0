@@ -83,4 +83,6 @@
         color: $on-surface-variant;
         font: $label-large;
     }
+
+    @include material-symbols;
 }

@@ -309,24 +309,10 @@ template {
 }
 
 @font-face {
-  font-family: "Material Symbols Outlined";
+  font-family: "Material Symbols Rounded";
   font-style: normal;
-  src: url(https://dev.emeskay.co.uk/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2) format("woff2");
+  src: url(../../MaterialSymbolsRounded[FILL\,GRAD\,opsz\,wght].woff2) format("woff2");
 }
-.material-symbols-outlined {
-  font-family: "Material Symbols Outlined";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-}
-
 /* Display Large */
 /* Display Medium */
 /* Display Small */
@@ -1177,6 +1163,19 @@ p {
     color: #3f4948;
     font: 14px/1.4 Barlow, sans-serif;
   }
+  nav.navigation .material-symbols-rounded {
+    font-family: "Material Symbols Rounded";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
   .top-app-bar, .extended-fab-container {
     display: none;
   }
@@ -1534,6 +1533,19 @@ p {
   nav.navigation .nav-rail-label {
     color: #3f4948;
     font: 14px/1.4 Barlow, sans-serif;
+  }
+  nav.navigation .material-symbols-rounded {
+    font-family: "Material Symbols Rounded";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
   }
   .top-app-bar, .extended-fab-container {
     display: none;

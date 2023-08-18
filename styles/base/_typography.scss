@@ -1,13 +1,14 @@
 //@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap');
 
 @font-face {
-    font-family: 'Material Symbols Outlined';
+    font-family: 'Material Symbols Rounded';
     font-style: normal;
-    src: url(https://dev.emeskay.co.uk/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2) format('woff2');
+    src: url(../../MaterialSymbolsRounded[FILL\,GRAD\,opsz\,wght].woff2) format('woff2');
   }
 
-  .material-symbols-outlined {
-    font-family: 'Material Symbols Outlined';
+@mixin material-symbols {
+  .material-symbols-rounded {
+    font-family: 'Material Symbols Rounded';
     font-weight: normal;
     font-style: normal;
     font-size: 24px;  /* Preferred icon size */
@@ -19,6 +20,7 @@
     white-space: nowrap;
     direction: ltr;
   }
+}
 
 /* Display Large */
 $display-large-size: 57px;
