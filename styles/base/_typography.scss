@@ -6,6 +6,13 @@
     src: url(../../MaterialSymbolsRounded[FILL\,GRAD\,opsz\,wght].woff2) format('woff2');
   }
 
+  @font-face {
+    font-family: 'Barlow';
+    src: url(../../Barlow-Regular.ttf) format('ttf');
+    font-display: swap;
+  }
+
+
 @mixin material-symbols {
   .material-symbols-rounded {
     font-family: 'Material Symbols Rounded';
@@ -21,6 +28,8 @@
     direction: ltr;
   }
 }
+
+
 
 /* Display Large */
 $display-large-size: 57px;
