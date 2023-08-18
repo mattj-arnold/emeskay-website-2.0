@@ -3,6 +3,10 @@
 @use '../components/extended-fab';
 @use '../components/navigation-rail';
 
+.window-header {
+    height: 64px;
+}
+
 .navigation-rail {
     display: none;
 }

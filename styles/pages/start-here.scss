@@ -1,8 +1,36 @@
 @use '../normalize.css';
 @use '../base/reset';
+@use '../base/utilities' as *;
+@use '../base/typography' as *;
 @use '../layout/header';
 @use '../layout/footer';
 @use '../base/media-queries' as *;
+
+#start-here .main-header {
+    border-radius: $medium-shape;
+    background-color: $primary;
+    padding: 16px;
+    
+}
+
+#start-here .main-header hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-here .main-header h1, #start-here .main-header p {
+    color: $on-primary;
+}
+
+#start-here .main-header h1 {
+    font: $display-small;
+}
+
+#start-here .main-header p {
+    font: $body-medium;
+}
 
 @media screen and (min-width: 600px) and (max-width: 839px) {
     @include medium;
