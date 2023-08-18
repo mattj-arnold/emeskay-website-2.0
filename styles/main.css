@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -307,6 +306,25 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  src: url(https://dev.emeskay.co.uk/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2) format("woff2");
+}
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
 }
 
 /* Display Large */
