@@ -634,6 +634,7 @@ div.social h3 {
   background-color: #006a6a;
   height: calc(100vh - 80px);
   border-radius: 16px;
+  overflow: hidden;
   margin: 0px 0px 16px 0px;
   gap: 8px;
 }
