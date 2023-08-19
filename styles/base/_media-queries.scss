@@ -32,8 +32,12 @@
     margin-top: 12px;
   }
 
-  .hero > * {
-    
+  .hero {
+    height: calc(100vh - 24px);
+  }
+
+  .hero hgroup {
+    padding: 24px;
   }
 
   section.intro {

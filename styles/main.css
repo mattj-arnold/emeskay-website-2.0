@@ -929,11 +929,6 @@ section.partners h2 {
   font: 14px/1.3 Barlow, sans-serif;
 }
 
-@media screen and (min-width: 600px) and (max-width: 839px) {
-  .hero {
-    background-image: url(../images/hero/hero-medium.jpeg);
-  }
-}
 @media screen and (min-width: 840px) {
   body {
     display: grid;
@@ -1035,16 +1030,11 @@ section.partners h2 {
   div.pane {
     margin-top: 12px;
   }
-  header.hero {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    padding: 24px;
-    gap: 0;
-    margin: 0;
-  }
   .hero {
-    background-image: url(../images/hero/hero-expanded.jpeg);
+    height: calc(100vh - 24px);
+  }
+  .hero hgroup {
+    padding: 24px;
   }
   section.intro {
     display: grid;
@@ -1126,7 +1116,7 @@ section.partners h2 {
     grid-row: auto;
     margin: 0;
   }
-  div.pane {
+  #contact .pane {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -1512,11 +1502,6 @@ p {
   margin: 0px 24px 0px 16px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 839px) {
-  .hero {
-    background-image: url(../images/hero/hero-medium.jpeg);
-  }
-}
 @media screen and (min-width: 840px) {
   body {
     display: grid;
@@ -1618,16 +1603,11 @@ p {
   div.pane {
     margin-top: 12px;
   }
-  header.hero {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    padding: 24px;
-    gap: 0;
-    margin: 0;
-  }
   .hero {
-    background-image: url(../images/hero/hero-expanded.jpeg);
+    height: calc(100vh - 24px);
+  }
+  .hero hgroup {
+    padding: 24px;
   }
   section.intro {
     display: grid;
@@ -1709,7 +1689,7 @@ p {
     grid-row: auto;
     margin: 0;
   }
-  div.pane {
+  #contact .pane {
     display: flex;
     flex-direction: column;
     gap: 24px;
