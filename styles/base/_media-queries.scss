@@ -2,12 +2,6 @@
 @use '../base/utilities' as *;
 @use '../base/typography' as *;
 
-@mixin medium {
-  .hero {
-    background-image: url(../images/hero/hero-medium.jpeg);
-  }
-}
-
 @mixin expanded {
   body {
       display: grid;
@@ -43,17 +37,8 @@
     margin-top: 12px;
   }
 
-  header.hero {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    padding: 24px;
-    gap: 0;
-    margin: 0;
-  }
-
-  .hero {
-    background-image: url(../images/hero/hero-expanded.jpeg);
+  .hero > * {
+    
   }
 
   section.intro {
