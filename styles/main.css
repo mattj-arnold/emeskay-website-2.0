@@ -315,7 +315,12 @@ template {
 }
 @font-face {
   font-family: "Barlow";
-  src: url(/Users/mattarnold/projects/emeskay-website-2.0/Barlow-Regular.ttf) format("ttf");
+  src: url(/Users/mattarnold/projects/emeskay-website-2.0/Barlow-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url(/Users/mattarnold/projects/emeskay-website-2.0/BarlowCondensed-Regular.ttf) format("truetype");
   font-display: swap;
 }
 /* Display Large */
