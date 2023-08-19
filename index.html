@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preload" fetchpriority="high" as="image" href="./images/hero-image.jpg" type="image/jpg">
     <script async src="https://kit.fontawesome.com/220cb0543d.js" crossorigin="anonymous"></script>
-    <script defer src="./main.js"></script>
+    <script defer src="main.js"></script>
     
 </head>
 <body class="window" id="home">
@@ -257,34 +257,14 @@
                 <div class="prehab-card">
 
                     <picture>
-                        <source 
-                            type="image/webp" 
-                            srcset="images/prehab/prehab-567w.webp 567w,
-                                    images/prehab/prehab-807w.webp 807w,
-                                    images/prehab/prehab-1157w.webp 1157w"
-                            sizes="(min-width: 840px) 1157px,
-                                    (min-width: 600px) 807px,
-                                    567px">
-                        <source 
-                            type="image/jpeg" 
-                            srcset="images/prehab/prehab-567w.jpeg 567w,
-                                    images/prehab/prehab-807w.jpeg 807w,
-                                    images/prehab/prehab-1157w.jpeg 1157w"
-                            sizes="(min-width: 840px) 1157px,
-                                    (min-width: 600px) 807px,
-                                    567px">
-                        <img 
-                            src="./images/prehab/prehab-567w.jpeg" 
-                            class="injury-prehab-image" 
-                            alt="A sports therapist coaches his female client to perform front foot elevated kettlebell split squats"
-                            loading="lazy"
-                            srcset="images/prehab/prehab-567w.jpeg 567w,
-                                    images/prehab/prehab-807w.jpeg 807w,
-                                    images/prehab/prehab-1157w.jpeg 1157w"
-                            sizes="(min-width: 840px) 1157px,
-                                    (min-width: 600px) 807px,
-                                    567px" />
-                      </picture>
+                        <source media="(max-width: 599px)" type="image/webp" srcset="images/prehab/prehab-567w.webp" width="567" height="378"/>
+                        <source media="(max-width: 599px)" type="image/jpeg" srcset="images/prehab/prehab-567w.jpeg" width="567" height="378"/>
+                        <source media="(min-width: 600px, max-width: 839px)" type="image/webp" srcset="images/prehab/prehab-807w.webp" width="807" height="538"/>
+                        <source media="(min-width: 600px, max-width: 839px)" type="image/jpeg" srcset="images/prehab/prehab-807w.jpeg" width="807" height="538"/>
+                        <source media="(min-width: 840px)" type="image/webp" srcset="images/prehab/prehab-1157w.webp" width="1157" height="771"/>
+                        <source media="(min-width: 840px)" type="image/jpeg" srcset="images/prehab/prehab-1157w.jpeg" width="1157" height="771"/>
+                        <img src="images/prehab/prehab-actual.jpg" class="injury-prehab-image" alt="A sports therapist coaches his female client to perform front foot elevated kettlebell split squats" width="4696" height="3130" loading="lazy" />
+                    </picture>
 
                     <div class="content-container">
                         <h3>Injury Prevention & Enhanced Performance</h3>
