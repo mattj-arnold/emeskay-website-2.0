@@ -3,7 +3,6 @@
 @use 'base/reset';
 @use 'pages/home';
 @use 'pages/contact';
-@use 'pages/start-here';
 @use 'base/media-queries' as *;
 
 @media screen and (min-width: 600px) and (max-width: 839px) {

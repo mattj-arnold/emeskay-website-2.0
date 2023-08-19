@@ -311,11 +311,11 @@ template {
 @font-face {
   font-family: "Material Symbols Rounded";
   font-style: normal;
-  src: url(../../MaterialSymbolsRounded[FILL\,GRAD\,opsz\,wght].woff2) format("woff2");
+  src: url(/Users/mattarnold/projects/emeskay-website-2.0/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2) format("woff2");
 }
 @font-face {
   font-family: "Barlow";
-  src: url(../../Barlow-Regular.ttf) format("ttf");
+  src: url(/Users/mattarnold/projects/emeskay-website-2.0/Barlow-Regular.ttf) format("ttf");
   font-display: swap;
 }
 /* Display Large */

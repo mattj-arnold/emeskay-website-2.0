@@ -59,13 +59,11 @@
         }
     </script>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"></noscript>
     <script async src="https://kit.fontawesome.com/220cb0543d.js" crossorigin="anonymous"></script>
     <script defer src="./main.js"></script>
     
 </head>
-<body class="window" id="contact-window">
+<body class="window" id="contact">
     <header class="window-header">
         <div class="top-app-bar" id="appBar">
             <div class="toggle-btn" onclick="show()">
@@ -73,11 +71,11 @@
                     menu
                 </span>
             </div>
-            <picture>
-                <source type="image/webp" srcset="images/emeskay-logo/emeskay-logo-website-top-app-bar.webp">
-                <source type="image/png" srcset="images/emeskay-logo/emeskay-logo-website-top-app-bar.png">
-                <img class="logo" src="images/emeskay-logo/emeskay-logo-website-top-app-bar.png" alt="Emeskay logo" />
-              </picture>
+            <picture class="logo">
+                <source media="(max-width: 839px)" type="image/webp" srcset="images/emeskay-logo/emeskay-logo-website-top-app-bar-compact.webp" width="92" height="24"/>
+                <source media="(max-width: 839px)" type="image/png" srcset="images/emeskay-logo/emeskay-logo-website-top-app-bar-compact.png" width="92" height="24"/>
+                <img class="logo" src="images/emeskay-logo/emeskay-logo-website-top-app-bar-actual.png" alt="Emeskay logo" width="500" height="130" loading="lazy"/>
+            </picture>
             </div>
     
             <!--Modal Navigation Drawer-->
@@ -90,10 +88,10 @@
                             </span>
                         </div>
 
-                        <picture>
-                            <source type="image/webp" srcset="images/emeskay-logo/emeskay-logo-website-modal-navigation-drawer.webp">
-                            <source type="image/png" srcset="images/emeskay-logo/emeskay-logo-website-modal-navigation-drawer.png">
-                            <img class="modal-navigation-drawer-logo" src="images/emeskay-logo/emeskay-logo-website-modal-navigation-drawer.png" alt="Emeskay logo" />
+                        <picture class="logo">
+                            <source media="(max-width: 839px)" type="image/webp" srcset="images/emeskay-logo/emeskay-logo-website-modal-navigation-drawer-compact.webp" width="92" height="24"/>
+                            <source media="(max-width: 839px)" type="image/png" srcset="images/emeskay-logo/emeskay-logo-website-modal-navigation-drawer-compact-png" width="92" height="24"/>
+                            <img class="logo" src="images/emeskay-logo/emeskay-logo-website-modal-navigation-drawer-actual.png" alt="Emeskay logo" width="500" height="130"/>
                         </picture>
 
                     </div>
@@ -105,7 +103,7 @@
                             <div class="modal-navigation-drawer-label">Home</div>
                         </div>
                     </a>
-                    <a href="./contact.html">
+                    <a href="#">
                         <div class="active-indicator active" class="contact">
                             <span class="material-symbols-rounded">
                                 contact_page
@@ -118,7 +116,11 @@
 
                 <!--Navigation Rail-->
                 <div class="navigation-rail">
-                    <img src="./images/emeskay-logo-website-top-app-bar.png" id="nav-rail-logo" />
+                    <picture>
+                        <source media="(min-width: 840px)" type="image/webp" srcset="images/emeskay-logo/emeskay-logo-website-top-app-bar-medium-expanded.webp" width="56" height="15"/>
+                        <source media="(min-width: 840px)" type="image/png" srcset="images/emeskay-logo/emeskay-logo-website-top-app-bar-medium-expanded.png" width="56" height="15"/>
+                        <img class="logo" id="nav-rail-logo" src="images/emeskay-logo/emeskay-logo-website-top-app-bar-actual.png" alt="Emeskay logo" width="500" height="130"/>
+                      </picture>
                     <a href="https://app.rehabguru.com/appointments/d46ed75c4c00969246d2ecd765363815%3A437f6f2c94772fb506ee2311d28f4db0f1dc7c88b6fdb7c0c31905dbb8bc3dd7">
                     <button class="fab">
                         <span class="material-symbols-rounded fab-icon">
@@ -138,7 +140,7 @@
                                 <div class="nav-rail-label">Home</div>
                             </div>
                         </a>
-                        <a href="./contact.html">
+                        <a href="#">
                             <div class="nav-rail-icon-label-container" class="contact">
                                 <div class="nav-rail-active-indicator active">
                                     <span class="material-symbols-rounded">
