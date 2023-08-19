@@ -311,16 +311,16 @@ template {
 @font-face {
   font-family: "Material Symbols Rounded";
   font-style: normal;
-  src: url(/Users/mattarnold/projects/emeskay-website-2.0/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2) format("woff2");
+  src: url(../../MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2) format("woff2");
 }
 @font-face {
   font-family: "Barlow";
-  src: url(/Users/mattarnold/projects/emeskay-website-2.0/Barlow-Regular.ttf) format("truetype");
+  src: url(../../Barlow-Regular.ttf) format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Barlow Condensed";
-  src: url(/Users/mattarnold/projects/emeskay-website-2.0/BarlowCondensed-Regular.ttf) format("truetype");
+  src: url(../../BarlowCondensed-Regular.ttf) format("truetype");
   font-display: swap;
 }
 /* Display Large */
