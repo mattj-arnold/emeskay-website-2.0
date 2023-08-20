@@ -1,6 +1,8 @@
 @use '../base/typography' as *;
 @use '../base/utilities' as *;
 
+@mixin top-app-bar {
+
 @include material-symbols;
 
 .top-app-bar {
@@ -27,4 +29,6 @@
 .logo {
     height: 24px;
     justify-self: center;
+}
+
 }

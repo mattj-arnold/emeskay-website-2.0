@@ -1,12 +1,41 @@
-@use '../components/top-app-bar';
-@use '../components/modal-navigation-drawer';
-@use '../components/extended-fab';
-@use '../components/navigation-rail';
+@use '../components/top-app-bar' as *;
+@use '../components/modal-navigation-drawer' as *;
+@use '../components/extended-fab' as *;
+@use '../components/navigation-rail' as *;
 
 .window-header {
+    grid-area: 1/1/2/2;
     height: 64px;
+
+    @media screen and (min-width: 840px) {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        height: auto;
+    }
 }
+
+@include top-app-bar;
+
+.top-app-bar {
+    @media screen and (min-width: 840px) {
+        display: none;
+    }
+}
+
+@include modal-navigation-drawer;
 
 .navigation-rail {
     display: none;
+}
+
+@media screen and (min-width: 840px) {
+    @include navigation-rail;
+}
+
+@include extended-fab;
+
+.extended-fab {
+    @media screen and (min-width: 840px) {
+        display: none;
+    }
 }

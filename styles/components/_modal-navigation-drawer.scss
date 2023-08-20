@@ -1,6 +1,7 @@
 @use '../base/utilities' as *;
 @use '../base/typography' as *;
 
+@mixin modal-navigation-drawer {
 #sidebar {
     position: fixed;
     width: 360px;
@@ -58,4 +59,5 @@
 .modal-navigation-drawer-label {
     color: $on-surface-variant;
     font: $label-large;
+}
 }

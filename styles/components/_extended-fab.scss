@@ -1,6 +1,7 @@
 @use '../base/utilities' as *;
 @use '../base/typography' as *;
 
+@mixin extended-fab {
 .extended-fab-container {
     display: flex;
     justify-content: flex-end;
@@ -30,4 +31,5 @@ div.extended-fab-container a {
     font: $label-large;
     color: $on-primary-container;
     box-shadow: 0px 3px 1px -2px #808080;
+}
 }
