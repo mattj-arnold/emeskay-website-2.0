@@ -1,4 +1,6 @@
-//Import normalise.css
+@use '../fontawesome/scss/fontawesome';
+@use '../fontawesome/scss/brands';
+@use '../fontawesome/scss/solid';
 @use 'normalize.css';
 @use 'base/reset';
 @use 'pages/home';
