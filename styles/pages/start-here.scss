@@ -1,15 +1,16 @@
 @use '../normalize.css';
 @use '../base/reset';
-@use '../base/utilities' as *;
 @use '../base/typography' as *;
+@use '../base/utilities' as *;
 @use '../layout/header';
 @use '../layout/footer';
-@use '../base/media-queries' as *;
 
 #start-here .main-header {
     border-radius: $medium-shape;
     background-color: $primary;
     padding: 16px;
+    width: 100%;
+    aspect-ratio: 16/9;
     
 }
 
@@ -32,6 +33,18 @@
     font: $body-medium;
 }
 
-@media screen and (min-width: 840px) {
-    @include expanded;
+#start-here .card {
+    border-radius: $medium-shape;
+    background-color: $surface-container;
+    padding: 16px;
+    width: 100%;
+    height: auto;
+}
+
+.section-picture {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: $primary;
+    border-radius: $medium-shape;
+    margin: 16px 0;
 }
