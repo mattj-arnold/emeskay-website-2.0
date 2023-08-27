@@ -33,7 +33,31 @@
   }
 }
 
+/* h1 */
+$h1-compact-size: 4.236rem;
+$h1-compact-line-height: 1;
+$h1-compact-font: 'Barlow Condensed', sans-serif;
+$h1-compact: #{$h1-compact-size}/#{$h1-compact-line-height} #{$h1-compact-font};
 
+$h2-compact-size: 2.618rem;
+$h2-compact-line-height: 1.2;
+$h2-compact-font: 'Barlow Condensed', sans-serif;
+$h2-compact: #{$h2-compact-size}/#{$h2-compact-line-height} #{$h2-compact-font};
+
+$h3-compact-size: 1.618rem;
+$h3-compact-line-height: 1.3;
+$h3-compact-font: 'Barlow Condensed', sans-serif;
+$h3-compact: #{$h3-compact-size}/#{$h3-compact-line-height} #{$h3-compact-font};
+
+$p-compact-size: 1rem;
+$p-compact-line-height: 25px;
+$p-compact-font: 'Barlow', sans-serif;
+$p-compact: #{$p-compact-size}/#{$p-compact-line-height} #{$p-compact-font};
+
+$p-expanded-size: 1.618rem;
+$p-expanded-line-height: 1.3;
+$p-expanded-font: 'Barlow', sans-serif;
+$p-expanded: #{$p-expanded-size}/#{$p-expanded-line-height} #{$p-expanded-font};
 
 /* Display Large */
 $display-large-size: 57px;

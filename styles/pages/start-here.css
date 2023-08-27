@@ -323,6 +323,7 @@ template {
   src: url("../../BarlowCondensed-Regular.ttf") format("truetype");
   font-display: swap;
 }
+/* h1 */
 /* Display Large */
 /* Display Medium */
 /* Display Small */
@@ -339,6 +340,10 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
 }
 
 body {
@@ -835,6 +840,7 @@ hr {
     grid-template-columns: minmax(80px, 1fr) repeat(11, 1fr);
     margin: 0;
     padding-right: 24px;
+    gap: 24px;
   }
 }
 
@@ -869,6 +875,7 @@ main.body-region {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, auto);
   justify-items: center;
+  align-items: stretch;
 }
 @media screen and (min-width: 600px) and (max-width: 839px) {
   .main-header {
@@ -882,6 +889,16 @@ main.body-region {
     grid-template-rows: 1fr repeat(2, auto);
   }
 }
+@media screen and (min-width: 1360px) {
+  .main-header {
+    grid-template-columns: 24px repeat(2, 1fr) 24px;
+    grid-template-rows: 1fr repeat(2, auto) 24px;
+  }
+}
+
+.main-header p {
+  text-align: center;
+}
 
 .start-here-picture {
   grid-area: 1/1/2/2;
@@ -892,8 +909,13 @@ main.body-region {
     grid-area: 1/1/2/3;
   }
 }
+@media screen and (min-width: 1360px) {
+  .start-here-picture {
+    grid-area: 1/1/5/5;
+  }
+}
 
-.main-header hgroup {
+.header-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -903,53 +925,22 @@ main.body-region {
   margin: 16px;
 }
 @media screen and (min-width: 600px) and (max-width: 839px) {
-  .main-header hgroup {
+  .header-content {
     grid-area: 1/1/2/2;
     margin: 24px;
   }
 }
 @media screen and (min-width: 840px) {
-  .main-header hgroup {
+  .header-content {
     grid-area: 1/1/2/3;
     margin: 24px;
+    width: 61.8%;
   }
 }
-
-.main-header p {
-  text-align: center;
-}
-
-.main-header > hgroup > h1, #start-here .main-header > hgroup > p {
-  color: #191c1c;
-}
-@media screen and (min-width: 600px) {
-  .main-header > hgroup > h1, #start-here .main-header > hgroup > p {
-    color: #ffffff;
-  }
-}
-
-.main-header > hgroup > h1 {
-  font: 57px/1 Barlow Condensed, sans-serif;
-}
-
-.main-header > hgroup > p {
-  font: 24px/1.2 Barlow Condensed, sans-serif;
-}
-
-.main-header h1 {
-  font: 36px/1 Barlow Condensed, sans-serif;
-}
-
-.main-header p {
-  font: 16px/1.3 Barlow, sans-serif;
-}
-
-h2 {
-  font: 32px/1.1 Barlow Condensed, sans-serif;
-}
-@media screen and (min-width: 600px) {
-  h2 {
-    font: 45px/1 Barlow Condensed, sans-serif;
+@media screen and (min-width: 1360px) {
+  .header-content {
+    grid-area: 1/2/2/4;
+    width: 61.8%;
   }
 }
 
@@ -957,19 +948,75 @@ p {
   max-width: 60ch;
 }
 
+.header-content h1, .header-content p {
+  color: #191c1c;
+}
+@media screen and (min-width: 600px) {
+  .header-content h1, .header-content p {
+    color: #ffffff;
+  }
+}
+
+.header-content h1 {
+  font: 4.236rem/1 Barlow Condensed, sans-serif;
+}
+
+.header-content p {
+  font: 1rem/25px Barlow, sans-serif;
+}
+@media screen and (min-width: 600px) {
+  .header-content p {
+    font: 1rem/25px Barlow, sans-serif;
+  }
+}
+@media screen and (min-width: 840px) {
+  .header-content p {
+    font: 1.618rem/1.3 Barlow, sans-serif;
+  }
+}
+
+.main-header h3 {
+  font: 1.618rem/1.3 Barlow Condensed, sans-serif;
+}
+
+h2 {
+  font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+}
+@media screen and (min-width: 600px) {
+  h2 {
+    font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+  }
+}
+
 .card {
   border-radius: 12px;
   background-color: #e0e3e2;
   color: #191c1c;
-  width: 100%;
   height: auto;
+  width: 100%;
   max-width: calc(60ch + 32px);
+  font: 16px/1.3 Barlow, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  transition: 0.3s;
+}
+
+.main-header .card {
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover {
   background-color: #ffdad4;
   color: #410000;
-  cursor: pointer;
+  text-decoration: none;
+}
+
+.card:active {
+  border-radius: 28px;
+  border: 8px solid #b22b1d;
 }
 
 .where-does-it-hurt-card {
@@ -984,6 +1031,11 @@ p {
   .where-does-it-hurt-card {
     grid-area: 2/1/3/2;
     justify-self: end;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .where-does-it-hurt-card {
+    grid-area: 2/2/3/3;
   }
 }
 
@@ -1001,6 +1053,11 @@ p {
     justify-self: start;
   }
 }
+@media screen and (min-width: 1360px) {
+  .conditions-i-treat-card {
+    grid-area: 2/3/3/4;
+  }
+}
 
 .what-is-sports-therapy-card {
   grid-area: 5/1/6/2;
@@ -1014,6 +1071,11 @@ p {
   .what-is-sports-therapy-card {
     grid-area: 3/1/4/2;
     justify-self: end;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .what-is-sports-therapy-card {
+    grid-area: 3/2/4/3;
   }
 }
 
@@ -1031,37 +1093,53 @@ p {
     justify-self: start;
   }
 }
+@media screen and (min-width: 1360px) {
+  .how-i-treat-card {
+    grid-area: 3/3/4/4;
+  }
+}
 
-section hgroup {
-  margin: 16px;
+section {
+  align-items: start;
+}
+
+section header {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .where-does-it-hurt {
   grid-area: 3/1/4/2;
   display: grid;
   grid-template: auto/1fr;
-  gap: 8px;
+  gap: 16px;
 }
 @media screen and (min-width: 840px) {
   .where-does-it-hurt {
     grid-area: 3/1/4/12;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content 1fr;
+    gap: 24px;
+    justify-items: end;
   }
 }
 
-.where-does-it-hurt > header {
+.where-does-it-hurt header {
   grid-area: 2/1/3/2;
 }
 @media screen and (min-width: 840px) {
-  .where-does-it-hurt > header {
+  .where-does-it-hurt header {
     grid-area: 1/1/2/2;
   }
 }
 
 .section-picture {
-  width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
+  -o-object-fit: cover;
+     object-fit: cover;
+  inline-size: 100%;
   background-color: #006a6a;
   border-radius: 12px;
 }
@@ -1090,27 +1168,22 @@ section hgroup {
   grid-area: 5/1/6/2;
   display: grid;
   grid-template: auto/1fr;
-  gap: 8px;
+  gap: 16px;
 }
 @media screen and (min-width: 840px) {
   .conditions-i-treat {
     grid-area: 5/1/6/12;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content 1fr;
+    gap: 24px;
   }
 }
 
-.conditions-i-treat > header {
+.conditions-i-treat header {
   grid-area: 2/1/3/2;
 }
 @media screen and (min-width: 840px) {
-  .conditions-i-treat > header {
-    grid-area: 1/2/2/3;
-  }
-}
-
-@media screen and (min-width: 840px) {
-  .conditions-i-treat hgroup {
+  .conditions-i-treat header {
     grid-area: 1/2/2/3;
   }
 }
@@ -1139,27 +1212,23 @@ section hgroup {
   grid-area: 7/1/8/2;
   display: grid;
   grid-template: auto/1fr;
-  gap: 8px;
+  gap: 16px;
 }
 @media screen and (min-width: 840px) {
   .what-is-sports-therapy {
     grid-area: 7/1/8/12;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content 1fr;
+    gap: 24px;
+    justify-items: end;
   }
 }
 
-.what-is-sports-therapy > header {
+.what-is-sports-therapy header {
   grid-area: 2/1/3/2;
 }
 @media screen and (min-width: 840px) {
-  .what-is-sports-therapy > header {
-    grid-area: 1/1/2/2;
-  }
-}
-
-@media screen and (min-width: 840px) {
-  .what-is-sports-therapy hgroup {
+  .what-is-sports-therapy header {
     grid-area: 1/1/2/2;
   }
 }
@@ -1188,27 +1257,22 @@ section hgroup {
   grid-area: 9/1/10/2;
   display: grid;
   grid-template: auto/1fr;
-  gap: 8px;
+  gap: 16px;
 }
 @media screen and (min-width: 840px) {
   .how-i-treat {
     grid-area: 9/1/10/12;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content 1fr;
+    gap: 24px;
   }
 }
 
-.how-i-treat > header {
+.how-i-treat header {
   grid-area: 2/1/3/2;
 }
 @media screen and (min-width: 840px) {
-  .how-i-treat > header {
-    grid-area: 1/2/2/3;
-  }
-}
-
-@media screen and (min-width: 840px) {
-  .how-i-treat hgroup {
+  .how-i-treat header {
     grid-area: 1/2/2/3;
   }
 }
