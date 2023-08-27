@@ -1144,11 +1144,11 @@ section header {
   border-radius: 12px;
 }
 
-.where-does-it-hurt .section-picture {
+.where-does-it-hurt picture {
   grid-area: 1/1/2/2;
 }
 @media screen and (min-width: 840px) {
-  .where-does-it-hurt .section-picture {
+  .where-does-it-hurt picture {
     grid-area: 1/2/3/3;
   }
 }

@@ -337,7 +337,7 @@ section header {
     border-radius: $medium-shape;
 }
 
-.where-does-it-hurt .section-picture {
+.where-does-it-hurt picture {
     grid-area: 1/1/2/2;
 
     @media screen and (min-width: 840px) {
