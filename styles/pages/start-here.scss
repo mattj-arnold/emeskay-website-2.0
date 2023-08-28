@@ -85,7 +85,7 @@ main.body-region {
 .main-header {
     grid-area: 1/1/2/2;
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/10;
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr;
@@ -113,9 +113,14 @@ main.body-region {
     text-align: center;
 }
 
-.start-here-picture {
+.main-header picture {
     grid-area: 1/1/2/2;
-    background-color: $primary;
+
+    @media screen and (min-width: 600px) {
+        filter: brightness(0.75);
+        z-index: -1;
+        
+    }
 
     @media screen and (min-width: 840px) {
         grid-area: 1/1/2/3;

@@ -11557,6 +11557,7 @@ main.body-region {
 .start-here-picture {
   grid-area: 1/1/2/2;
   background-color: #006a6a;
+  filter: brightness(50%);
 }
 @media screen and (min-width: 840px) {
   .start-here-picture {
@@ -11588,11 +11589,13 @@ main.body-region {
   .header-content {
     grid-area: 1/1/2/3;
     margin: 24px;
+    width: 61.8%;
   }
 }
 @media screen and (min-width: 1360px) {
   .header-content {
     grid-area: 1/2/2/4;
+    width: 61.8%;
   }
 }
 
@@ -11664,6 +11667,11 @@ h2 {
   background-color: #ffdad4;
   color: #410000;
   text-decoration: none;
+}
+
+.card:active {
+  border-radius: 28px;
+  border: 8px solid #b22b1d;
 }
 
 .where-does-it-hurt-card {
@@ -11783,17 +11791,19 @@ section header {
 }
 
 .section-picture {
-  width: 100%;
   aspect-ratio: 16/10;
+  -o-object-fit: cover;
+     object-fit: cover;
+  inline-size: 100%;
   background-color: #006a6a;
   border-radius: 12px;
 }
 
-.where-does-it-hurt .section-picture {
+.where-does-it-hurt picture {
   grid-area: 1/1/2/2;
 }
 @media screen and (min-width: 840px) {
-  .where-does-it-hurt .section-picture {
+  .where-does-it-hurt picture {
     grid-area: 1/2/3/3;
   }
 }
