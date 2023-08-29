@@ -30,10 +30,20 @@
     padding: 0px 24px 0px 16px;
     gap: 12px;
     margin-bottom: 16px;
+    align-items: center;
 }
 
 .toggle-btn {
     cursor: pointer;
+    border-radius: 28px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-btn:hover {
+    background-color: $surface-container-highest;
+    text-decoration: none;
 }
 
 .modal-navigation-drawer-logo {
@@ -49,6 +59,12 @@
     gap: 12px;
     align-items: center;
     cursor: pointer;
+    
+}
+
+.active-indicator:hover {
+    background-color: $surface-container-highest;
+    text-decoration: none;
 }
 
 .active {

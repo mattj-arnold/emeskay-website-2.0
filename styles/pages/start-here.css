@@ -493,10 +493,20 @@ iframe {
   padding: 0px 24px 0px 16px;
   gap: 12px;
   margin-bottom: 16px;
+  align-items: center;
 }
 
 .toggle-btn {
   cursor: pointer;
+  border-radius: 28px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.toggle-btn:hover {
+  background-color: #e0e3e2;
+  text-decoration: none;
 }
 
 .modal-navigation-drawer-logo {
@@ -512,6 +522,11 @@ iframe {
   gap: 12px;
   align-items: center;
   cursor: pointer;
+}
+
+.active-indicator:hover {
+  background-color: #e0e3e2;
+  text-decoration: none;
 }
 
 .active {
@@ -579,6 +594,7 @@ iframe {
     gap: 4px;
     align-items: center;
     cursor: pointer;
+    color: #3f4948;
   }
   .nav-rail-active-indicator {
     width: 56px;
@@ -586,6 +602,10 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .nav-rail-active-indicator:hover {
+    background-color: #e0e3e2;
+    border-radius: 16px;
   }
   .active {
     background-color: #ffdad4;
@@ -616,11 +636,8 @@ iframe {
   position: fixed;
   bottom: 16px;
   right: 16px;
-  width: 100vw;
-}
-
-div.extended-fab-container a {
-  text-decoration: none;
+  height: 56px;
+  min-width: 80px;
 }
 
 .extended-fab {
@@ -639,6 +656,11 @@ div.extended-fab-container a {
   font: 14px/1.4 Barlow, sans-serif;
   color: #002020;
   box-shadow: 0px 3px 1px -2px #808080;
+}
+
+.extended-fab-container:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 840px) {

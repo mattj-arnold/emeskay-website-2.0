@@ -63,6 +63,7 @@
         gap: 4px;
         align-items: center;
         cursor: pointer;
+        color: $on-surface-variant;
     }
 
     .nav-rail-active-indicator {
@@ -71,6 +72,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .nav-rail-active-indicator:hover {
+        background-color: $surface-container-highest;
+        border-radius: 16px;
     }
     
     .active {
