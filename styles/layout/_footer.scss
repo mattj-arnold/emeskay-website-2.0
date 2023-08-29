@@ -38,6 +38,11 @@ footer p {
 
 footer a {
     font: $label-large;
+    color: $tertiary;
+}
+
+footer a path {
+    fill: $tertiary;
 }
 
 .logo-footer {

@@ -10744,7 +10744,7 @@ iframe {
 }
 
 .scrolled {
-  background-color: #eff1f0;
+  background-color: #f7faf9;
 }
 
 .toggle-btn {
@@ -10766,7 +10766,7 @@ iframe {
   position: fixed;
   width: 360px;
   height: 100vh;
-  background-color: #eff1f0;
+  background-color: #fafdfc;
   border-radius: 0px 16px 16px 0px;
   padding: 28px 12px 16px 12px;
   left: -360px;
@@ -10827,8 +10827,8 @@ iframe {
 }
 
 .active {
-  background-color: #ffdad4;
-  color: #410000;
+  background-color: #cce8e7;
+  color: #051f1f;
 }
 
 .modal-navigation-drawer-label {
@@ -10844,7 +10844,7 @@ iframe {
   .navigation-rail {
     width: 80px;
     height: 100vh;
-    background-color: #eff1f0;
+    background-color: #f7faf9;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -10864,6 +10864,7 @@ iframe {
     justify-content: center;
     align-items: center;
     Background-color: #6ff7f6;
+    color: white;
     height: 56px;
     border-radius: 16px;
     width: 56px;
@@ -10871,9 +10872,8 @@ iframe {
     border: none;
     cursor: pointer;
   }
-  .fab-icon {
-    font-size: 24px;
-    color: #002020;
+  .fab svg {
+    fill: #002020;
   }
   .nav-rail-book-now {
     text-align: center;
@@ -10905,8 +10905,8 @@ iframe {
     border-radius: 16px;
   }
   .active {
-    background-color: #ffdad4;
-    color: #410000;
+    background-color: #cce8e7;
+    color: #051f1f;
     border-radius: 16px;
   }
   .nav-rail-label {
@@ -11004,6 +11004,11 @@ footer p {
 
 footer a {
   font: 14px/1.4 Barlow, sans-serif;
+  color: #b22b1d;
+}
+
+footer a path {
+  fill: #b22b1d;
 }
 
 .logo-footer {
@@ -11274,11 +11279,11 @@ div.social h3 {
   padding: 0px 24px;
   border-radius: 20px;
   border: none;
-  background-color: #ffdad4;
+  background-color: #cce8e7;
 }
 
 button.rehab-book label {
-  color: #410000;
+  color: #051f1f;
 }
 
 .rehab-learn {
@@ -11322,11 +11327,11 @@ button.rehab-learn label {
   padding: 0px 24px;
   border-radius: 20px;
   border: none;
-  background-color: #ffdad4;
+  background-color: #cce8e7;
 }
 
 button.prehab-book label {
-  color: #410000;
+  color: #051f1f;
 }
 
 .prehab-learn {
@@ -11690,14 +11695,14 @@ h2 {
 }
 
 .card:hover {
-  background-color: #ffdad4;
-  color: #410000;
+  background-color: #cce8e7;
+  color: #051f1f;
   text-decoration: none;
 }
 
 .card:active {
   border-radius: 28px;
-  border: 8px solid #b22b1d;
+  border: 8px solid #4a6363;
 }
 
 .where-does-it-hurt-card {

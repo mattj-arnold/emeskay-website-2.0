@@ -4,15 +4,15 @@ $on-primary: #ffffff;
 $primary-container: #6ff7f6;
 $on-primary-container: #002020;
 
-$secondary: #b22b1d;
+$secondary: #4a6363;
 $on-secondary: #ffffff;
-$secondary-container: #ffdad4;
-$on-secondary-container: #410000;
+$secondary-container: #cce8e7;
+$on-secondary-container: #051f1f;
 
-$tertiary: #7445b4;
+$tertiary: #b22b1d;
 $on-tertiary: #ffffff;
-$tertiary-container: #eddcff;
-$on-tertiary-container: #290055;
+$tertiary-container: #ffdad4;
+$on-tertiary-container: #410000;
 
 $error: #ba1a1a;
 $on-error: #ffffff;
@@ -21,11 +21,15 @@ $on-error-container: #410002;
 
 $background: #fafdfc;
 $on-background: #191c1c;
+$surface-dim: #e0e3e2;
 $surface: #f7faf9;
+$surface-brightest: #fafdfc;
 $on-surface: #191c1c;
 
-$surface-container-low: #eff1f0;
-$surface-container: #eff1f0;
+$surface-container-lowest: #ffffff;
+$surface-container-low: #fafdfc;
+$surface-container: #f7faf9;
+$surface-container-high: #eff1f0;
 $surface-container-highest: #e0e3e2;
 
 $outline: #6f7979;

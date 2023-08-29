@@ -447,7 +447,7 @@ iframe {
 }
 
 .scrolled {
-  background-color: #eff1f0;
+  background-color: #f7faf9;
 }
 
 .toggle-btn {
@@ -469,7 +469,7 @@ iframe {
   position: fixed;
   width: 360px;
   height: 100vh;
-  background-color: #eff1f0;
+  background-color: #fafdfc;
   border-radius: 0px 16px 16px 0px;
   padding: 28px 12px 16px 12px;
   left: -360px;
@@ -530,8 +530,8 @@ iframe {
 }
 
 .active {
-  background-color: #ffdad4;
-  color: #410000;
+  background-color: #cce8e7;
+  color: #051f1f;
 }
 
 .modal-navigation-drawer-label {
@@ -547,7 +547,7 @@ iframe {
   .navigation-rail {
     width: 80px;
     height: 100vh;
-    background-color: #eff1f0;
+    background-color: #f7faf9;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -567,6 +567,7 @@ iframe {
     justify-content: center;
     align-items: center;
     Background-color: #6ff7f6;
+    color: white;
     height: 56px;
     border-radius: 16px;
     width: 56px;
@@ -574,9 +575,8 @@ iframe {
     border: none;
     cursor: pointer;
   }
-  .fab-icon {
-    font-size: 24px;
-    color: #002020;
+  .fab svg {
+    fill: #002020;
   }
   .nav-rail-book-now {
     text-align: center;
@@ -608,8 +608,8 @@ iframe {
     border-radius: 16px;
   }
   .active {
-    background-color: #ffdad4;
-    color: #410000;
+    background-color: #cce8e7;
+    color: #051f1f;
     border-radius: 16px;
   }
   .nav-rail-label {
@@ -707,6 +707,11 @@ footer p {
 
 footer a {
   font: 14px/1.4 Barlow, sans-serif;
+  color: #b22b1d;
+}
+
+footer a path {
+  fill: #b22b1d;
 }
 
 .logo-footer {
@@ -1034,16 +1039,26 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1360px) {
+  .main-header .card {
+    filter: drop-shadow(0 0 1px #000000);
+    background-color: #fafdfc;
+  }
+}
 
 .card:hover {
-  background-color: #ffdad4;
-  color: #410000;
   text-decoration: none;
+  filter: drop-shadow(0 0 1px #000000);
+}
+
+@media screen and (min-width: 1360px) {
+  .main-header .card:hover {
+    filter: drop-shadow(0 0 3px #000000);
+  }
 }
 
 .card:active {
-  border-radius: 28px;
-  border: 8px solid #b22b1d;
+  filter: drop-shadow(0 0 0 #000000);
 }
 
 .where-does-it-hurt-card {

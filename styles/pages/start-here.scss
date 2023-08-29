@@ -217,17 +217,26 @@ h2 {
 .main-header .card {
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 1360px) {
+        filter: drop-shadow(0 0 1px #000000);
+        background-color: $surface-container-low;
+    }
 }
 
 .card:hover {
-    background-color: $secondary-container;
-    color: $on-secondary-container;
     text-decoration: none;
+    filter: drop-shadow(0 0 1px #000000);
+}
+
+.main-header .card:hover {
+    @media screen and (min-width: 1360px) {
+        filter: drop-shadow(0 0 3px #000000);
+    }
 }
 
 .card:active {
-    border-radius: $extra-large-shape;
-    border: 8px solid $secondary;
+    filter: drop-shadow(0 0 0 #000000);
 }
 
 .where-does-it-hurt-card {

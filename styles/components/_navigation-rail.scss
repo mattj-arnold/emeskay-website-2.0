@@ -5,7 +5,7 @@
     .navigation-rail {
         width: 80px;
         height: 100vh;
-        background-color: $surface-container;
+        background-color: $surface;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -30,6 +30,7 @@
         justify-content: center;
         align-items: center;
         Background-color: $primary-container;
+        color: white;
         height: 56px;
         border-radius: 16px;
         width: 56px;
@@ -39,9 +40,8 @@
         
     }
 
-    .fab-icon {
-        font-size: 24px;
-        color: $on-primary-container;
+    .fab svg {
+        fill: $on-primary-container;
     }
 
     .nav-rail-book-now {
