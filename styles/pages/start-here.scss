@@ -47,7 +47,7 @@ hr {
     display: grid;
     grid-template-columns: minmax(320px, 599px);
     grid-template-rows: auto;
-    gap: 16px;
+    row-gap: 16px;
 
     @media screen and (min-width: 600px) and (max-width: 839px) {
         grid-template-columns: minmax(600px, 839px);
@@ -55,10 +55,8 @@ hr {
     }
 
     @media screen and (min-width: 840px) {
-        grid-template-columns: minmax(80px, 1fr) repeat(11, 1fr);
+        grid-template-columns: 80px repeat(11, 1fr);
         margin: 0;
-        padding-right: 24px;
-        gap: 24px;
     }
 }
 
@@ -76,7 +74,7 @@ main.body-region {
 
     @media screen and (min-width: 840px) {
         grid-area: 1/2/2/13;
-        margin: 12px 0px 0px 0px;
+        margin: 12px 24px 12px 24px;
         grid-template-columns: repeat(11, 1fr);
         gap: 24px;
     }
@@ -204,7 +202,6 @@ h2 {
     color: $on-surface;
     height: auto;
     width: 100%;
-    max-width: calc(60ch + 32px);
     font: $body-large;
     display: flex;
     flex-direction: column;

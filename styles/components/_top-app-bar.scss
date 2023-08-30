@@ -3,14 +3,12 @@
 
 @mixin top-app-bar {
 
-@include material-symbols;
-
 .top-app-bar {
     width: 100vw;
     height: 64px;
     position: fixed;
     display: grid;
-    align-content: center;
+    align-items: center;
     gap: 24px;
     background-color: $surface;
     padding: 0px 16px 0px 16px;

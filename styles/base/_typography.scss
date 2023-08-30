@@ -1,8 +1,8 @@
-@font-face {
+/*@font-face {
     font-family: 'Material Symbols Rounded';
     font-style: normal;
     src: url('../../MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2') format('woff2');
-  }
+  }*/
 
   @font-face {
     font-family: 'Barlow';
@@ -17,12 +17,12 @@
   }
 
 
-@mixin material-symbols {
+/*@mixin material-symbols {
   .material-symbols-rounded {
     font-family: 'Material Symbols Rounded';
     font-weight: normal;
     font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
+    font-size: 24px;  /* Preferred icon size
     display: inline-block;
     line-height: 1;
     text-transform: none;
@@ -31,7 +31,7 @@
     white-space: nowrap;
     direction: ltr;
   }
-}
+}*/
 
 /* h1 */
 $h1-compact-size: 4.236rem;

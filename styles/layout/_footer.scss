@@ -8,7 +8,7 @@ footer {
     grid-template-rows: auto;
     gap: 16px;
     padding: 12px 16px 12px 16px;
-    background-color: $surface-container-highest;
+    background-color: $surface-container;
     overflow: hidden;
 
     @media screen and (min-width: 840px) {
@@ -19,30 +19,42 @@ footer {
         gap: 24px;
         padding: 24px;
         overflow: hidden;
-        border-radius: 28px;
-        margin-bottom: 12px;
+        border-radius: 0 0 0 0;
     }
 }
 
 footer h3 {
-    font: $body-large;
+    font-size: 16px;
     color: $on-surface-variant;
 }
 
 footer p {
     margin: 0px;
     color: $on-surface-variant;
-    font: $label-large;
+    font-size: 16px;
     padding: 0;
 }
 
 footer a {
-    font: $label-large;
-    color: $tertiary;
+    font-size: 16px;
+    color: $secondary;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: $on-surface-variant;
+}
+
+footer path {
+    fill: $on-surface-variant;
 }
 
 footer a path {
-    fill: $tertiary;
+    fill: $secondary;
+}
+
+footer a path:hover {
+    fill: $on-surface-variant;
 }
 
 .logo-footer {
