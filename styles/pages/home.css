@@ -1551,6 +1551,7 @@ div.slider p {
 }
 
 section.partners h2 {
+  order: 2;
   padding: 0px 0px 0px 16px;
 }
 @media screen and (min-width: 840px) {
@@ -1559,12 +1560,19 @@ section.partners h2 {
   }
 }
 
+.partners p {
+  order: 3;
+  padding: 0px 16px 0px 16px;
+}
 @media screen and (min-width: 840px) {
   .partners p {
     grid-area: 2/1/3/2;
   }
 }
 
+.partners picture {
+  order: 1;
+}
 @media screen and (min-width: 840px) {
   .partners picture {
     grid-area: 1/2/3/3;
@@ -1603,6 +1611,8 @@ section.partners h2 {
 @media screen and (min-width: 840px) {
   .home-map {
     grid-area: 6/1/7/12;
+    display: grid;
+    grid-template: auto/repeat(2, 1fr);
   }
 }
 
