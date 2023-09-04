@@ -29,7 +29,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: $on-primary;
+    }
+
+    .leading-icon-container path {
+        fill: $on-primary;
     }
 
     .leading-icons {
