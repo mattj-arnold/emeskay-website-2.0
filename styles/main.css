@@ -12873,6 +12873,11 @@ section.hours {
 .hours picture {
   grid-area: 1/1/2/2;
 }
+@media screen and (min-width: 840px) {
+  .hours picture {
+    grid-area: 1/2/4/3;
+  }
+}
 
 .hours ul {
   grid-area: 3/1/4/2;
