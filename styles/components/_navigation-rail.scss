@@ -60,7 +60,7 @@
         display: flex;
         flex-direction: column;
         width: 80px;
-        height: 56px;
+        height: min-content;
         gap: 4px;
         align-items: center;
         cursor: pointer;
@@ -89,5 +89,6 @@
     .nav-rail-label {
         color: $on-surface-variant;
         font: $label-large;
+        text-align: center;
     }
 }

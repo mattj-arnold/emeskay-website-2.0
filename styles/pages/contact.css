@@ -592,7 +592,8 @@ iframe {
     display: flex;
     flex-direction: column;
     width: 80px;
-    height: 56px;
+    height: -moz-min-content;
+    height: min-content;
     gap: 4px;
     align-items: center;
     cursor: pointer;
@@ -617,6 +618,7 @@ iframe {
   .nav-rail-label {
     color: #3f4948;
     font: 14px/1.4 Barlow, sans-serif;
+    text-align: center;
   }
 }
 .extended-fab-container {
@@ -969,7 +971,7 @@ p {
 }
 
 .header-content h1 {
-  font: 4.236rem/1 Barlow Condensed, sans-serif;
+  font: 2.074rem/1 Barlow Condensed, sans-serif;
 }
 
 .header-content p {
@@ -987,15 +989,15 @@ p {
 }
 
 .main-header h3 {
-  font: 1.618rem/1.3 Barlow Condensed, sans-serif;
+  font: 1.44rem/1.3 Barlow Condensed, sans-serif;
 }
 
 h2 {
-  font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+  font: 1.728rem/1.2 Barlow Condensed, sans-serif;
 }
 @media screen and (min-width: 600px) {
   h2 {
-    font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+    font: 1.728rem/1.2 Barlow Condensed, sans-serif;
   }
 }
 

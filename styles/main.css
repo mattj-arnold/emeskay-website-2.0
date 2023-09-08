@@ -10889,7 +10889,8 @@ iframe {
     display: flex;
     flex-direction: column;
     width: 80px;
-    height: 56px;
+    height: -moz-min-content;
+    height: min-content;
     gap: 4px;
     align-items: center;
     cursor: pointer;
@@ -10914,6 +10915,7 @@ iframe {
   .nav-rail-label {
     color: #3f4948;
     font: 14px/1.4 Barlow, sans-serif;
+    text-align: center;
   }
 }
 .extended-fab-container {
@@ -11246,7 +11248,7 @@ p {
 }
 
 .header-content h1 {
-  font: 4.236rem/1 Barlow Condensed, sans-serif;
+  font: 2.074rem/1 Barlow Condensed, sans-serif;
 }
 
 .header-content p {
@@ -11278,15 +11280,15 @@ p {
 }
 
 .main-header h3 {
-  font: 1.618rem/1.3 Barlow Condensed, sans-serif;
+  font: 1.44rem/1.3 Barlow Condensed, sans-serif;
 }
 
 h2 {
-  font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+  font: 1.728rem/1.2 Barlow Condensed, sans-serif;
 }
 @media screen and (min-width: 600px) {
   h2 {
-    font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+    font: 1.728rem/1.2 Barlow Condensed, sans-serif;
   }
 }
 
@@ -11776,10 +11778,20 @@ button.prehab-learn label {
 }
 
 .testimonials {
-  grid-row: 4/5;
+  grid-area: 4/1/5/2;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
+}
+@media screen and (min-width: 600px) {
+  .testimonials {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 840px) {
+  .testimonials {
+    grid-area: 4/1/5/12;
+  }
 }
 
 .testimonials h2 {
@@ -11790,15 +11802,11 @@ button.prehab-learn label {
   /* line them up horizontally */
   display: flex;
   gap: 8px;
-  /* allow for scrolling */
-  overflow-x: auto;
-  /* make it smooth on iOS */
-  -webkit-overflow-scrolling: touch;
+  flex-wrap: wrap;
 }
 
 .slider > div {
   /* make sure the width is honored */
-  flex-shrink: 0;
   width: 300px;
   height: 300px;
   background-color: #dde4e3;
@@ -11848,6 +11856,7 @@ div.slider p {
 }
 
 section.partners h2 {
+  order: 2;
   padding: 0px 0px 0px 16px;
 }
 @media screen and (min-width: 840px) {
@@ -11856,12 +11865,19 @@ section.partners h2 {
   }
 }
 
+.partners p {
+  order: 3;
+  padding: 0px 16px 0px 16px;
+}
 @media screen and (min-width: 840px) {
   .partners p {
     grid-area: 2/1/3/2;
   }
 }
 
+.partners picture {
+  order: 1;
+}
 @media screen and (min-width: 840px) {
   .partners picture {
     grid-area: 1/2/3/3;
@@ -11900,6 +11916,8 @@ section.partners h2 {
 @media screen and (min-width: 840px) {
   .home-map {
     grid-area: 6/1/7/12;
+    display: grid;
+    grid-template: auto/repeat(2, 1fr);
   }
 }
 
@@ -11995,9 +12013,9 @@ main.body-region {
   width: 100%;
   aspect-ratio: 16/10;
   display: grid;
-  gap: 8px;
+  gap: 16px;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: auto;
   justify-items: center;
   align-items: stretch;
 }
@@ -12009,19 +12027,18 @@ main.body-region {
 @media screen and (min-width: 840px) {
   .main-header {
     grid-area: 1/1/2/12;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr repeat(2, auto);
+    grid-template: auto/1fr;
   }
 }
 @media screen and (min-width: 1360px) {
   .main-header {
     grid-template-columns: 24px repeat(2, 1fr) 24px;
-    grid-template-rows: 1fr repeat(2, auto) 24px;
+    grid-template-rows: 1fr auto 24px;
   }
 }
 
 .main-header p {
-  text-align: center;
+  grid-area: 2/1/3/3;
 }
 
 .main-header picture {
@@ -12035,7 +12052,7 @@ main.body-region {
 }
 @media screen and (min-width: 840px) {
   .main-header picture {
-    grid-area: 1/1/2/3;
+    grid-area: 1/1/2/2;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -12050,8 +12067,7 @@ main.body-region {
   justify-content: center;
   align-items: center;
   grid-area: 2/1/3/2;
-  gap: 8px;
-  margin: 16px;
+  gap: 16px;
 }
 @media screen and (min-width: 600px) and (max-width: 839px) {
   .header-content {
@@ -12061,7 +12077,7 @@ main.body-region {
 }
 @media screen and (min-width: 840px) {
   .header-content {
-    grid-area: 1/1/2/3;
+    grid-area: 1/1/2/2;
     margin: 24px;
     width: 61.8%;
   }
@@ -12087,7 +12103,7 @@ p {
 }
 
 .header-content h1 {
-  font: 4.236rem/1 Barlow Condensed, sans-serif;
+  font: 2.074rem/1 Barlow Condensed, sans-serif;
 }
 
 .header-content p {
@@ -12104,16 +12120,65 @@ p {
   }
 }
 
+.main-header h2 {
+  padding: 16px;
+  align-self: center;
+}
+@media screen and (min-width: 840px) {
+  .main-header h2 {
+    grid-area: 1/1/2/2;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .main-header h2 {
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  p.just-follow {
+    grid-area: 3/1/4/3;
+  }
+}
+
+.header-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+@media screen and (min-width: 840px) {
+  .header-cards-container {
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template: auto/repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1360px) {
+  .header-cards-container {
+    grid-area: 2/2/3/4;
+  }
+}
+
+.header-cards-container svg {
+  grid-area: 1/1/2/2;
+}
+
+.header-cards-container path {
+  fill: #3f4948;
+}
+
 .main-header h3 {
-  font: 1.618rem/1.3 Barlow Condensed, sans-serif;
+  font: 1.44rem/1.3 Barlow Condensed, sans-serif;
+  grid-area: 1/2/2/3;
 }
 
 h2 {
-  font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+  font: 1.728rem/1.2 Barlow Condensed, sans-serif;
 }
 @media screen and (min-width: 600px) {
   h2 {
-    font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+    font: 1.728rem/1.2 Barlow Condensed, sans-serif;
   }
 }
 
@@ -12133,7 +12198,11 @@ h2 {
 
 .main-header .card {
   align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template: auto/max-content 1fr;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  justify-items: start;
 }
 @media screen and (min-width: 1360px) {
   .main-header .card {
@@ -12158,7 +12227,7 @@ h2 {
 }
 
 .where-does-it-hurt-card {
-  grid-area: 3/1/4/2;
+  order: 1;
 }
 @media screen and (min-width: 600px) and (max-width: 839px) {
   .where-does-it-hurt-card {
@@ -12167,38 +12236,12 @@ h2 {
 }
 @media screen and (min-width: 840px) {
   .where-does-it-hurt-card {
-    grid-area: 2/1/3/2;
-    justify-self: end;
-  }
-}
-@media screen and (min-width: 1360px) {
-  .where-does-it-hurt-card {
-    grid-area: 2/2/3/3;
-  }
-}
-
-.conditions-i-treat-card {
-  grid-area: 4/1/5/2;
-}
-@media screen and (min-width: 600px) and (max-width: 839px) {
-  .conditions-i-treat-card {
-    grid-area: 3/1/4/2;
-  }
-}
-@media screen and (min-width: 840px) {
-  .conditions-i-treat-card {
-    grid-area: 2/2/3/3;
-    justify-self: start;
-  }
-}
-@media screen and (min-width: 1360px) {
-  .conditions-i-treat-card {
-    grid-area: 2/3/3/4;
+    grid-area: 1/2/2/3;
   }
 }
 
 .what-is-sports-therapy-card {
-  grid-area: 5/1/6/2;
+  order: 2;
 }
 @media screen and (min-width: 600px) and (max-width: 839px) {
   .what-is-sports-therapy-card {
@@ -12207,18 +12250,12 @@ h2 {
 }
 @media screen and (min-width: 840px) {
   .what-is-sports-therapy-card {
-    grid-area: 3/1/4/2;
-    justify-self: end;
-  }
-}
-@media screen and (min-width: 1360px) {
-  .what-is-sports-therapy-card {
-    grid-area: 3/2/4/3;
+    grid-area: 2/1/3/2;
   }
 }
 
 .how-i-treat-card {
-  grid-area: 6/1/7/2;
+  order: 3;
 }
 @media screen and (min-width: 600px) and (max-width: 839px) {
   .how-i-treat-card {
@@ -12227,13 +12264,7 @@ h2 {
 }
 @media screen and (min-width: 840px) {
   .how-i-treat-card {
-    grid-area: 3/2/4/3;
-    justify-self: start;
-  }
-}
-@media screen and (min-width: 1360px) {
-  .how-i-treat-card {
-    grid-area: 3/3/4/4;
+    grid-area: 2/2/3/3;
   }
 }
 
@@ -12596,7 +12627,7 @@ p {
 }
 
 .header-content h1 {
-  font: 4.236rem/1 Barlow Condensed, sans-serif;
+  font: 2.074rem/1 Barlow Condensed, sans-serif;
 }
 
 .header-content p {
@@ -12614,15 +12645,15 @@ p {
 }
 
 .main-header h3 {
-  font: 1.618rem/1.3 Barlow Condensed, sans-serif;
+  font: 1.44rem/1.3 Barlow Condensed, sans-serif;
 }
 
 h2 {
-  font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+  font: 1.728rem/1.2 Barlow Condensed, sans-serif;
 }
 @media screen and (min-width: 600px) {
   h2 {
-    font: 2.618rem/1.2 Barlow Condensed, sans-serif;
+    font: 1.728rem/1.2 Barlow Condensed, sans-serif;
   }
 }
 
