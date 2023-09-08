@@ -92,17 +92,12 @@ main.body-region {
     align-items: stretch;
 
     @media screen and (min-width: 600px) and (max-width: 839px) {
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: auto;
     }
 
     @media screen and (min-width: 840px) {
         grid-area: 1/1/2/12;
         grid-template: auto/1fr;
-    }
-
-    @media screen and (min-width: 1360px) {
-        grid-template-columns: 24px repeat(2, 1fr) 24px;
-        grid-template-rows: 1fr auto 24px;
     }
 }
 
@@ -110,7 +105,7 @@ main.body-region {
     grid-area: 2/1/3/3;
 }
 
-.main-header picture {
+.main-header > picture {
     grid-area: 1/1/2/2;
 
     @media screen and (min-width: 600px) {
@@ -120,11 +115,7 @@ main.body-region {
     }
 
     @media screen and (min-width: 840px) {
-        grid-area: 1/1/2/2;
-    }
-
-    @media screen and (min-width: 1360px) {
-        grid-area: 1/1/5/5;
+        grid-area: 1/1/2/3;
     }
 }
 
@@ -135,6 +126,7 @@ main.body-region {
     align-items: center;
     grid-area: 2/1/3/2;
     gap: 16px;
+    text-align: center;
 
     @media screen and (min-width: 600px) and (max-width: 839px) {
         grid-area: 1/1/2/2;
@@ -142,20 +134,15 @@ main.body-region {
     }
 
     @media screen and (min-width: 840px) {
-        grid-area: 1/1/2/2;
+        grid-area: 1/1/2/3;
         margin: 24px;
         width: 61.8%
     }
 
-    @media screen and (min-width: 1360px) {
-        grid-area: 1/2/2/4;
-        width: 61.8%
-    }
+  
 }
 
-p {
-    max-width: 60ch;
-}
+
 
 .header-content h1, .header-content p {
     color: $on-surface;
@@ -207,16 +194,20 @@ p.just-follow {
     width: 100%;
 
     @media screen and (min-width: 840px) {
-        grid-area: 2/1/3/2;
+        grid-area: 2/1/3/3;
         display: grid;
         grid-template: auto/repeat(2, 1fr);
     }
 
-    @media screen and (min-width: 1360px) {
-        
-        
-        grid-area: 2/2/3/4;
-    } 
+    @media screen and (min-width: 1440px) {
+        grid-template: auto/repeat(3, 1fr);
+    }
+   
+}
+
+.header-cards-container h2 {
+    grid-area: 1/1/2/3;
+    color: $on-surface;
 }
 
 .header-cards-container svg {
@@ -256,6 +247,25 @@ h2 {
     
 }
 
+.card picture {
+    grid-area: 1/1/2/3;
+}
+
+.card svg {
+    grid-area: 2/1/3/2;
+    margin-inline-start: 16px;
+}
+
+.card h3 {
+    grid-area: 2/2/2/3;
+    margin-inline-end: 16px;
+}
+
+.card p {
+    margin: 0px 16px 16px 16px;
+    grid-area: 3/1/4/3;
+}
+
 .main-header .card {
     align-items: center;
     display: grid;
@@ -263,10 +273,7 @@ h2 {
     column-gap: 16px;
     justify-items: start;
 
-    @media screen and (min-width: 1360px) {
-        filter: drop-shadow(0 0 1px #000000);
-        background-color: $surface-container-low;
-    }
+   
 }
 
 .card:hover {
@@ -286,13 +293,14 @@ h2 {
 
 .where-does-it-hurt-card {
     order: 1;
+    padding: 0;
 
     @media screen and (min-width: 600px) and (max-width: 839px) {
         grid-area: 2/1/3/2;
     }
 
     @media screen and (min-width: 840px) {
-        grid-area: 1/2/2/3;
+        grid-area: 2/1/3/2;
     }
 
     
@@ -300,13 +308,14 @@ h2 {
 
 .what-is-sports-therapy-card {
     order: 2;
+    padding: 0;
 
     @media screen and (min-width: 600px) and (max-width: 839px) {
         grid-area: 4/1/5/2;
     }
 
     @media screen and (min-width: 840px) {
-        grid-area: 2/1/3/2;
+        grid-area: 2/2/3/3;
     }
 
     
@@ -314,15 +323,19 @@ h2 {
 
 .how-i-treat-card {
     order: 3;
+    padding: 0;
 
     @media screen and (min-width: 600px) and (max-width: 839px) {
         grid-area: 5/1/6/2;
     }
 
     @media screen and (min-width: 840px) {
-        grid-area: 2/2/3/3;
+        grid-area: 3/1/4/2;
     }
 
+    @media screen and (min-width: 1440px) {
+        grid-area: 2/3/3/4;
+    }
     
 }
 
@@ -337,29 +350,80 @@ section header {
     gap: 8px;
 }
 
-.where-does-it-hurt {
-    grid-area: 3/1/4/2;
+//Testimonials
 
-    display: grid;
-    grid-template: auto / 1fr;
+.testimonials {
+    grid-area: 3/1/4/2;
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 
-    @media screen and (min-width: 840px) {
-        grid-area: 3/1/4/12;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: min-content 1fr;
+    @media screen and (min-width: 600px) {
         gap: 24px;
-        justify-items: end;
-    } 
-}
-
-.where-does-it-hurt header {
-    grid-area: 2/1/3/2;
+    }
 
     @media screen and (min-width: 840px) {
-        grid-area: 1/1/2/2;
+        grid-area: 4/1/5/12;
     }
 }
+
+.testimonial-card {
+
+}
+
+.testimonials h2 {
+    margin-left: 16px;
+}
+
+.slider {
+    /* line them up horizontally */
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 840px) {
+        display: grid;
+    grid-template: auto/repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1440px) {
+        grid-template: auto/repeat(3, 1fr);
+    }
+        
+    }
+
+
+div.slider p {
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+}
+
+.img-name-stars-container {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.name-stars-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.testimonial-images {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.stars path {
+    fill: $tertiary;
+}
+
+
+
 
 .section-picture {
     aspect-ratio: 16/10;
@@ -370,139 +434,3 @@ section header {
     border-radius: $medium-shape;
 }
 
-.where-does-it-hurt picture {
-    grid-area: 1/1/2/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/2/3/3;
-    }
-}
-
-.where-does-it-hurt .card {
-    grid-area: 3/1/4/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 2/1/3/2;
-        height: fit-content;
-    }
-}
-
-.conditions-i-treat {
-    grid-area: 5/1/6/2;
-    display: grid;
-    grid-template: auto / 1fr;
-    gap: 16px;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 5/1/6/12;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: min-content 1fr;
-        gap: 24px;
-    } 
-}
-
-.conditions-i-treat header {
-    grid-area: 2/1/3/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/2/2/3;
-    }
-}
-
-.conditions-i-treat picture {
-    grid-area: 1/1/2/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/1/3/2;
-    }
-}
-
-.conditions-i-treat .card {
-    grid-area: 3/1/4/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 2/2/3/3;
-        height: fit-content;
-    }
-}
-
-.what-is-sports-therapy {
-    grid-area: 7/1/8/2;
-    display: grid;
-    grid-template: auto / 1fr;
-    gap: 16px;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 7/1/8/12;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: min-content 1fr;
-        gap: 24px;
-        justify-items: end;
-    } 
-}
-
-.what-is-sports-therapy header {
-    grid-area: 2/1/3/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/1/2/2;
-    }
-}
-
-.what-is-sports-therapy picture {
-    grid-area: 1/1/2/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/2/3/3;
-    }
-}
-
-.what-is-sports-therapy .card {
-    grid-area: 3/1/4/2;
-    height: fit-content;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 2/1/3/2;
-    }
-}
-
-.how-i-treat {
-    grid-area: 9/1/10/2;
-    display: grid;
-    grid-template: auto / 1fr;
-    gap: 16px;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 9/1/10/12;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: min-content 1fr;
-        gap: 24px;
-    } 
-}
-
-.how-i-treat header {
-    grid-area: 2/1/3/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/2/2/3;
-    }
-}
-
-.how-i-treat picture {
-    grid-area: 1/1/2/2;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/1/3/2;
-    }
-}
-
-.how-i-treat-cards {
-    grid-area: 3/1/4/2;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    @media screen and (min-width: 840px) {
-        grid-area: 2/2/3/3;
-    }
-}

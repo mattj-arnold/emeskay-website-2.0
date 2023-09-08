@@ -1,0 +1,49 @@
+@use '../base/utilities' as *;
+@use '../base/typography' as *;
+
+@mixin standard-navigation-drawer {
+.standard-navigation-drawer {
+    position: fixed;
+    width: 360px;
+    height: 100vh;
+    background-color: $surface-container-low;
+    border-radius: $large-end-shape;
+    padding: 28px 12px 16px 12px;
+    left: -360px;
+    transition: 0.3s;
+    color: $on-surface-variant;
+}
+
+
+
+.modal-navigation-drawer-logo {
+    height: 24px;
+}
+
+.active-indicator {
+    display: flex;
+    width: 336px;
+    height: 56px;
+    border-radius: 28px;
+    padding: 0px 24px 0px 16px;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.active-indicator:hover {
+    background-color: $surface-container-highest;
+    text-decoration: none;
+}
+
+.active {
+    background-color: $secondary-container;
+    color: $on-secondary-container
+}
+
+.standard-navigation-drawer-label {
+    color: $on-surface-variant;
+    font: $label-large;
+}
+}
