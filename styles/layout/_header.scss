@@ -2,6 +2,7 @@
 @use '../components/modal-navigation-drawer' as *;
 @use '../components/extended-fab' as *;
 @use '../components/navigation-rail' as *;
+@use '../components/standard-navigation-drawer' as *;
 
 .window-header {
     grid-area: 1/1/2/2;
@@ -24,12 +25,26 @@
 
 @include modal-navigation-drawer;
 
+
+
+@include navigation-rail;
+
 .navigation-rail {
-    display: none;
+    @media screen and (max-width: 839px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1239px) {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 840px) {
-    @include navigation-rail;
+@include standard-navigation-drawer;
+
+.standard-navigation-drawer {
+    @media screen and (max-width: 1239px) {
+        display: none;
+    }
 }
 
 @include extended-fab;
