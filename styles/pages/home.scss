@@ -60,6 +60,10 @@ hr {
         grid-template-columns: 80px repeat(11, 1fr);
         margin: 0;
     }
+
+    @media screen and (min-width: 1240px) {
+        grid-template: auto/360px 1fr;
+    }
 }
 
 main.body-region {
