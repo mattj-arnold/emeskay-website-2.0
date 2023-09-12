@@ -2,8 +2,10 @@
 @use '../base/reset';
 @use '../base/typography' as *;
 @use '../base/utilities' as *;
+@use '../components/text-card' as *;
 @use '../components/lists' as *;
 @use '../layout/header';
+@use '../layout/main';
 @use '../layout/footer';
 
 hr {
@@ -80,7 +82,6 @@ main.body-region {
   grid-template-rows: repeat(6, auto);
   justify-items: center;
   align-items: stretch;
-  text-align: center;
 
   @media screen and (min-width: 600px) and (max-width: 839px) {
       grid-template-rows: repeat(5, auto);
@@ -156,6 +157,15 @@ p {
 
 .header-content h1 {
   font: $h1-compact;
+
+  @media screen and (min-width: 600px) {
+      font: $h1-medium;
+  }
+
+  @media screen and (min-width: 840px) {
+      font: $h1-expanded;
+    
+  }
 }
 
 .header-content p {
@@ -182,21 +192,7 @@ h2 {
   }
 }
 
-
-.card {
-  border-radius: $medium-shape;
-  background-color: $surface-container-highest;
-  color: $on-surface;
-  height: auto;
-  width: 100%;
-  font: $body-large;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 16px;
-  transition: 0.3s;
-  
-}
+@include text-card;
 
 .main-header .card {
   align-items: center;
@@ -208,10 +204,7 @@ h2 {
   }
 }
 
-.card:hover {
-  text-decoration: none;
-  filter: drop-shadow(0 0 1px #000000);
-}
+
 
 .main-header .card:hover {
   @media screen and (min-width: 1360px) {
@@ -219,9 +212,7 @@ h2 {
   }
 }
 
-.card:active {
-  filter: drop-shadow(0 0 0 #000000);
-}
+
 
 .address-card {
   grid-area: 3/1/4/2;

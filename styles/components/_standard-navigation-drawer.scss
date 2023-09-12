@@ -19,8 +19,6 @@
     
 }
 
-
-
 .standard-nav-drawer-logo {
     height: 24px;
     margin: 0px 16px 16px 16px;
@@ -33,7 +31,7 @@
         position: static;
         justify-content: flex-start;
         margin: 16px 0px 16px 0px;
-}
+    }
 }
 
 .standard-navigation-drawer .extended-fab {
@@ -41,4 +39,21 @@
     width: 100%;
     box-shadow: none;
 }
+
+.standard-navigation-drawer .active-indicator path {
+    fill: $on-surface-variant;
+}
+
+.standard-navigation-drawer-label {
+    color: $on-surface-variant;
+}
+
+.standard-navigation-drawer .active path {
+    fill: $on-secondary-container;
+}
+
+.standard-navigation-drawer .active .standard-navigation-drawer-label {
+    color: $on-secondary-container;
+}
+
 }

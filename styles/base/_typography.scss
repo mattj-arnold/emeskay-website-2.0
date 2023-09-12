@@ -39,6 +39,16 @@ $h1-compact-line-height: 1;
 $h1-compact-font: 'Barlow Condensed', sans-serif;
 $h1-compact: #{$h1-compact-size}/#{$h1-compact-line-height} #{$h1-compact-font};
 
+$h1-medium-size: 2.441rem;
+$h1-medium-line-height: 1;
+$h1-medium-font: 'Barlow Condensed', sans-serif;
+$h1-medium: #{$h1-medium-size}/#{$h1-medium-line-height} #{$h1-medium-font};
+
+$h1-expanded-size: 3.157rem;
+$h1-expanded-line-height: 1;
+$h1-expanded-font: 'Barlow Condensed', sans-serif;
+$h1-expanded: #{$h1-expanded-size}/#{$h1-expanded-line-height} #{$h1-expanded-font};
+
 $h2-compact-size: 1.728rem;
 $h2-compact-line-height: 1.2;
 $h2-compact-font: 'Barlow Condensed', sans-serif;

@@ -705,6 +705,22 @@ iframe {
   box-shadow: none;
 }
 
+.standard-navigation-drawer .active-indicator path {
+  fill: #3f4948;
+}
+
+.standard-navigation-drawer-label {
+  color: #3f4948;
+}
+
+.standard-navigation-drawer .active path {
+  fill: #410000;
+}
+
+.standard-navigation-drawer .active .standard-navigation-drawer-label {
+  color: #410000;
+}
+
 @media screen and (max-width: 1239px) {
   .standard-navigation-drawer {
     display: none;
