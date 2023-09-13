@@ -34,7 +34,7 @@
 }*/
 
 /* h1 */
-$h1-compact-size: 2.074rem;
+$h1-compact-size: clamp(3.48rem, 2.56vw + 2.67rem, 7.58rem);
 $h1-compact-line-height: 1;
 $h1-compact-font: 'Barlow Condensed', sans-serif;
 $h1-compact: #{$h1-compact-size}/#{$h1-compact-line-height} #{$h1-compact-font};
@@ -49,18 +49,18 @@ $h1-expanded-line-height: 1;
 $h1-expanded-font: 'Barlow Condensed', sans-serif;
 $h1-expanded: #{$h1-expanded-size}/#{$h1-expanded-line-height} #{$h1-expanded-font};
 
-$h2-compact-size: 1.728rem;
+$h2-compact-size: clamp(2.9rem, 1.74vw + 2.35rem, 5.68rem);
 $h2-compact-line-height: 1.2;
 $h2-compact-font: 'Barlow Condensed', sans-serif;
 $h2-compact: #{$h2-compact-size}/#{$h2-compact-line-height} #{$h2-compact-font};
 
-$h3-compact-size: 1.44rem;
+$h3-compact-size: clamp(2.42rem, 1.15vw + 2.05rem, 4.26rem);
 $h3-compact-line-height: 1.3;
 $h3-compact-font: 'Barlow Condensed', sans-serif;
 $h3-compact: #{$h3-compact-size}/#{$h3-compact-line-height} #{$h3-compact-font};
 
-$p-compact-size: 1rem;
-$p-compact-line-height: 25px;
+$p-compact-size: clamp(1.68rem, 0.45vw + 1.54rem, 2.4rem);
+$p-compact-line-height: 1.6;
 $p-compact-font: 'Barlow', sans-serif;
 $p-compact: #{$p-compact-size}/#{$p-compact-line-height} #{$p-compact-font};
 
@@ -68,6 +68,20 @@ $p-expanded-size: 1.618rem;
 $p-expanded-line-height: 1.3;
 $p-expanded-font: 'Barlow', sans-serif;
 $p-expanded: #{$p-expanded-size}/#{$p-expanded-line-height} #{$p-expanded-font};
+
+
+
+/*--font-size-small-body: clamp(1.4rem, 0.25vw + 1.32rem, 1.8rem);
+--font-size-body: clamp(1.68rem, 0.45vw + 1.54rem, 2.4rem);
+--font-size-h4: clamp(2.02rem, 0.74vw + 1.78rem, 3.2rem);
+--font-size-h3: clamp(2.42rem, 1.15vw + 2.05rem, 4.26rem);
+--font-size-h2: clamp(2.9rem, 1.74vw + 2.35rem, 5.68rem);
+--font-size-h1: clamp(3.48rem, 2.56vw + 2.67rem, 7.58rem);*/
+
+
+
+
+
 
 /* Display Large */
 $display-large-size: 57px;
@@ -122,3 +136,4 @@ $label-large-size: 14px;
 $label-large-line-height: 1.4;
 $label-large-font: 'Barlow', sans-serif;
 $label-large: #{$label-large-size}/#{$label-large-line-height} #{$label-large-font};
+

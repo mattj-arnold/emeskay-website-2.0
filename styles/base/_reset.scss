@@ -16,7 +16,7 @@ html {
     }
 
 html {
-  font-size: calc(15px + 0.390625vw);
+  font-size: 10px;
 }
 
 body {
@@ -30,35 +30,35 @@ main {
 }
 
 h1 {
-  font: $display-medium;
+  font: $h1-compact;
   color: $on-surface;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  font: $headline-large;
+  font: $h2-compact;
   color: $on-surface;
   margin: 0;
   padding: 0;
 }
 
 h3 {
-  font: $headline-small;
+  font: $h3-compact;
   color: $on-surface;
   margin: 0;
   padding: 0;
 }
 
 p {
-  font: $body-large;
+  font: $p-compact;
   color: $on-surface;
   margin: 0;
   padding: 0;
 }
 
 a {
-  font: $body-large;
+  
   color: $primary;
   text-decoration: none;
   margin: 0;
