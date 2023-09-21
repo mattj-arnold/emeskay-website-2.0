@@ -24,20 +24,20 @@ footer {
 }
 
 footer h3 {
-    font-size: 16px;
     color: $on-surface-variant;
 }
 
 footer p {
     margin: 0px;
     color: $on-surface-variant;
-    font-size: 16px;
+    font: $label;
+    font-weight: 400;
     padding: 0;
 }
 
 footer a {
-    font-size: 16px;
-    color: $secondary;
+    font: $label;
+    color: $primary;
     text-decoration: underline;
 }
 
@@ -50,7 +50,7 @@ footer path {
 }
 
 footer a path {
-    fill: $secondary;
+    fill: $primary;
 }
 
 footer a path:hover {
@@ -94,6 +94,10 @@ footer a path:hover {
     display: flex;
     gap: 16px;
     align-items: center;
+}
+
+footer svg {
+    height: clamp(1.4rem, 0.25vw + 1.32rem, 1.6rem);
 }
 
 .email-container {

@@ -2,6 +2,7 @@
 @use '../base/reset';
 @use '../base/typography' as *;
 @use '../base/utilities' as *;
+@use '../components/cards' as *;
 @use '../layout/header';
 @use '../layout/footer';
 
@@ -171,19 +172,11 @@ main.body-region {
 }
 
 .header-content h1 {
-    font: $h1-compact;
+    font: $display;
 }
 
 .header-content p {
-    font: $p-compact;
-
-    @media screen and (min-width: 600px) {
-        font: $p-compact;
-    }
-
-    @media screen and (min-width: 840px) {
-        font: $p-expanded;
-    }
+    font: $title;
 }
 
 .main-header h2 {
@@ -233,60 +226,22 @@ p.just-follow {
 }
 
 .main-header h3 {
-    font: $h3-compact;
+    font: $title;
     grid-area: 1/2/2/3;
 }
 
 h2 {
-    font: $h2-compact;
+    font: $headline;
 
     @media screen and (min-width: 600px) {
-        font: $h2-compact;
+        font: $headline;
     }
 }
 
+@include filled-card;
 
-.card {
-    border-radius: $medium-shape;
-    background-color: $surface-container-highest;
-    color: $on-surface;
-    height: auto;
-    width: 100%;
-    font: $body-large;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 16px;
-    transition: 0.3s;
-    
-}
-
-.main-header .card {
-    align-items: center;
-    display: grid;
-    grid-template: auto/max-content 1fr;
-    column-gap: 16px;
-    justify-items: start;
-
-    @media screen and (min-width: 1440px) {
-        filter: drop-shadow(0 0 1px #000000);
-        background-color: $surface-container-low;
-    }
-}
-
-.card:hover {
-    text-decoration: none;
-    filter: drop-shadow(0 0 1px #000000);
-}
-
-.main-header .card:hover {
-    @media screen and (min-width: 1440px) {
-        filter: drop-shadow(0 0 3px #000000);
-    }
-}
-
-.card:active {
-    filter: drop-shadow(0 0 0 #000000);
+@media screen and (min-width: 1440px) {
+    @include elevated-card;
 }
 
 .where-does-it-hurt-card {
@@ -299,8 +254,6 @@ h2 {
     @media screen and (min-width: 840px) {
         grid-area: 1/2/2/3;
     }
-
-    
 }
 
 .what-is-sports-therapy-card {
@@ -359,10 +312,6 @@ section header {
     }
 }
 
-.testimonial-card {
-
-}
-
 .testimonials h2 {
     margin-left: 16px;
 }
@@ -411,7 +360,7 @@ div.slider p {
 }
 
 .stars path {
-    fill: $tertiary;
+    fill: $primary;
 }
 
 
@@ -719,14 +668,14 @@ p {
 }
 
 .header-content h1 {
-    font: $h1-compact;
+    font: $display;
 }
 
 .header-content p {
-    font: $p-compact;
+    font: $body;
 
     @media screen and (min-width: 600px) {
-        font: $p-compact;
+        font: $body;
     }
 
     @media screen and (min-width: 840px) {
@@ -748,14 +697,14 @@ p {
 }
 
 .main-header h3 {
-    font: $h3-compact;
+    font: $title;
 }
 
 h2 {
-    font: $h2-compact;
+    font: $headline;
 
     @media screen and (min-width: 600px) {
-        font: $h2-compact;
+        font: $headline;
     }
 }
 

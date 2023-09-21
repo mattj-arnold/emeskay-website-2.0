@@ -2,7 +2,7 @@
 @use '../base/reset';
 @use '../base/typography' as *;
 @use '../base/utilities' as *;
-@use '../components/text-card' as *;
+@use '../components/cards' as *;
 @use '../components/lists' as *;
 @use '../layout/header';
 @use '../layout/main';
@@ -155,27 +155,15 @@ p {
   }
 }
 
-@include text-card;
-
-.main-header .card {
-  align-items: center;
-  justify-content: center;
-
-  @media screen and (min-width: 1360px) {
-      filter: drop-shadow(0 0 1px #000000);
-      background-color: $surface-container-low;
-  }
+.header-content p {
+  font: $title;
 }
 
+@include filled-card;
 
-
-.main-header .card:hover {
-  @media screen and (min-width: 1360px) {
-      filter: drop-shadow(0 0 3px #000000);
-  }
+@media screen and (min-width: 1440px) {
+  @include elevated-card;
 }
-
-
 
 .address-card {
   grid-area: 3/1/4/2;
@@ -306,6 +294,7 @@ section.how-to-find-me {
   grid-template: auto / auto 1fr;
   row-gap: 8px;
   column-gap: 16px;
+  align-items: center;
 }
 
 .how-to-find-me-content div p {
@@ -314,6 +303,11 @@ section.how-to-find-me {
 
 .how-to-find-me > h3 {
   margin: 0px 16px;
+}
+
+.how-to-find-me svg {
+  height: 2.4rem;
+  width: 2.4rem;
 }
 
 #when-you-arrive-container {

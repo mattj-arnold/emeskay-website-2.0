@@ -30,28 +30,35 @@ main {
 }
 
 h1 {
-  font: $h1-compact;
+  font: $display;
   color: $on-surface;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  font: $h2-compact;
+  font: $headline;
   color: $on-surface;
   margin: 0;
   padding: 0;
 }
 
 h3 {
-  font: $h3-compact;
+  font: $title;
+  color: $on-surface;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font: $body;
   color: $on-surface;
   margin: 0;
   padding: 0;
 }
 
 p {
-  font: $p-compact;
+  font: $body;
   color: $on-surface;
   margin: 0;
   padding: 0;

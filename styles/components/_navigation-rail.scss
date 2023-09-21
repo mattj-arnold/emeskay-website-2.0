@@ -10,8 +10,9 @@
         flex-direction: column;
         gap: 24px;
         position: fixed;
-        padding-top: 12px;
+        padding: 12px 8px;
         border-right: 1px solid $surface-variant;
+        align-items: center;
         
     }
 
@@ -59,7 +60,6 @@
     .nav-rail-icon-label-container {
         display: flex;
         flex-direction: column;
-        width: 80px;
         height: min-content;
         gap: 4px;
         align-items: center;
@@ -88,7 +88,7 @@
     
     .nav-rail-label {
         color: $on-surface-variant;
-        font: $label-large;
+        font: $label;
         text-align: center;
     }
 }

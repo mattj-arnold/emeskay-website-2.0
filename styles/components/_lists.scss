@@ -25,7 +25,7 @@
         height: 40px;
         width: 40px;
         border-radius: 50%;
-        background-color: $tertiary;
+        background-color: $primary;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,9 +38,11 @@
     .leading-icons {
         color: $surface;
     }
-    
-    p {
+
+    li p {
         color: $on-surface-variant;
+        font: $label;
+        font-weight: 400;
     }
 
     .divider {
