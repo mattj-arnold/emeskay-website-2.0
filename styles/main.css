@@ -13221,6 +13221,112 @@ div.slider p {
   text-align: center;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filled-card {
+  border-radius: 12px;
+  background-color: #e3e1e9;
+  color: #001849;
+  height: auto;
+  width: 100%;
+  gap: 8px;
+  padding: 16px;
+  transition: 0.3s;
+  align-items: center;
+  display: grid;
+  grid-template: auto/max-content 1fr;
+  row-gap: 8px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  justify-items: start;
+  align-content: start;
+  cursor: pointer;
+}
+
+.filled-card svg {
+  grid-area: 1/1/2/2;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.filled-card path {
+  fill: #001849;
+}
+
+.filled-card h3 {
+  grid-area: 1/2/2/3;
+}
+
+.filled-card p {
+  grid-area: 2/1/3/3;
+}
+
+.filled-card:hover {
+  text-decoration: none;
+  filter: drop-shadow(0 0 1px #000000);
+  background-color: #d0e4ff;
+}
+.filled-card:hover path {
+  fill: #00105b;
+}
+.filled-card:hover h3 {
+  color: #00105b;
+}
+.filled-card:hover p {
+  color: #00105b;
+}
+
+.filled-card:active {
+  filter: drop-shadow(0 0 0 #000000);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 840px) {
+  .ankle-foot {
+    grid-area: 2/1/3/12;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .knee {
+    grid-area: 3/1/4/12;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .hip {
+    grid-area: 4/1/5/12;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .card-container {
+    display: grid;
+    grid-template: auto/repeat(2, 1fr);
+  }
+}
+
+.filled-card {
+  grid-template: repeat(2, auto)/auto;
+}
+
+.filled-card h3 {
+  grid-area: 1/1/2/2;
+}
+
+.filled-card p {
+  grid-area: 2/1/3/2;
+}
+
 hr {
   border: 0;
   border-top: 1px solid #e3e1ec;
