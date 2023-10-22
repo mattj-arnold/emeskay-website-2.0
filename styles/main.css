@@ -13217,8 +13217,71 @@ div.slider p {
     grid-template: auto/1fr;
   }
 }
-.main-header .header-content {
+
+.main-header picture {
+  grid-area: 1/1/2/2;
+}
+@media screen and (min-width: 600px) {
+  .main-header picture {
+    filter: brightness(0.75);
+    z-index: -1;
+  }
+}
+@media screen and (min-width: 840px) {
+  .main-header picture {
+    grid-area: 1/1/2/2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-header picture {
+    grid-area: 1/1/5/5;
+  }
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: 2/1/3/2;
+  gap: 16px;
   text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .header-content {
+    grid-area: 1/1/2/2;
+    margin: 24px;
+  }
+}
+@media screen and (min-width: 840px) {
+  .header-content {
+    grid-area: 1/1/2/2;
+    margin: 24px;
+    width: 61.8%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header-content {
+    grid-area: 1/2/2/4;
+    width: 61.8%;
+  }
+}
+
+.header-content h1, .header-content p {
+  color: #001849;
+}
+@media screen and (min-width: 600px) {
+  .header-content h1, .header-content p {
+    color: #ffffff;
+  }
+}
+
+.header-content h1 {
+  font: clamp(3.6rem, 1.3vw + 3.2rem, 5.7rem)/clamp(4.4rem, 1.3vw + 4rem, 6.4rem) Barlow Condensed, sans-serif;
+}
+
+.header-content p {
+  font: 500 clamp(1.4rem, 0.5vw + 1.2rem, 2.2rem)/clamp(2rem, 0.5vw + 1.8rem, 2.8rem) Barlow, sans-serif;
 }
 
 .card-container {
