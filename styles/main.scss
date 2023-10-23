@@ -3,14 +3,14 @@
 @use '../fontawesome/scss/solid';
 @use 'normalize.css';
 @use 'base/reset';
+@use 'layout/grid';
 @use 'pages/home';
 @use 'pages/start-here';
 @use 'pages/conditions';
+@use 'pages/sports-therapy';
 @use 'pages/contact';
 @use 'base/media-queries' as *;
 
-
-
-@media screen and (min-width: 840px) {
-    @include expanded;
-}
+//@media screen and (min-width: 840px) {
+    //@include expanded;
+//}

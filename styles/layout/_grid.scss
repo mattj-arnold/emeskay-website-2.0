@@ -58,7 +58,7 @@
     }
 }
 
-.main-header picture {
+.main-header-picture {
     grid-area: 1/1/2/2;
 
     @media screen and (min-width: 600px) {
@@ -110,10 +110,8 @@
     }
 }
 
-.header-content h1 {
-    font: $display;
-}
-
-.header-content p {
-    font: $title;
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }

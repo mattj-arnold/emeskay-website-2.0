@@ -54,10 +54,20 @@ $display-line-height: clamp(4.4rem, 1.3vw + 4rem, 6.4rem);
 $display-font: 'Barlow Condensed', sans-serif;
 $display: #{$display-size}/#{$display-line-height} #{$display-font};
 
+.display {
+  font: $display;
+  
+}
+
 $headline-size: clamp(2.4rem, 0.5vw + 2.2rem, 3.2rem);
 $headline-line-height: clamp(3.2rem, 0.5vw + 3rem, 4rem);
 $headline-font: 'Barlow Condensed', sans-serif;
 $headline: #{$headline-size}/#{$headline-line-height} #{$headline-font};
+
+.headline {
+  font: $headline;
+  
+}
 
 $title-font-weight: 500;
 $title-size: clamp(1.4rem, 0.5vw + 1.2rem, 2.2rem);
@@ -65,16 +75,30 @@ $title-line-height: clamp(2rem, 0.5vw + 1.8rem, 2.8rem);
 $title-font: 'Barlow', sans-serif;
 $title: #{$title-font-weight} #{$title-size}/#{$title-line-height} #{$title-font};
 
+.title {
+  font: $title;
+  
+}
+
 $body-size: clamp(1.2rem, 0.3vw + 1.1rem, 1.6rem);
 $body-line-height: clamp(1.6rem, 0.5vw + 1.4rem, 2.4rem);
 $body-font: 'Barlow', sans-serif;
 $body: #{$body-size}/#{$body-line-height} #{$body-font};
+
+.body {
+  font: $body;
+}
 
 $label-font-weight: 500;
 $label-size: clamp(1.1rem, 0.2vw + 1rem, 1.4rem);
 $label-line-height: clamp(1.6rem, 0.3vw + 1.5rem, 2rem);
 $label-font: 'Barlow', sans-serif;
 $label: #{$label-font-weight} #{$label-size}/#{$label-line-height} #{$label-font};
+
+.label {
+  font: $label;
+  
+}
 
 
 
