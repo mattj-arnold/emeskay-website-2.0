@@ -1140,4 +1140,16 @@ div.social h3 {
   .first-para {
     font: 500 clamp(1.4rem, 0.5vw + 1.2rem, 2.2rem)/clamp(2rem, 0.5vw + 1.8rem, 2.8rem) Barlow, sans-serif;
   }
+}
+
+.sports-therapy-main-content-footer {
+  display: grid;
+  width: 100%;
+  grid-template: auto/1fr;
+  gap: 8px;
+}
+@media screen and (min-width: 840px) {
+  .sports-therapy-main-content-footer {
+    grid-template: auto/repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=sports-therapy.css.map */
