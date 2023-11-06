@@ -10784,7 +10784,7 @@ iframe {
   block-size: auto;
 }
 
-.filled-button, .outlined-button:hover, .outlined-button, .filled-tonal-button:hover, .filled-tonal-button {
+.filled-button, .outlined-button:hover, .right-segment:hover, .middle-segment:hover, .left-segment:hover, .outlined-button, .right-segment, .middle-segment, .left-segment, .filled-tonal-button:hover, .filled-tonal-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10795,16 +10795,16 @@ iframe {
   padding: 24px;
 }
 
-.filled-button:hover, .outlined-button:hover, .filled-tonal-button:hover {
+.filled-button:hover, .outlined-button:hover, .right-segment:hover, .middle-segment:hover, .left-segment:hover, .filled-tonal-button:hover {
   text-decoration: none;
   background: linear-gradient(rgba(255, 255, 255, 0.0784313725), rgba(255, 255, 255, 0.0784313725)), linear-gradient(#3851d0, #3851d0);
 }
 
-.filled-button:active, .outlined-button:active, .filled-tonal-button:active {
+.filled-button:active, .outlined-button:active, .right-segment:active, .middle-segment:active, .left-segment:active, .filled-tonal-button:active {
   background: linear-gradient(rgba(255, 255, 255, 0.1019607843), rgba(255, 255, 255, 0.1019607843)), linear-gradient(#3851d0, #3851d0);
 }
 
-.filled-button-label-text, .outlined-button-label-text, .filled-tonal-button-label-text {
+.filled-button-label-text, .segmented-button-label-text, .outlined-button-label-text, .filled-tonal-button-label-text {
   color: #ffffff;
   font: 500 clamp(1.1rem, 0.2vw + 1rem, 1.4rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;
 }
@@ -10825,21 +10825,54 @@ iframe {
   color: #00201b;
 }
 
-.outlined-button {
+.outlined-button, .right-segment, .middle-segment, .left-segment {
   background-color: #fbf8ff;
   outline: #767680 solid 1px;
 }
 
-.outlined-button:hover {
+.outlined-button:hover, .right-segment:hover, .middle-segment:hover, .left-segment:hover {
   background: linear-gradient(rgba(56, 81, 208, 0.0784313725), rgba(56, 81, 208, 0.0784313725)), linear-gradient(#fbf8ff, #fbf8ff);
 }
 
-.outlined-button:active {
+.outlined-button:active, .right-segment:active, .middle-segment:active, .left-segment:active {
   background: linear-gradient(rgba(56, 81, 208, 0.1019607843), rgba(56, 81, 208, 0.1019607843)), linear-gradient(#fbf8ff, #fbf8ff);
 }
 
 .outlined-button-label-text {
   color: #3851d0;
+}
+
+.segmented-button {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  width: 100%;
+}
+
+.left-segment {
+  border-radius: 20px 0px 0px 20px;
+  padding: 12px;
+}
+
+.middle-segment {
+  border-radius: 0;
+  padding: 12px;
+}
+
+.right-segment {
+  border-radius: 0px 20px 20px 0px;
+  padding: 12px;
+}
+
+.selected-segment {
+  background-color: #76f8e2;
+}
+
+.segmented-button-label-text {
+  color: #001849;
+}
+
+.selected-label-text {
+  color: #00201b;
 }
 
 .window, .sports-therapy-window {
