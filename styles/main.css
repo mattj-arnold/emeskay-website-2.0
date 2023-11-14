@@ -11915,7 +11915,6 @@ section header {
 }
 
 .testimonials {
-  grid-area: 3/1/4/2;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -11927,7 +11926,7 @@ section header {
 }
 @media screen and (min-width: 840px) {
   .testimonials {
-    grid-area: 4/1/5/12;
+    grid-column: 1/12;
   }
 }
 
@@ -12169,6 +12168,105 @@ div.slider p {
   .how-i-treat-cards {
     grid-area: 2/2/3/3;
   }
+}
+
+@media screen and (min-width: 840px) {
+  .trust-signals {
+    grid-column: 1/12;
+  }
+}
+
+.trust-signals h2 {
+  padding: 0 16px 8px;
+}
+
+.trust-signals-cards-container {
+  display: grid;
+  gap: 8px;
+  grid-template: auto/1fr;
+}
+@media screen and (min-width: 840px) {
+  .trust-signals-cards-container {
+    grid-template: auto/repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .trust-signals-cards-container {
+    grid-template: auto/repeat(3, 1fr);
+  }
+}
+
+.trust-signals-cards-container picture {
+  grid-area: 1/1/2/2;
+}
+
+.trust-signals-cards-container h3, .trust-signals-cards-container p {
+  padding: 0 16px;
+}
+
+.trust-signals-cards-container h3 {
+  grid-area: 2/1/3/2;
+}
+
+.trust-signals-cards-container p {
+  grid-area: 3/1/4/2;
+}
+
+.qualified, .member, .insured {
+  gap: 0;
+  padding: 0 0 16px 0;
+  grid-template: auto/1fr;
+  row-gap: 8px;
+  -moz-column-gap: 0;
+       column-gap: 0;
+}
+
+.qualified {
+  grid-area: 1/1/2/2;
+}
+
+.qualified .section-picture {
+  background-color: #d0e4ff;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0 16px;
+}
+
+.member {
+  grid-area: 2/1/3/2;
+}
+@media screen and (min-width: 840px) {
+  .member {
+    grid-area: 1/2/2/3;
+  }
+}
+
+.member .section-picture {
+  background-color: #ffffff;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 16px 0;
+}
+
+.insured {
+  grid-area: 3/1/4/2;
+}
+@media screen and (min-width: 840px) {
+  .insured {
+    grid-area: 2/1/3/2;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .insured {
+    grid-area: 1/3/2/4;
+  }
+}
+
+.insured .section-picture {
+  background-color: #d0e4ff;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0 16px;
 }
 
 /*.window#home {

@@ -298,7 +298,6 @@ section header {
 //Testimonials
 
 .testimonials {
-    grid-area: 3/1/4/2;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -308,7 +307,7 @@ section header {
     }
 
     @media screen and (min-width: 840px) {
-        grid-area: 4/1/5/12;
+        grid-column: 1/12;
     }
 }
 
@@ -534,6 +533,95 @@ div.slider p {
     }
 }
 
+.trust-signals {
+    @media screen and (min-width: 840px) {
+        grid-column: 1/12;
+    }
+}
+
+.trust-signals h2, .trust-signals p {
+    padding: 0 16px 8px;
+}
+
+.trust-signals-cards-container {
+    display: grid;
+    gap: 8px;
+    grid-template: auto/1fr;
+
+    @media screen and (min-width: 840px) {
+        grid-template: auto/repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1440px) {
+        grid-template: auto/repeat(3, 1fr);
+    }
+}
+
+.trust-signals-cards-container picture {
+    grid-area: 1/1/2/2;
+}
+
+.trust-signals-cards-container h3, .trust-signals-cards-container p {
+    padding: 0 16px;
+}
+
+.trust-signals-cards-container h3 {
+    grid-area: 2/1/3/2;
+}
+
+.trust-signals-cards-container p {
+    grid-area: 3/1/4/2;
+}
+
+.qualified, .member, .insured {
+    gap: 0;
+    padding: 0 0 16px 0;
+    grid-template: auto/1fr;
+    row-gap: 8px;
+    column-gap: 0;
+}
+
+.qualified {
+    grid-area: 1/1/2/2;
+}
+
+.qualified .section-picture {
+    background-color: $primary-container;
+    object-fit: contain;
+    padding: 0 16px;
+}
+
+.member {
+    grid-area: 2/1/3/2;
+
+    @media screen and (min-width: 840px) {
+        grid-area: 1/2/2/3;
+    }
+}
+
+.member .section-picture {
+    background-color: #ffffff;
+    object-fit: contain;
+    padding: 16px 0;
+}
+
+.insured {
+    grid-area: 3/1/4/2;
+
+    @media screen and (min-width: 840px) {
+        grid-area: 2/1/3/2;
+    }
+
+    @media screen and (min-width: 1440px) {
+        grid-area: 1/3/2/4;
+    }
+}
+
+.insured .section-picture {
+    background-color: $primary-container;
+    object-fit: contain;
+    padding: 0 16px;
+}
 
 
 
