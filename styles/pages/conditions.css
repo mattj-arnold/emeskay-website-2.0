@@ -596,8 +596,8 @@ iframe {
 }
 
 .active {
-  background-color: #76f8e2;
-  color: #00201b;
+  background-color: #dfe1f9;
+  color: #181a2c;
 }
 
 .modal-navigation-drawer-label {
@@ -681,8 +681,8 @@ iframe {
 }
 
 .active {
-  background-color: #76f8e2;
-  color: #00201b;
+  background-color: #dfe1f9;
+  color: #181a2c;
   border-radius: 28px;
 }
 
@@ -743,7 +743,7 @@ iframe {
   min-width: 80px;
   padding-left: 16px;
   padding-right: 24px;
-  background-color: #76f8e2;
+  background-color: #d0e4ff;
   border: none;
   border-radius: 16px;
   font: 500 clamp(1.1rem, 0.2vw + 1rem, 1.4rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;
@@ -780,11 +780,11 @@ iframe {
 }
 
 .standard-navigation-drawer .active path {
-  fill: #00201b;
+  fill: #181a2c;
 }
 
 .standard-navigation-drawer .active .standard-navigation-drawer-label {
-  color: #00201b;
+  color: #181a2c;
 }
 
 @media screen and (max-width: 1239px) {
@@ -813,7 +813,7 @@ iframe {
   min-width: 80px;
   padding-left: 16px;
   padding-right: 24px;
-  background-color: #76f8e2;
+  background-color: #d0e4ff;
   border: none;
   border-radius: 16px;
   font: 500 clamp(1.1rem, 0.2vw + 1rem, 1.4rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;

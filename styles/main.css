@@ -10810,19 +10810,19 @@ iframe {
 }
 
 .filled-tonal-button {
-  background-color: #76f8e2;
+  background-color: #dfe1f9;
 }
 
 .filled-tonal-button:hover {
-  background: linear-gradient(rgba(0, 32, 27, 0.0784313725), rgba(0, 32, 27, 0.0784313725)), linear-gradient(#76f8e2, #76f8e2);
+  background: linear-gradient(rgba(0, 32, 27, 0.0784313725), rgba(0, 32, 27, 0.0784313725)), linear-gradient(#dfe1f9, #dfe1f9);
 }
 
 .filled-tonal-button:active {
-  background: linear-gradient(rgba(0, 32, 27, 0.1019607843), rgba(0, 32, 27, 0.1019607843)), linear-gradient(#76f8e2, #76f8e2);
+  background: linear-gradient(rgba(0, 32, 27, 0.1019607843), rgba(0, 32, 27, 0.1019607843)), linear-gradient(#dfe1f9, #dfe1f9);
 }
 
 .filled-tonal-button-label-text {
-  color: #00201b;
+  color: #181a2c;
 }
 
 .outlined-button, .right-segment, .middle-segment, .left-segment {
@@ -10864,7 +10864,7 @@ iframe {
 }
 
 .selected-segment {
-  background-color: #76f8e2;
+  background-color: #dfe1f9;
 }
 
 .segmented-button-label-text {
@@ -10872,7 +10872,7 @@ iframe {
 }
 
 .selected-label-text {
-  color: #00201b;
+  color: #181a2c;
 }
 
 .window, .sports-therapy-window {
@@ -11111,8 +11111,8 @@ section {
 }
 
 .active {
-  background-color: #76f8e2;
-  color: #00201b;
+  background-color: #dfe1f9;
+  color: #181a2c;
 }
 
 .modal-navigation-drawer-label {
@@ -11196,8 +11196,8 @@ section {
 }
 
 .active {
-  background-color: #76f8e2;
-  color: #00201b;
+  background-color: #dfe1f9;
+  color: #181a2c;
   border-radius: 28px;
 }
 
@@ -11258,7 +11258,7 @@ section {
   min-width: 80px;
   padding-left: 16px;
   padding-right: 24px;
-  background-color: #76f8e2;
+  background-color: #d0e4ff;
   border: none;
   border-radius: 16px;
   font: 500 clamp(1.1rem, 0.2vw + 1rem, 1.4rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;
@@ -11295,11 +11295,11 @@ section {
 }
 
 .standard-navigation-drawer .active path {
-  fill: #00201b;
+  fill: #181a2c;
 }
 
 .standard-navigation-drawer .active .standard-navigation-drawer-label {
-  color: #00201b;
+  color: #181a2c;
 }
 
 @media screen and (max-width: 1239px) {
@@ -11328,7 +11328,7 @@ section {
   min-width: 80px;
   padding-left: 16px;
   padding-right: 24px;
-  background-color: #76f8e2;
+  background-color: #d0e4ff;
   border: none;
   border-radius: 16px;
   font: 500 clamp(1.1rem, 0.2vw + 1rem, 1.4rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;
@@ -12176,7 +12176,7 @@ div.slider p {
   }
 }
 
-.trust-signals h2 {
+.trust-signals h2, .trust-signals p {
   padding: 0 16px 8px;
 }
 
