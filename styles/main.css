@@ -10810,19 +10810,19 @@ iframe {
 }
 
 .filled-tonal-button {
-  background-color: #dfe1f9;
+  background-color: #ffdcc5;
 }
 
 .filled-tonal-button:hover {
-  background: linear-gradient(rgba(0, 32, 27, 0.0784313725), rgba(0, 32, 27, 0.0784313725)), linear-gradient(#dfe1f9, #dfe1f9);
+  background: linear-gradient(rgba(0, 32, 27, 0.0784313725), rgba(0, 32, 27, 0.0784313725)), linear-gradient(#ffdcc5, #ffdcc5);
 }
 
 .filled-tonal-button:active {
-  background: linear-gradient(rgba(0, 32, 27, 0.1019607843), rgba(0, 32, 27, 0.1019607843)), linear-gradient(#dfe1f9, #dfe1f9);
+  background: linear-gradient(rgba(0, 32, 27, 0.1019607843), rgba(0, 32, 27, 0.1019607843)), linear-gradient(#ffdcc5, #ffdcc5);
 }
 
 .filled-tonal-button-label-text {
-  color: #181a2c;
+  color: #301400;
 }
 
 .outlined-button, .right-segment, .middle-segment, .left-segment {
@@ -10864,7 +10864,7 @@ iframe {
 }
 
 .selected-segment {
-  background-color: #dfe1f9;
+  background-color: #ffdcc5;
 }
 
 .segmented-button-label-text {
@@ -10872,7 +10872,7 @@ iframe {
 }
 
 .selected-label-text {
-  color: #181a2c;
+  color: #301400;
 }
 
 .window, .sports-therapy-window {
@@ -11111,8 +11111,8 @@ section {
 }
 
 .active {
-  background-color: #dfe1f9;
-  color: #181a2c;
+  background-color: #ffdcc5;
+  color: #301400;
 }
 
 .modal-navigation-drawer-label {
@@ -11196,8 +11196,8 @@ section {
 }
 
 .active {
-  background-color: #dfe1f9;
-  color: #181a2c;
+  background-color: #ffdcc5;
+  color: #301400;
   border-radius: 28px;
 }
 
@@ -11295,11 +11295,11 @@ section {
 }
 
 .standard-navigation-drawer .active path {
-  fill: #181a2c;
+  fill: #301400;
 }
 
 .standard-navigation-drawer .active .standard-navigation-drawer-label {
-  color: #181a2c;
+  color: #301400;
 }
 
 @media screen and (max-width: 1239px) {

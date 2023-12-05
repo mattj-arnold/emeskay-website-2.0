@@ -596,8 +596,8 @@ iframe {
 }
 
 .active {
-  background-color: #dfe1f9;
-  color: #181a2c;
+  background-color: #ffdcc5;
+  color: #301400;
 }
 
 .modal-navigation-drawer-label {
@@ -681,8 +681,8 @@ iframe {
 }
 
 .active {
-  background-color: #dfe1f9;
-  color: #181a2c;
+  background-color: #ffdcc5;
+  color: #301400;
   border-radius: 28px;
 }
 
@@ -780,11 +780,11 @@ iframe {
 }
 
 .standard-navigation-drawer .active path {
-  fill: #181a2c;
+  fill: #301400;
 }
 
 .standard-navigation-drawer .active .standard-navigation-drawer-label {
-  color: #181a2c;
+  color: #301400;
 }
 
 @media screen and (max-width: 1239px) {
