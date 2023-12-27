@@ -10,6 +10,39 @@
 @include card-container;
 @include filled-card;
 
+.conditions-window {
+    @extend .window;
+}
+
+.conditions-window-header {
+    @extend .window-header;
+}
+
+.conditions-body-region {
+    @extend .body-region;
+}
+
+.conditions-main-header {
+    @extend .main-header;
+}
+
+.conditions-main-header-picture {
+    @extend .main-header-picture;
+
+    @media screen and (min-width: 1440px) {
+        grid-area: 1/1/2/2;
+    }
+}
+
+.conditions-header-content {
+    @extend .header-content;
+
+    @media screen and (min-width: 1440px) {
+        grid-area: 1/1/2/2;
+        width: 61.8%
+    }
+}
+
 .ankle-foot {
     @media screen and (min-width: 840px) {
         grid-area: 2/1/3/12;

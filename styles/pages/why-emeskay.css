@@ -373,11 +373,11 @@ $on-surface-variant: #3f4948;*/
 --font-size-display: clamp(1.57rem, 0.44vw + 1.42rem, 2.28rem);*/
 /* h1 */
 .display {
-  font: clamp(3.6rem, 1.3vw + 3.2rem, 5.7rem)/clamp(4.4rem, 1.3vw + 4rem, 6.4rem) Barlow Condensed, sans-serif;
+  font: clamp(4.5rem, 1.3vw + 3.2rem, 5.7rem)/clamp(4.4rem, 1.3vw + 4rem, 6.4rem) Barlow Condensed, sans-serif;
 }
 
 .headline {
-  font: clamp(2.4rem, 0.5vw + 2.2rem, 3.2rem)/clamp(3.2rem, 0.5vw + 3rem, 4rem) Barlow Condensed, sans-serif;
+  font: clamp(3.6rem, 0.5vw + 2.2rem, 4.5rem)/clamp(3.2rem, 0.5vw + 3rem, 4rem) Barlow Condensed, sans-serif;
 }
 
 .title {
@@ -385,7 +385,7 @@ $on-surface-variant: #3f4948;*/
 }
 
 .body {
-  font: clamp(1.2rem, 0.3vw + 1.1rem, 1.6rem)/clamp(1.6rem, 0.5vw + 1.4rem, 2.4rem) Barlow, sans-serif;
+  font: clamp(1.4rem, 0.3vw + 1.1rem, 1.6rem)/clamp(1.6rem, 0.5vw + 1.4rem, 2.4rem) Barlow, sans-serif;
 }
 
 .label {
@@ -421,7 +421,7 @@ html {
 }
 
 body {
-  background-color: #fbf8ff;
+  background-color: #F9F9FF;
 }
 
 main {
@@ -429,42 +429,42 @@ main {
 }
 
 h1 {
-  font: clamp(3.6rem, 1.3vw + 3.2rem, 5.7rem)/clamp(4.4rem, 1.3vw + 4rem, 6.4rem) Barlow Condensed, sans-serif;
-  color: #001849;
+  font: clamp(4.5rem, 1.3vw + 3.2rem, 5.7rem)/clamp(4.4rem, 1.3vw + 4rem, 6.4rem) Barlow Condensed, sans-serif;
+  color: #191C20;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  font: clamp(2.4rem, 0.5vw + 2.2rem, 3.2rem)/clamp(3.2rem, 0.5vw + 3rem, 4rem) Barlow Condensed, sans-serif;
-  color: #001849;
+  font: clamp(3.6rem, 0.5vw + 2.2rem, 4.5rem)/clamp(3.2rem, 0.5vw + 3rem, 4rem) Barlow Condensed, sans-serif;
+  color: #191C20;
   margin: 0;
   padding: 0;
 }
 
 h3 {
   font: 500 clamp(1.4rem, 0.5vw + 1.2rem, 2.2rem)/clamp(2rem, 0.5vw + 1.8rem, 2.8rem) Barlow, sans-serif;
-  color: #001849;
+  color: #191C20;
   margin: 0;
   padding: 0;
 }
 
 h4 {
-  font: clamp(1.2rem, 0.3vw + 1.1rem, 1.6rem)/clamp(1.6rem, 0.5vw + 1.4rem, 2.4rem) Barlow, sans-serif;
-  color: #001849;
+  font: clamp(1.4rem, 0.3vw + 1.1rem, 1.6rem)/clamp(1.6rem, 0.5vw + 1.4rem, 2.4rem) Barlow, sans-serif;
+  color: #191C20;
   margin: 0;
   padding: 0;
 }
 
 p {
-  font: clamp(1.2rem, 0.3vw + 1.1rem, 1.6rem)/clamp(1.6rem, 0.5vw + 1.4rem, 2.4rem) Barlow, sans-serif;
-  color: #001849;
+  font: clamp(1.4rem, 0.3vw + 1.1rem, 1.6rem)/clamp(1.6rem, 0.5vw + 1.4rem, 2.4rem) Barlow, sans-serif;
+  color: #191C20;
   margin: 0;
   padding: 0;
 }
 
 a {
-  color: #3851d0;
+  color: #405F90;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -472,7 +472,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #00105b;
+  color: #001B3D;
 }
 
 hr {
@@ -506,18 +506,18 @@ iframe {
   display: grid;
   align-items: center;
   gap: 24px;
-  background-color: #fbf8ff;
+  background-color: #F9F9FF;
   padding: 0px 16px 0px 16px;
   grid-template-columns: 24px minmax(92px, 1fr) 48px;
   transition: 0.3s;
 }
 
 .scrolled {
-  background-color: #efedf4;
+  background-color: #EDEDF4;
 }
 
 .toggle-btn {
-  color: #001849;
+  color: #191C20;
 }
 
 .logo {
@@ -535,7 +535,7 @@ iframe {
   position: fixed;
   width: 360px;
   height: 100vh;
-  background-color: #f5f2fa;
+  background-color: #F3F3FA;
   border-radius: 0px 16px 16px 0px;
   padding: 28px 12px 16px 12px;
   left: -360px;
@@ -571,7 +571,7 @@ iframe {
 }
 
 .toggle-btn:hover {
-  background-color: #e3e1e9;
+  background-color: #E3E1F1;
   text-decoration: none;
 }
 
@@ -591,13 +591,13 @@ iframe {
 }
 
 .active-indicator:hover {
-  background-color: #e3e1e9;
+  background-color: #E3E1F1;
   text-decoration: none;
 }
 
 .active {
-  background-color: #ffdcc5;
-  color: #301400;
+  background-color: #D9E3F9;
+  color: #002107;
 }
 
 .modal-navigation-drawer-label {
@@ -608,7 +608,7 @@ iframe {
 .navigation-rail {
   width: 80px;
   height: 100vh;
-  background-color: #fbf8ff;
+  background-color: #F9F9FF;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -632,7 +632,7 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  Background-color: #d0e4ff;
+  Background-color: #D6E3FF;
   color: white;
   height: 56px;
   border-radius: 16px;
@@ -643,7 +643,7 @@ iframe {
 }
 
 .fab svg {
-  fill: #00105b;
+  fill: #001B3D;
 }
 
 .nav-rail-book-now {
@@ -676,13 +676,13 @@ iframe {
 }
 
 .nav-rail-active-indicator:hover {
-  background-color: #e3e1e9;
+  background-color: #E3E1F1;
   border-radius: 16px;
 }
 
 .active {
-  background-color: #ffdcc5;
-  color: #301400;
+  background-color: #D9E3F9;
+  color: #002107;
   border-radius: 28px;
 }
 
@@ -707,7 +707,7 @@ iframe {
   position: fixed;
   width: 360px;
   height: 100vh;
-  background-color: #fbf8ff;
+  background-color: #F9F9FF;
   padding: 28px;
   transition: 0.3s;
   color: #46464f;
@@ -743,11 +743,11 @@ iframe {
   min-width: 80px;
   padding-left: 16px;
   padding-right: 24px;
-  background-color: #d0e4ff;
+  background-color: #FFDCBF;
   border: none;
   border-radius: 16px;
   font: 500 clamp(1.1rem, 0.2vw + 1rem, 1.4rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;
-  color: #00105b;
+  color: #2D1600;
   box-shadow: 0px 3px 1px -2px #808080;
 }
 
@@ -780,11 +780,11 @@ iframe {
 }
 
 .standard-navigation-drawer .active path {
-  fill: #301400;
+  fill: #002107;
 }
 
 .standard-navigation-drawer .active .standard-navigation-drawer-label {
-  color: #301400;
+  color: #002107;
 }
 
 @media screen and (max-width: 1239px) {
@@ -813,11 +813,11 @@ iframe {
   min-width: 80px;
   padding-left: 16px;
   padding-right: 24px;
-  background-color: #d0e4ff;
+  background-color: #FFDCBF;
   border: none;
   border-radius: 16px;
   font: 500 clamp(1.1rem, 0.2vw + 1rem, 1.4rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;
-  color: #00105b;
+  color: #2D1600;
   box-shadow: 0px 3px 1px -2px #808080;
 }
 
@@ -854,7 +854,7 @@ iframe {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 16px;
-  margin: 12px 16px 16px 16px;
+  margin: 0px 0px 12px 0px;
 }
 @media screen and (min-width: 600px) and (max-width: 839px) {
   .body-region {
@@ -945,7 +945,7 @@ iframe {
 }
 
 .header-content h1, .header-content p {
-  color: #001849;
+  color: #191C20;
 }
 @media screen and (min-width: 600px) {
   .header-content h1, .header-content p {
@@ -957,6 +957,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 0px 16px;
 }
 
 footer {
@@ -966,7 +967,7 @@ footer {
   grid-template-rows: auto;
   gap: 16px;
   padding: 12px 16px 12px 16px;
-  background-color: #efedf4;
+  background-color: #EDEDF4;
   overflow: hidden;
 }
 @media screen and (min-width: 840px) {
@@ -996,7 +997,7 @@ footer p {
 
 footer a {
   font: 500 clamp(1.1rem, 0.2vw + 1rem, 1.4rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;
-  color: #3851d0;
+  color: #405F90;
   text-decoration: underline;
 }
 
@@ -1009,7 +1010,7 @@ footer path {
 }
 
 footer a path {
-  fill: #3851d0;
+  fill: #405F90;
 }
 
 footer a path:hover {

@@ -95,31 +95,40 @@
     display: grid;
     grid-template: auto/repeat(3, 1fr);
     width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: $surface-container-low;
 }
 
 .left-segment {
     @extend .outlined-button;
 
-    border-radius: 20px 0px 0px 20px;
+    outline: none;
+    border-radius: 20px 20px 20px 20px;
     padding: 12px;
+    background-color: $surface-container-low;
 }
 
 .middle-segment {
     @extend .outlined-button;
 
-    border-radius: 0;
+    outline: none;
+    border-radius: 20px 20px 20px 20px;
     padding: 12px;
+    background-color: $surface-container-low;
 }
 
 .right-segment {
     @extend .outlined-button;
 
-    border-radius: 0px 20px 20px 0px;
+    outline: none;
+    border-radius: 20px 20px 20px 20px;
     padding: 12px;
+    background-color: $surface-container-low;
 }
 
 .selected-segment {
     background-color: $secondary-container;
+    border-radius: 20px 20px 20px 20px; 
 }
 
 .segmented-button-label-text {
