@@ -14,12 +14,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Therapy - Emeskay Sports Therapy</title>
-    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="scss/style.css" type="text/css">
     <script defer src="./main.js"></script>
 </head>
 
-<body class="sports-therapy-window" id="sports-therapy">
-    <header class="sports-therapy-window-header">
+<body class="window" id="sports-therapy">
+    <header class="window-header">
         <div class="top-app-bar" id="appBar">
             <div aria-label="menu" class="toggle-btn" onclick="show()">
                 <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
@@ -53,14 +53,7 @@
                     </svg>
                     <div class="modal-navigation-drawer-label">Home</div>
                 </a>
-                <a href="start-here.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M120-240q-17 0-28.5-11.5T80-280v-400q0-17 11.5-28.5T120-720q17 0 28.5 11.5T160-680v400q0 17-11.5 28.5T120-240Zm607-200H280q-17 0-28.5-11.5T240-480q0-17 11.5-28.5T280-520h347L612-636q-11-11-11.5-27.5T612-692q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L668-268q-11 11-27.5 11T612-268q-12-12-12-28.5t12-28.5l115-115Z" />
-                    </svg>
-                    <div class="modal-navigation-drawer-label">Start Here</div>
-                </a>
+               
                 <a href="conditions.html" class="active-indicator">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
                         width="24">
@@ -130,18 +123,7 @@
                             <div class="nav-rail-label">Home</div>
                         </div>
                     </a>
-                    <a href="start-here.html">
-                        <div class="nav-rail-icon-label-container">
-                            <div class="nav-rail-active-indicator">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24"
-                                    viewBox="0 -960 960 960" width="24">
-                                    <path
-                                        d="M120-240q-17 0-28.5-11.5T80-280v-400q0-17 11.5-28.5T120-720q17 0 28.5 11.5T160-680v400q0 17-11.5 28.5T120-240Zm607-200H280q-17 0-28.5-11.5T240-480q0-17 11.5-28.5T280-520h347L612-636q-11-11-11.5-27.5T612-692q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L668-268q-11 11-27.5 11T612-268q-12-12-12-28.5t12-28.5l115-115Z" />
-                                </svg>
-                            </div>
-                            <div class="nav-rail-label">Start here</div>
-                        </div>
-                    </a>
+                    
                     <a href="conditions.html">
                         <div class="nav-rail-icon-label-container">
                             <div class="nav-rail-active-indicator">
@@ -227,14 +209,7 @@
                     </svg>
                     <div class="standard-navigation-drawer-label">Home</div>
                 </a>
-                <a href="start-here.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M120-240q-17 0-28.5-11.5T80-280v-400q0-17 11.5-28.5T120-720q17 0 28.5 11.5T160-680v400q0 17-11.5 28.5T120-240Zm607-200H280q-17 0-28.5-11.5T240-480q0-17 11.5-28.5T280-520h347L612-636q-11-11-11.5-27.5T612-692q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L668-268q-11 11-27.5 11T612-268q-12-12-12-28.5t12-28.5l115-115Z" />
-                    </svg>
-                    <div class="standard-navigation-drawer-label">Start Here</div>
-                </a>
+                
                 <a href="conditions.html" class="active-indicator">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
                         width="24">
@@ -291,9 +266,9 @@
         </a>
     </header>
 
-    <main class="sports-therapy-body-region">
-        <header class="sports-therapy-main-header">
-            <picture class="sports-therapy-main-header-picture">
+    <main class="body-region">
+        <header class="main-header">
+            <picture class="main-header-picture">
                 <!--<source type="image/webp" srcset="images/what-is-sports-therapy/what-is-sports-therapy-compact1x.webp 1x, images/what-is-sports-therapy/what-is-sports-therapy-compact2x.webp 2x, images/what-is-sports-therapy/what-is-sports-therapy-compact3x.webp 3x" media="(max-width: 599px)" width="567" height="378" />
                 <source type="image/webp" srcset="images/what-is-sports-therapy/what-is-sports-therapy-medium1x.webp 1x, images/what-is-sports-therapy/what-is-sports-therapy-medium2x.webp 2x, images/what-is-sports-therapy/what-is-sports-therapy-medium3x.webp 3x" media="(min-width: 600px) and (max-width: 839px)" width="791" height="528" />
                 <source type="image/webp" srcset="images/what-is-sports-therapy/what-is-sports-therapy-expanded1x.webp 1x, images/what-is-sports-therapy/what-is-sports-therapy-expanded2x.webp 2x, images/what-is-sports-therapy/what-is-sports-therapy-expanded3x.webp 3x" media="(min-width: 840px)" width="2322" height="1549" />
@@ -303,12 +278,10 @@
 
                 <img class="section-picture" src="images/what-is-sports-therapy/test3.jpg" alt="A man performs a core stability exercise on a gym floor with the help of a sports therapist" width="567" height="378" loading="eager" decoding="sync" />
             </picture>
-            <div class="sports-therapy-header-content">
+            <div class="header-content">
                 <h1 class="display">What is Sports Therapy?</h1>
                 <p class="title">Sports therapy, a specialized branch of healthcare, plays a pivotal role in the lives of athletes, sports enthusiasts, and individuals recovering from injuries.</p>
             </div>
-        </header>
-        <section class="sports-therapy-main-content">
             <div class="segmented-button">
                 <a class="left-segment" href="conditions.html">
                     <h3 class="segmented-button-label-text">Conditions</h3>
@@ -320,6 +293,8 @@
                     <h3 class="segmented-button-label-text">Why Emeskay</h3>
                 </a>
             </div>
+        </header>
+        <section class="main-content">
             <p class="first-para">As the name suggests, sports therapy is a form of therapy designed specifically for sports-related injuries and performance enhancement. In this article, we delve deep into the world of sports therapy, exploring its definition, benefits, techniques, and the crucial role of sports therapists.</p>
             <h2 class="headline">Defining Sports Therapy</h2>
             <p class="body">At its core, sports therapy focuses on preventing, diagnosing, and treating injuries related to sports and exercise. It encompasses a wide range of techniques and approaches aimed at promoting physical fitness, preventing injuries, and facilitating the rehabilitation process. Sports therapists, highly trained professionals, utilize their expertise to assess injuries, create tailored treatment plans, and guide individuals toward optimal recovery and enhanced athletic performance.</p>
@@ -341,7 +316,9 @@
             Moreover, sports therapists collaborate with other healthcare professionals, such as physiotherapists, orthopedic specialists, and fitness trainers, to offer comprehensive care. This interdisciplinary approach ensures that individuals receive holistic treatment, addressing not only the immediate injury but also underlying factors that may contribute to recurrent issues.<br>
             <br>
             In conclusion, sports therapy is a specialised field dedicated to optimising athletic performance, preventing injuries, and facilitating the recovery process for sports-related injuries. Through a combination of innovative techniques, personalised treatment plans, and expert guidance from sports therapists, individuals can embark on a path toward enhanced physical fitness, resilience, and overall well-being. Whether you're an athlete striving for peak performance or someone on the journey to recovery, sports therapy can help you toward a healthier, more active future.</p>
-            <div class="sports-therapy-main-content-footer">
+            
+            </section>
+            <div class="buttons-container">
                 <a class="outlined-button" href="conditions.html">
                     <h3 class="outlined-button-label-text">Back to Where does it hurt?</h3>
                 </a>
@@ -349,7 +326,6 @@
                     <h3 class="filled-tonal-button-label-text">Forward to Why Emeskay?</h3>
                 </a>
             </div>
-            </section>
     </main>
 
     <footer>

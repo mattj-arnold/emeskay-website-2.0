@@ -1,0 +1,143 @@
+@use '../base/utilities' as *;
+@use '../base/typography' as *;
+
+//Filled Button
+
+.filled-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary;
+    height: 40px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.filled-button:hover {
+    text-decoration: none;
+    background:
+        linear-gradient($on-primary-hover, $on-primary-hover),
+        linear-gradient($primary, $primary);
+}
+
+.filled-button:active {
+    background:
+        linear-gradient($on-primary-active, $on-primary-active),
+        linear-gradient($primary, $primary);
+}
+
+.filled-button-label-text {
+    color: $on-primary;
+    font: $label;
+}
+
+//Filled Tonal Buton
+
+.filled-tonal-button {
+    @extend .filled-button;
+
+    background-color: $secondary-container;
+}
+
+.filled-tonal-button:hover {
+    @extend .filled-button;
+
+    background:
+        linear-gradient($on-secondary-container-hover, $on-secondary-container-hover),
+        linear-gradient($secondary-container, $secondary-container);
+}
+
+.filled-tonal-button:active {
+    background:
+        linear-gradient($on-secondary-container-active, $on-secondary-container-active),
+        linear-gradient($secondary-container, $secondary-container);
+}
+
+.filled-tonal-button-label-text {
+    @extend .filled-button-label-text;
+
+    color: $on-secondary-container;
+}
+
+//Outlined Button
+
+.outlined-button {
+    @extend .filled-button;
+
+    background-color: $surface;
+    outline: $outline solid 1px;
+}
+
+.outlined-button:hover {
+    @extend .filled-button;
+
+    background:
+        linear-gradient($primary-hover, $primary-hover),
+        linear-gradient($surface, $surface);
+}
+
+.outlined-button:active {
+    background:
+        linear-gradient($primary-active, $primary-active),
+        linear-gradient($surface, $surface);
+}
+
+.outlined-button-label-text {
+    @extend .filled-button-label-text;
+
+    color: $primary;
+}
+
+//Segmented Button
+
+.segmented-button {
+    display: grid;
+    grid-template: auto/repeat(3, 1fr);
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    background-color: $surface-container-low;
+    margin: var(--base-spacing);
+}
+
+.left-segment {
+    @extend .outlined-button;
+
+    outline: none;
+    border-radius: 20px 20px 20px 20px;
+    padding: 12px;
+    background-color: $surface-container-low;
+}
+
+.middle-segment {
+    @extend .outlined-button;
+
+    outline: none;
+    border-radius: 20px 20px 20px 20px;
+    padding: 12px;
+    background-color: $surface-container-low;
+}
+
+.right-segment {
+    @extend .outlined-button;
+
+    outline: none;
+    border-radius: 20px 20px 20px 20px;
+    padding: 12px;
+    background-color: $surface-container-low;
+}
+
+.selected-segment {
+    background-color: $secondary-container;
+    border-radius: 20px 20px 20px 20px; 
+}
+
+.segmented-button-label-text {
+    @extend .filled-button-label-text;
+
+    color: $on-surface;
+}
+
+.selected-label-text {
+    color: $on-secondary-container;
+}

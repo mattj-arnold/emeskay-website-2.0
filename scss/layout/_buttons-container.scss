@@ -1,0 +1,7 @@
+.buttons-container {
+    display: grid;
+    width: 100%;
+    grid-template: auto/1fr;
+    gap: 8px;
+    padding: var(--base-spacing);
+}
