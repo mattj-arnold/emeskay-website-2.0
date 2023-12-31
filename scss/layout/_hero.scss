@@ -5,12 +5,12 @@
     width: 100%;
     aspect-ratio: 16/10;
     display: grid;
-    gap: 16px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: center;
     align-items: stretch;
-    margin-bottom: var(--base-spacing);
+    row-gap: var(--base-spacing);
+    margin: 0;
 }
 
 .main-header picture {
@@ -23,9 +23,9 @@
     justify-content: center;
     align-items: center;
     grid-area: 2/1/3/2;
-    gap: 16px;
     text-align: center;
-    margin: var(--base-spacing);
+    margin: 0 var(--base-spacing);
+    row-gap: var(--base-spacing);
 
     @media screen and (min-width: 600px) {
         grid-area: 1/1/2/2;

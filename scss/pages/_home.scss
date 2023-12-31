@@ -65,26 +65,16 @@ p.just-follow {
     } 
 }
 
-.header-cards-container svg {
-    grid-area: 1/1/2/2;
-}
 
-.header-cards-container path {
-    fill: $on-surface-variant;
-}
+
+
 
 .main-header h3 {
     font: $title;
     grid-area: 1/2/2/3;
 }
 
-h2 {
-    font: $headline;
 
-    @media screen and (min-width: 600px) {
-        font: $headline;
-    }
-}
 
 
 section header {
@@ -334,9 +324,7 @@ div.slider p {
     }
 }
 
-.trust-signals h2, .trust-signals p {
-    padding: 0 16px 8px;
-}
+
 
 .trust-signals-cards-container {
     display: grid;
@@ -1145,31 +1133,16 @@ section.partners h2 {
 
 
 
-.header-cards-container h2 {
-    grid-area: 1/1/2/3;
-    color: $on-surface;
-}
 
-.header-cards-container svg {
-    grid-area: 1/1/2/2;
-}
 
-.header-cards-container path {
-    fill: $on-surface-variant;
-}
+
 
 .main-header h3 {
     font: $title;
     grid-area: 1/2/2/3;
 }
 
-h2 {
-    font: $headline;
 
-    @media screen and (min-width: 600px) {
-        font: $headline;
-    }
-}
 
 
 

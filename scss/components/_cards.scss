@@ -2,37 +2,56 @@
 @use '../base/_utilities.scss' as *;
 
 //Base card style
-.card {
-    display: grid;
+.b-card {
     border-radius: $medium-shape;
-    
-    gap: 8px;
-
-    
-    
-    
-    
     height: auto;
     width: 100%;
-    gap: 8px;
-    
-    transition: 0.3s;
-    align-items: center;
-    display: grid;
-    grid-template: auto/max-content 1fr;
-    row-gap: 8px;
-    column-gap: 16px;
-    justify-items: start;
-    align-content: start;
+    //transition: 0.3s;
 
-    .title {
-        font: $headline-s;
+    &--filled {
+        background-color: $surface-container-highest;
         color: $on-surface;
     }
 
-    .content {
+    &__content-container {
+        display: grid;
+        margin: var(--base-spacing);
+        row-gap: var(--base-spacing);
+
+    }
+
+    &__image {
+        object-fit: cover;
+        aspect-ratio: 16/10;
+        inline-size: 100%;
+        border-radius: 12px;
+        background-color: $primary;
+
+        &--ahg, &--sto, &--balens {
+            object-fit: contain;
+            padding: var(--base-spacing);
+        }
+
+        &--sto {
+            background-color: #ffffff;
+        }
+    }
+
+    &__icon, &__title, &__content {
+        //margin: var(--base-spacing);
+    }
+
+    &__icon {
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+
+    &__title {
+        font: $headline-s;
+    }
+
+    &__supporting-text {
         font: $body;
-        color: $surface-container-highest;
     }
 }
 
@@ -45,29 +64,29 @@
         transition: 0.3s;
         align-items: center;
         display: grid;
-        grid-template: auto/max-content 1fr;
-        column-gap: 16px;
+        grid-template: auto/auto 1fr;
+        gap: var(--base-spacing);
         justify-items: start;
         align-content: start;
         cursor: pointer;
 
         .img-name-stars-container {
             display: flex;
-            gap: 16px;
+            gap: var(--base-spacing);
             align-items: center;
-            padding: 16px;
+            margin: var(--base-spacing) var(--base-spacing) 0;
         }
 
         .title {
             font: $headline-s;
             color: $on-surface;
             grid-area: 2/2/2/3;
-            margin-inline-end: 16px;
+            margin: 0 var(--base-spacing) 0 0;
         }
 
         .content {
-            grid-area: 3/1/4/3;
-            padding: var(--base-spacing);
+            grid-area: 2/1/4/2;
+            margin: 0 var(--base-spacing) var(--base-spacing);
             color: $on-surface;
         }
 
@@ -110,9 +129,7 @@
             width: 2.4rem;
         }
     
-        .filled-card path {
-            fill: $on-surface;
-        }
+        
     
        
     

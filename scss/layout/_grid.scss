@@ -13,6 +13,8 @@ body {
 }
 
 .body-region {
+    display: grid;
+    row-gap: var(--base-spacing);
 
     @media screen and (min-width: 600px) and (max-width: 839px) {
         margin: 0px 24px;
@@ -72,7 +74,12 @@ body {
 section {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin: var(--base-spacing);
+    gap: var(--base-spacing);
+    margin: 0 var(--base-spacing);
+
+    h2 {
+        margin: 0 var(--base-spacing);
+        color: $on-surface;
+    }
 }
 
