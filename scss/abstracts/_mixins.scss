@@ -1,0 +1,6 @@
+@mixin container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px var(--base-spacing);
+}

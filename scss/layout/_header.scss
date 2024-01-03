@@ -5,7 +5,7 @@
 @use '../components/standard-navigation-drawer' as *;
 
 .window-header {
-    grid-area: 1/1/2/2;
+    grid-area: 1/1/2/4;
     height: 64px;
 
     @media screen and (min-width: 840px) {
