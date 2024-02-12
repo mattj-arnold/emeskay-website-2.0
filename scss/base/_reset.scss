@@ -1,84 +1,82 @@
-@use 'utilities' as *;
-@use 'typography' as *;
-
-html {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-    *,
-    *::before,
-    *::after {
-        -webkit-box-sizing: inherit;
-           -moz-box-sizing: inherit;
-                box-sizing: inherit;
-    }
-
-html {
-  font-size: 10px;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[class],
+ol[class] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Set core body defaults */
 body {
-  background-color: $surface;
-  }
-
-h1 {
-  font: $display;
-  color: $on-surface;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  line-height: 1.5;
 }
 
-h2 {
-  font: $headline;
-  color: $on-surface;
-  margin: 0;
-  padding: 0;
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
 }
 
-h3 {
-  font: $title;
-  color: $on-surface;
-  margin: 0;
-  padding: 0;
-}
-
-h4 {
-  font: $body;
-  color: $on-surface;
-  margin: 0;
-  padding: 0;
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  max-width: 60ch;
+  text-wrap: balance;
 }
 
 p {
-  font: $body;
-  color: $on-surface;
-  margin: 0;
-  padding: 0;
+  max-width: 75ch;
+  text-wrap: pretty;
 }
 
-a {
-  
-  color: $primary;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: $on-primary-container
-}
-
-hr {
-  margin: 0;
-  border: 0;
-}
-
+/* Make images easier to work with */
 img,
-video,
-iframe {
+picture {
   max-inline-size: 100%;
+  display: block;
   block-size: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
 }

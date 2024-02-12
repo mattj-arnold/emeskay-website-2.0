@@ -77,3 +77,53 @@ $medium-shape: 12px;
 $large-shape: 16px;
 $large-end-shape: 0px 16px 16px 0px;
 $extra-large-shape: 28px;
+
+.container {
+    width: min(100vw - 3.2rem, 80ch);
+    margin-inline: auto;
+  }
+
+
+main > *:not(header) {
+    width: min(100% - 3.2rem, 240ch);
+    margin-inline: auto; 
+}
+
+[class^='stack'] > * {
+  /* top and bottom margins in horizontal-tb writing mode */
+  margin-block: 0;
+}
+
+.stack-lg > * + * {
+  margin-block-start: var(--s3);
+}
+
+.stack-sm > * + * {
+  margin-block-start: var(--s1);
+}
+
+
+
+/*main *:is(h1, h2, h3, p):not(.b-card *) {
+    margin-block-start: 1em;
+}*/
+
+header .container:has(h1) {
+    text-align: center;
+}
+
+
+
+  /*main *:not(:is(.main-header, .section-picture)) {
+    margin-block-start: var(--block-flow-md);
+  }
+
+  .main-header > * {
+    margin-block-start: var(--block-flow-md);
+  }*/
+
+  .link {
+    color: var(--clr-primary);
+  }
+
+  

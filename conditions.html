@@ -15,387 +15,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conditions - Emeskay Sports Therapy</title>
     <link rel="stylesheet" href="scss/style.css" type="text/css">
-    <script defer src="./main.js"></script>
+    <!--<script defer src="./main.js"></script>-->
 </head>
 
 <body class="window" id="conditions">
     <header class="window-header">
-        <div class="top-app-bar" id="appBar">
-            <div aria-label="menu" class="toggle-btn" onclick="show()">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                    width="24">
-                    <path
-                        d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h640q17 0 28.5 11.5T840-280q0 17-11.5 28.5T800-240H160Zm0-200q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h640q17 0 28.5 11.5T840-480q0 17-11.5 28.5T800-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h640q17 0 28.5 11.5T840-680q0 17-11.5 28.5T800-640H160Z" />
-                </svg>
-            </div>
-            <img class="logo" src="images/emeskay-logo/emeskay-logo-colour-light.svg"
-                alt="Emeskay colour logo on a light background" width="92" height="24">
-        </div>
-        <nav class="navigation" id="contact-navigation">
-            <!--Modal Navigation Drawer-->
-            <div id="sidebar">
-                <div class="headline-container">
-                    <div aria-label="menu-open" class="toggle-btn" onclick="show()">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                            width="24">
-                            <path
-                                d="M160-240q-17 0-28.5-11.5T120-280q0-17 11.5-28.5T160-320h340q17 0 28.5 11.5T640-280q0 17-11.5 28.5T600-240H160Zm596-68L612-452q-12-12-12-28t12-28l144-144q11-11 28-11t28 11q11 11 11 28t-11 28L696-480l116 116q11 11 11 28t-11 28q-11 11-28 11t-28-11ZM160-440q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520h320q17 0 28.5 11.5T520-480q0 17-11.5 28.5T480-440H160Zm0-200q-17 0-28.5-11.5T120-680q0-17 11.5-28.5T160-720h340q17 0 28.5 11.5T640-680q0 17-11.5 28.5T600-640H160Z" />
-                        </svg>
-                    </div>
-                    <img class="logo" src="images/emeskay-logo/emeskay-logo-on-surface-variant.svg"
-                        alt="Emeskay gray logo on a light background" width="92" height="24">
-                </div>
-                <a href="index.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
-                    </svg>
-                    <div class="modal-navigation-drawer-label">Home</div>
-                </a>
-                
-                <a href="conditions.html" class="active-indicator active">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M400-720q-33 0-56.5-23.5T320-800q0-33 23.5-56.5T400-880q33 0 56.5 23.5T480-800q0 33-23.5 56.5T400-720Zm260 480q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm96 52q-22 14-46 21t-50 7q-75 0-127.5-52.5T480-340q0-75 52.5-127.5T660-520q75 0 127.5 52.5T840-340q0 26-7 50t-21 46l80 80q11 11 11 28t-11 28q-11 11-28 11t-28-11l-80-80Zm-316-13q15 24 35.5 44t44.5 36v1q0 17-11.5 28.5T480-80q-17 0-28.5-11.5T440-120v-81Zm-80-119v200q0 17-11.5 28.5T320-80q-17 0-28.5-11.5T280-120v-480q-50-4-99-11t-98-18q-17-4-27.5-19T50-680q5-17 20.5-25t32.5-4q73 17 147.5 23t149.5 6q75 0 149.5-6T697-709q17-4 32.5 4t20.5 25q5 17-5.5 32T717-629q-49 11-98 18t-99 11v41q-54 35-87 92.5T400-340v10q0 5 1 10h-41Z" />
-                    </svg>
-                    <div class="modal-navigation-drawer-label">Conditions</div>
-                </a>
-                <a href="sports-therapy.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M481-276Zm90 190-189-74H160q-17 0-28.5-11.5T120-200v-120q0-83 58.5-141.5T320-520h329q38 0 64.5 26t26.5 64q0 31-19 55.5T773-342l-93 27v155q0 21-9.5 38T645-94q-16 11-35 13.5T571-86Zm-83-194H375q-7 0-10.5 4t-4.5 9q-1 5 1.5 9.5t8.5 6.5l230 91v-120h388Zm-288 40h84q-2-6-3-12t-1-13q0-39 28-67t67-28h163l214-59q5-2 7-5t1-7q-1-4-3.5-6.5T749-440H320q-50 0-85 35t-35 85v80Zm281-36Zm-81-284q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T480-720q0-33-23.5-56.5T400-800q-33 0-56.5 23.5T320-720q0 33 23.5 56.5T400-640Zm0-80Z" />
-                    </svg>
-                    <div class="modal-navigation-drawer-label">Sports therapy</div>
-                </a>
-                <a href="why-emeskay.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M760-440h-80q-17 0-28.5-11.5T640-480q0-17 11.5-28.5T680-520h80q17 0 28.5 11.5T800-480q0 17-11.5 28.5T760-440ZM584-288q10-14 26-16t30 8l64 48q14 10 16 26t-8 30q-10 14-26 16t-30-8l-64-48q-14-10-16-26t8-30Zm120-424-64 48q-14 10-30 8t-26-16q-10-14-8-30t16-26l64-48q14-10 30-8t26 16q10 14 8 30t-16 26ZM280-360H160q-17 0-28.5-11.5T120-400v-160q0-17 11.5-28.5T160-600h120l132-132q19-19 43.5-8.5T480-703v446q0 27-24.5 37.5T412-228L280-360Zm120-246-86 86H200v80h114l86 86v-252ZM300-480Z" />
-                    </svg>
-                    <div class="modal-navigation-drawer-label">Why Emeskay</div>
-                </a>
-                <!--<a href="blog.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M200-120q-33 0-56.5-23.5T120-200q0-33 23.5-56.5T200-280q33 0 56.5 23.5T280-200q0 33-23.5 56.5T200-120Zm539 0q-24 0-41.5-17T677-179q-10-98-52.5-184t-109-152.5Q449-582 363-624.5T179-677q-25-3-42-21t-17-43q0-25 17.5-41.5T179-797q123 10 231 62t190.5 134.5Q683-518 735-410t62 231q2 24-15 41.5T739-120Zm-240 0q-23 0-41.5-16.5T434-179q-18-97-88-167t-167-88q-26-5-42.5-24T120-501q0-26 18-42t41-13q148 20 252.5 124.5T556-179q3 23-14 41t-43 18Z" />
-                    </svg>
-                    <div class="modal-navigation-drawer-label">Blog</div>
-                </a>-->
-                <a href="contact.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M470-200h-10q-142 0-241-99t-99-241q0-142 99-241t241-99q71 0 132.5 26.5t108 73q46.5 46.5 73 108T800-540q0 134-75.5 249T534-111q-10 5-20 5.5t-18-4.5q-8-5-14-13t-7-19l-5-58Zm90-26q71-60 115.5-140.5T720-540q0-109-75.5-184.5T460-800q-109 0-184.5 75.5T200-540q0 109 75.5 184.5T460-280h100v54Zm-101-95q17 0 29-12t12-29q0-17-12-29t-29-12q-17 0-29 12t-12 29q0 17 12 29t29 12Zm-87-304q11 5 22 .5t18-14.5q9-12 21-18.5t27-6.5q24 0 39 13.5t15 34.5q0 13-7.5 26T480-558q-25 22-37 41.5T431-477q0 12 8.5 20.5T460-448q12 0 20-9t12-21q5-17 18-31t24-25q21-21 31.5-42t10.5-42q0-46-31.5-74T460-720q-32 0-59 15.5T357-662q-6 11-1.5 21.5T372-625Zm88 112Z" />
-                    </svg>
-                    <div class="modal-navigation-drawer-label">Contact</div>
-                </a>
-            </div>
-            <!--Navigation Rail-->
-            <div class="navigation-rail">
-                <img class="nav-rail-logo" src="images/emeskay-logo/emeskay-logo-colour-light.svg"
-                    alt="Emeskay colour logo on a light background" width="56" height="15">
-                <a
-                    href="https://app.rehabguru.com/appointments/d46ed75c4c00969246d2ecd765363815%3A437f6f2c94772fb506ee2311d28f4db0f1dc7c88b6fdb7c0c31905dbb8bc3dd7">
-                    <div class="fab">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                            width="24">
-                            <path
-                                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h240v240q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
-                        </svg>
-                    </div>
-                    <div class="nav-rail-label nav-rail-book-now">Book now</div>
-                </a>
-                <div class="nav-rail-destinations">
-                    <a href="index.html">
-                        <div class="nav-rail-icon-label-container">
-                            <div class="nav-rail-active-indicator">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24"
-                                    viewBox="0 -960 960 960" width="24">
-                                    <path
-                                        d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
-                                </svg>
-                            </div>
-                            <div class="nav-rail-label">Home</div>
-                        </div>
-                    </a>
-                    
-                    <a href="conditions.html">
-                        <div class="nav-rail-icon-label-container">
-                            <div class="nav-rail-active-indicator active">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24"
-                                    viewBox="0 -960 960 960" width="24">
-                                    <path
-                                        d="M400-720q-33 0-56.5-23.5T320-800q0-33 23.5-56.5T400-880q33 0 56.5 23.5T480-800q0 33-23.5 56.5T400-720Zm260 480q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm96 52q-22 14-46 21t-50 7q-75 0-127.5-52.5T480-340q0-75 52.5-127.5T660-520q75 0 127.5 52.5T840-340q0 26-7 50t-21 46l80 80q11 11 11 28t-11 28q-11 11-28 11t-28-11l-80-80Zm-316-13q15 24 35.5 44t44.5 36v1q0 17-11.5 28.5T480-80q-17 0-28.5-11.5T440-120v-81Zm-80-119v200q0 17-11.5 28.5T320-80q-17 0-28.5-11.5T280-120v-480q-50-4-99-11t-98-18q-17-4-27.5-19T50-680q5-17 20.5-25t32.5-4q73 17 147.5 23t149.5 6q75 0 149.5-6T697-709q17-4 32.5 4t20.5 25q5 17-5.5 32T717-629q-49 11-98 18t-99 11v41q-54 35-87 92.5T400-340v10q0 5 1 10h-41Z" />
-                                </svg>
-                            </div>
-                            <div class="nav-rail-label">Conditions</div>
-                        </div>
-                    </a>
-                    <a href="sports-therapy.html">
-                        <div class="nav-rail-icon-label-container">
-                            <div class="nav-rail-active-indicator">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24"
-                                    viewBox="0 -960 960 960" width="24">
-                                    <path
-                                        d="M481-276Zm90 190-189-74H160q-17 0-28.5-11.5T120-200v-120q0-83 58.5-141.5T320-520h329q38 0 64.5 26t26.5 64q0 31-19 55.5T773-342l-93 27v155q0 21-9.5 38T645-94q-16 11-35 13.5T571-86Zm-83-194H375q-7 0-10.5 4t-4.5 9q-1 5 1.5 9.5t8.5 6.5l230 91v-120h388Zm-288 40h84q-2-6-3-12t-1-13q0-39 28-67t67-28h163l214-59q5-2 7-5t1-7q-1-4-3.5-6.5T749-440H320q-50 0-85 35t-35 85v80Zm281-36Zm-81-284q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T480-720q0-33-23.5-56.5T400-800q-33 0-56.5 23.5T320-720q0 33 23.5 56.5T400-640Zm0-80Z" />
-                                </svg>
-                            </div>
-                            <div class="nav-rail-label">Sports therapy</div>
-                        </div>
-                    </a>
-                    <a href="why-emeskay.html">
-                        <div class="nav-rail-icon-label-container">
-                            <div class="nav-rail-active-indicator">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24"
-                                    viewBox="0 -960 960 960" width="24">
-                                    <path
-                                        d="M760-440h-80q-17 0-28.5-11.5T640-480q0-17 11.5-28.5T680-520h80q17 0 28.5 11.5T800-480q0 17-11.5 28.5T760-440ZM584-288q10-14 26-16t30 8l64 48q14 10 16 26t-8 30q-10 14-26 16t-30-8l-64-48q-14-10-16-26t8-30Zm120-424-64 48q-14 10-30 8t-26-16q-10-14-8-30t16-26l64-48q14-10 30-8t26 16q10 14 8 30t-16 26ZM280-360H160q-17 0-28.5-11.5T120-400v-160q0-17 11.5-28.5T160-600h120l132-132q19-19 43.5-8.5T480-703v446q0 27-24.5 37.5T412-228L280-360Zm120-246-86 86H200v80h114l86 86v-252ZM300-480Z" />
-                                </svg>
-                            </div>
-                            <div class="nav-rail-label">Why Emeskay</div>
-                        </div>
-                    </a>
-                    <!--<a href="blog.html">
-                        <div class="nav-rail-icon-label-container">
-                            <div class="nav-rail-active-indicator">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24"
-                                    viewBox="0 -960 960 960" width="24">
-                                    <path
-                                        d="M200-120q-33 0-56.5-23.5T120-200q0-33 23.5-56.5T200-280q33 0 56.5 23.5T280-200q0 33-23.5 56.5T200-120Zm539 0q-24 0-41.5-17T677-179q-10-98-52.5-184t-109-152.5Q449-582 363-624.5T179-677q-25-3-42-21t-17-43q0-25 17.5-41.5T179-797q123 10 231 62t190.5 134.5Q683-518 735-410t62 231q2 24-15 41.5T739-120Zm-240 0q-23 0-41.5-16.5T434-179q-18-97-88-167t-167-88q-26-5-42.5-24T120-501q0-26 18-42t41-13q148 20 252.5 124.5T556-179q3 23-14 41t-43 18Z" />
-                                </svg>
-                            </div>
-                            <div class="nav-rail-label">Blog</div>
-                        </div>
-                    </a>-->
-                    <a href="contact.html">
-                        <div class="nav-rail-icon-label-container">
-                            <div class="nav-rail-active-indicator">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24"
-                                    viewBox="0 -960 960 960" width="24">
-                                    <path
-                                        d="M470-200h-10q-142 0-241-99t-99-241q0-142 99-241t241-99q71 0 132.5 26.5t108 73q46.5 46.5 73 108T800-540q0 134-75.5 249T534-111q-10 5-20 5.5t-18-4.5q-8-5-14-13t-7-19l-5-58Zm90-26q71-60 115.5-140.5T720-540q0-109-75.5-184.5T460-800q-109 0-184.5 75.5T200-540q0 109 75.5 184.5T460-280h100v54Zm-101-95q17 0 29-12t12-29q0-17-12-29t-29-12q-17 0-29 12t-12 29q0 17 12 29t29 12Zm-87-304q11 5 22 .5t18-14.5q9-12 21-18.5t27-6.5q24 0 39 13.5t15 34.5q0 13-7.5 26T480-558q-25 22-37 41.5T431-477q0 12 8.5 20.5T460-448q12 0 20-9t12-21q5-17 18-31t24-25q21-21 31.5-42t10.5-42q0-46-31.5-74T460-720q-32 0-59 15.5T357-662q-6 11-1.5 21.5T372-625Zm88 112Z" />
-                                </svg>
-                            </div>
-                            <div class="nav-rail-label">Contact</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!--Standard Nav Drawer-->
-            <div class="standard-navigation-drawer">
-                <img class="standard-nav-drawer-logo" src="images/emeskay-logo/emeskay-logo-colour-light.svg"
-                    alt="Emeskay colour logo on a light background" width="92" height="24">
-                <a class="extended-fab-container"
-                    href="https://app.rehabguru.com/appointments/d46ed75c4c00969246d2ecd765363815%3A437f6f2c94772fb506ee2311d28f4db0f1dc7c88b6fdb7c0c31905dbb8bc3dd7">
-                    <div class="extended-fab">
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                            width="24">
-                            <path
-                                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h240v240q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
-                        </svg>
-                        <span>Book now</span>
-                    </div>
-                </a>
-                <a href="index.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z" />
-                    </svg>
-                    <div class="standard-navigation-drawer-label">Home</div>
-                </a>
-                
-                <a href="conditions.html" class="active-indicator active">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M400-720q-33 0-56.5-23.5T320-800q0-33 23.5-56.5T400-880q33 0 56.5 23.5T480-800q0 33-23.5 56.5T400-720Zm260 480q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm96 52q-22 14-46 21t-50 7q-75 0-127.5-52.5T480-340q0-75 52.5-127.5T660-520q75 0 127.5 52.5T840-340q0 26-7 50t-21 46l80 80q11 11 11 28t-11 28q-11 11-28 11t-28-11l-80-80Zm-316-13q15 24 35.5 44t44.5 36v1q0 17-11.5 28.5T480-80q-17 0-28.5-11.5T440-120v-81Zm-80-119v200q0 17-11.5 28.5T320-80q-17 0-28.5-11.5T280-120v-480q-50-4-99-11t-98-18q-17-4-27.5-19T50-680q5-17 20.5-25t32.5-4q73 17 147.5 23t149.5 6q75 0 149.5-6T697-709q17-4 32.5 4t20.5 25q5 17-5.5 32T717-629q-49 11-98 18t-99 11v41q-54 35-87 92.5T400-340v10q0 5 1 10h-41Z" />
-                    </svg>
-                    <div class="standard-navigation-drawer-label">Conditions</div>
-                </a>
-                <a href="sports-therapy.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M481-276Zm90 190-189-74H160q-17 0-28.5-11.5T120-200v-120q0-83 58.5-141.5T320-520h329q38 0 64.5 26t26.5 64q0 31-19 55.5T773-342l-93 27v155q0 21-9.5 38T645-94q-16 11-35 13.5T571-86Zm-83-194H375q-7 0-10.5 4t-4.5 9q-1 5 1.5 9.5t8.5 6.5l230 91v-120h388Zm-288 40h84q-2-6-3-12t-1-13q0-39 28-67t67-28h163l214-59q5-2 7-5t1-7q-1-4-3.5-6.5T749-440H320q-50 0-85 35t-35 85v80Zm281-36Zm-81-284q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T480-720q0-33-23.5-56.5T400-800q-33 0-56.5 23.5T320-720q0 33 23.5 56.5T400-640Zm0-80Z" />
-                    </svg>
-                    <div class="standard-navigation-drawer-label">Sports therapy</div>
-                </a>
-                <a href="why-emeskay.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M760-440h-80q-17 0-28.5-11.5T640-480q0-17 11.5-28.5T680-520h80q17 0 28.5 11.5T800-480q0 17-11.5 28.5T760-440ZM584-288q10-14 26-16t30 8l64 48q14 10 16 26t-8 30q-10 14-26 16t-30-8l-64-48q-14-10-16-26t8-30Zm120-424-64 48q-14 10-30 8t-26-16q-10-14-8-30t16-26l64-48q14-10 30-8t26 16q10 14 8 30t-16 26ZM280-360H160q-17 0-28.5-11.5T120-400v-160q0-17 11.5-28.5T160-600h120l132-132q19-19 43.5-8.5T480-703v446q0 27-24.5 37.5T412-228L280-360Zm120-246-86 86H200v80h114l86 86v-252ZM300-480Z" />
-                    </svg>
-                    <div class="standard-navigation-drawer-label">Why Emeskay</div>
-                </a>
-                <!--<a href="blog.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M200-120q-33 0-56.5-23.5T120-200q0-33 23.5-56.5T200-280q33 0 56.5 23.5T280-200q0 33-23.5 56.5T200-120Zm539 0q-24 0-41.5-17T677-179q-10-98-52.5-184t-109-152.5Q449-582 363-624.5T179-677q-25-3-42-21t-17-43q0-25 17.5-41.5T179-797q123 10 231 62t190.5 134.5Q683-518 735-410t62 231q2 24-15 41.5T739-120Zm-240 0q-23 0-41.5-16.5T434-179q-18-97-88-167t-167-88q-26-5-42.5-24T120-501q0-26 18-42t41-13q148 20 252.5 124.5T556-179q3 23-14 41t-43 18Z" />
-                    </svg>
-                    <div class="standard-navigation-drawer-label">Blog</div>
-                </a>-->
-                <a href="contact.html" class="active-indicator">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                        width="24">
-                        <path
-                            d="M470-200h-10q-142 0-241-99t-99-241q0-142 99-241t241-99q71 0 132.5 26.5t108 73q46.5 46.5 73 108T800-540q0 134-75.5 249T534-111q-10 5-20 5.5t-18-4.5q-8-5-14-13t-7-19l-5-58Zm90-26q71-60 115.5-140.5T720-540q0-109-75.5-184.5T460-800q-109 0-184.5 75.5T200-540q0 109 75.5 184.5T460-280h100v54Zm-101-95q17 0 29-12t12-29q0-17-12-29t-29-12q-17 0-29 12t-12 29q0 17 12 29t29 12Zm-87-304q11 5 22 .5t18-14.5q9-12 21-18.5t27-6.5q24 0 39 13.5t15 34.5q0 13-7.5 26T480-558q-25 22-37 41.5T431-477q0 12 8.5 20.5T460-448q12 0 20-9t12-21q5-17 18-31t24-25q21-21 31.5-42t10.5-42q0-46-31.5-74T460-720q-32 0-59 15.5T357-662q-6 11-1.5 21.5T372-625Zm88 112Z" />
-                    </svg>
-                    <div class="standard-navigation-drawer-label">Contact</div>
-                </a>
-            </div>
+    <div class="top-app-bar">
+        <img class="top-app-bar__logo" src="images/emeskay-logo/emeskay-logo-primary-light.svg" alt="Emeskay colour logo on a light background" width="92" height="24">
+        <div class="top-app-bar__sub-container">
+        <nav>
+            <ul class="top-app-bar__menu">
+                <li class="top-app-bar__label"><a href="/">Home</a></li>
+                <li class="top-app-bar__label"><a href="conditions.html">Conditions</a></li>
+                <li class="top-app-bar__label"><a href="sports-therapy.html">Sports therapy</a></li>
+                <li class="top-app-bar__label"><a href="why-emeskay.html">Why Emeskay</a></li>
+                <li class="top-app-bar__label"><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-        <!--Extended FAB-->
-        <a class="extended-fab-container"
-            href="https://app.rehabguru.com/appointments/d46ed75c4c00969246d2ecd765363815%3A437f6f2c94772fb506ee2311d28f4db0f1dc7c88b6fdb7c0c31905dbb8bc3dd7">
-            <div class="extended-fab">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960"
-                    width="24">
-                    <path
-                        d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h240v240q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z" />
-                </svg>
-                <span>Book now</span>
-            </div>
-        </a>
-    </header>
+        <div class="top-app-bar__fab-container">   
+            <a class="fab" href="#"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+            <a class="extended-fab-container" href="https://app.rehabguru.com/appointments/d46ed75c4c00969246d2ecd765363815%3A437f6f2c94772fb506ee2311d28f4db0f1dc7c88b6fdb7c0c31905dbb8bc3dd7">
+                <div class="extended-fab">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h240q17 0 28.5 11.5T480-800q0 17-11.5 28.5T440-760H200v560h560v-240q0-17 11.5-28.5T800-480q17 0 28.5 11.5T840-440v240q0 33-23.5 56.5T760-120H200Zm560-584L416-360q-11 11-28 11t-28-11q-11-11-11-28t11-28l344-344H600q-17 0-28.5-11.5T560-800q0-17 11.5-28.5T600-840h240v240q0 17-11.5 28.5T800-560q-17 0-28.5-11.5T760-600v-104Z"/></svg>
+                    <span class="extended-fab__label">Book now</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
 
-    <main class="body-region">
-        <header class="main-header">
-            <picture class="main-header-picture">
-                <!--<source type="image/webp" srcset="images/start-here/start-here-compact1x.webp 1x, images/start-here/start-here-compact2x.webp 2x, images/start-here/start-here-compact3x.webp 3x" media="(max-width: 599px)" width="567" height="378" />
-                <source type="image/webp" srcset="images/start-here/start-here-medium1x.webp 1x, images/start-here/start-here-medium2x.webp 2x, images/start-here/start-here-medium3x.webp 3x" media="(min-width: 600px) and (max-width: 839px)" width="791" height="528" />
-                <source type="image/webp" srcset="images/start-here/start-here-expanded1x.webp 1x, images/start-here/start-here-expanded2x.webp 2x, images/start-here/start-here-expanded3x.webp 3x" media="(min-width: 840px)" width="2322" height="1549" />
-                <source type="image/jpeg" srcset="images/start-here/start-here-medium1x.jpeg 1x, images/start-here/start-here-medium2x.jpeg 2x, images/start-here/start-here-medium3x.jpeg 3x" media="(min-width: 600px) and (max-width: 839px)" width="791" height="528" />
-                <source type="image/jpeg" srcset="images/start-here/start-here-expanded1x.jpeg 1x, images/start-here/start-here-expanded2x.jpeg 2x, images/start-here/start-here-expanded3x.jpeg 3x" media="(min-width: 840px)" width="2322" height="1549" />-->
-                <img class="section-picture" src="images/conditions-i-treat/test.jpeg" alt="A man performs a core stability exercise on a gym floor with the help of a sports therapist" width="567" height="378" loading="eager" decoding="sync"/> <!--srcset="images/start-here/start-here-compact1x.jpeg 1x, images/conditions-i-treat/conditions-i-treat-compact2x.jpeg 2x, images/start-here/start-here-compact3x.jpeg 3x" /> -->
+    
+</header>
+
+<main class="body-region">
+    <header class="hero">
+        <div class="hero__wrapper">
+            <div class="hero__grid-layout">
+            <div class="hero__grid-layout hero__grid-layout--intrinsic-cols">
+            <div class="hero__content">
+                <h1 class="hero__title">Where does it hurt?</h1>
+                <p class="hero__supporting-text">What musculoskeletal conditons do I treat? Browse conditions by body region and learn how to fix them.</p>  
+                </div>
+            <picture>
+                <source type="image/webp"
+                            srcset="images/conditions-i-treat/conditions-i-treat-2250.webp 2250w,
+                                    images/conditions-i-treat/conditions-i-treat-1500.webp 1500w,
+                                    images/conditions-i-treat/conditions-i-treat-750.webp 750w" />
+
+                        <source type="image/jpeg"
+                            srcset="images/conditions-i-treat/conditions-i-treat-2250.jpeg 2250w,
+                                    images/conditions-i-treat/conditions-i-treat-1500.jpeg 1500w,
+                                    images/conditions-i-treat/conditions-i-treat-750.jpeg 750w" />
+
+                        <img class="b-card__image" src="images/conditions-i-treat/conditions-i-treat-750.jpeg"
+                            alt="A framed anatomical chart hangs on a white wall" width="567" height="378"
+                            loading="lazy" decoding="async"/>
             </picture>
-            <div class="header-content">
-            <h1>Where does it hurt?</h1>
-            <p>What musculoskeletal conditons do I treat? Browse conditions by body region and learn how to fix them.</p>
             </div>
-            <div class="segmented-button">
-                <a class="left-segment selected-segment" href="conditions.html">
-                    <h3 class="segmented-button-label-text selected-label-text">Conditions</h3>
-                </a>
-                <a class="middle-segment" href="sports-therapy.html">
-                    <h3 class="segmented-button-label-text">Sports therapy</h3>
-                </a>
-                <a class="right-segment" href="why-emeskay.html">
-                    <h3 class="segmented-button-label-text">Why Emeskay</h3>
-                </a>
+            
+            
+                <div class="segmented-button">
+                    <a class="segmented-button__left segmented-button__active" href="conditions.html">Conditions</a>
+                    <a class="segmented-button__middle" href="sports-therapy.html">Sports therapy</a>
+                    <a class="segmented-button__right" href="why-emeskay.html">Why Emeskay</a>
+                </div>
+            
             </div>
-        </header>
+            </div>
+            </header>
+        
+        <div class="container stack-lg">
         <section class="ankle-foot">
-            <h2>Ankle & foot</h2>
+            <h2 class="secondary-heading">Ankle & foot</h2>
             <p>The ankle and foot are intricate structures crucial for mobility, comprising numerous bones, joints, ligaments, and tendons. Musculoskeletal injuries in this area, such as sprains, fractures, or tendonitis, are common and can significantly impair movement and daily activities.</p>
-            <div class="card-container">
-                <a href="#lower-leg-pain" class="filled-card">  
-                    <h3>Lower leg pain</h3>
-                    <p>Lower leg pain, localized between the knee and ankle, can result from various causes including muscle strains, shin splints, stress fractures, or nerve impingements.</p>
+            <div class="cards-container">
+                <a href="#lower-leg-pain" class="b-card b-card--filled">
+                    <div class="b-card__content-container"> 
+                    <h3 class="b-card__title">Lower leg pain</h3>
+                    <p class="b-card__supporting-text">Lower leg pain, localized between the knee and ankle, can result from various causes including muscle strains, shin splints, stress fractures, or nerve impingements.</p>
+                    </div>
                 </a>
-                <a href="#calf-pain" class="filled-card">  
-                    <h3>Calf pain</h3>
-                    <p>Calf pain, situated at the back of the leg just below the knee, can be caused by muscle strains, Achilles tendonitis, or even vascular issues.</p>
+                <a href="#calf-pain" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Calf pain</h3>
+                    <p class="b-card__supporting-text">Calf pain, situated at the back of the leg just below the knee, can be caused by muscle strains, Achilles tendonitis, or even vascular issues.</p>
+                    </div>
                 </a>
-                <a href="#pain-achilles-region" class="filled-card">  
-                    <h3>Pain in the achilles region</h3>
-                    <p>Achilles region pain, located at the back of the ankle and heel, is primarily associated with Achilles tendon injuries, such as tendonitis or ruptures. These conditions can result from overuse, sudden movements, or degenerative changes.</p>
+                <a href="#pain-achilles-region" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Pain in the achilles region</h3>
+                    <p class="b-card__supporting-text">Achilles region pain, located at the back of the ankle and heel, is primarily associated with Achilles tendon injuries, such as tendonitis or ruptures. These conditions can result from overuse, sudden movements, or degenerative changes.</p>
+                    </div>
                 </a>
-                <a href="#acute-ankle-injuries" class="filled-card">  
-                    <h3>Acute ankle injuries</h3>
-                    <p>Acute ankle injuries, often resulting from sudden twists, falls, or impacts, can cause immediate pain, swelling, and instability in the ankle joint. These injuries commonly involve ligament sprains, fractures, or tendon strains.</p>
+                <a href="#acute-ankle-injuries" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Acute ankle injuries</h3>
+                    <p class="b-card__supporting-text">Acute ankle injuries, often resulting from sudden twists, falls, or impacts, can cause immediate pain, swelling, and instability in the ankle joint. These injuries commonly involve ligament sprains, fractures, or tendon strains.</p>
+                    </div>
                 </a>
-                <a href="#ankle-pain" class="filled-card">  
-                    <h3>Ankle pain</h3>
-                    <p>Ankle pain, a common symptom, can stem from various causes including sprains, fractures, arthritis, or tendonitis. This discomfort often leads to limited mobility and can significantly impact daily activities.</p>
+                <a href="#ankle-pain" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Ankle pain</h3>
+                    <p class="b-card__supporting-text">Ankle pain, a common symptom, can stem from various causes including sprains, fractures, arthritis, or tendonitis. This discomfort often leads to limited mobility and can significantly impact daily activities.</p>
+                    </div>
                 </a>
-                <a href="#foot-pain" class="filled-card">  
-                    <h3>Foot pain</h3>
-                    <p>Foot pain, a prevalent issue affecting people of all ages, can result from conditions such as plantar fasciitis, bunions, or metatarsalgia. This discomfort is often exacerbated by running, walking or even simply standing</p>
+                <a href="#foot-pain" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Foot pain</h3>
+                    <p class="b-card__supporting-text">Foot pain, a prevalent issue affecting people of all ages, can result from conditions such as plantar fasciitis, bunions, or metatarsalgia. This discomfort is often exacerbated by running, walking or even simply standing.</p>
+                    </div>
                 </a>
             </div>  
         </section>
         <section class="knee">
-            <h2>Knee</h2>
+            <h2 class="secondary-heading">Knee</h2>
             <p>The knee, being a vital hinge joint in the human body, is highly susceptible to musculoskeletal injuries due to its complex structure involving bones, ligaments, tendons, and cartilage. These injuries, often caused by trauma, overuse, or degenerative conditions, can result in pain, swelling, and reduced mobility.</p>
-            <div class="card-container">
-                <a href="#acute-knee-injuries" class="filled-card">  
-                    <h3>Acute knee injuries</h3>
-                    <p>Acute knee injuries, caused by sudden trauma, result in immediate pain, swelling, and limited mobility.</p>
+            <div class="cards-container">
+                <a href="#acute-knee-injuries" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Acute knee injuries</h3>
+                    <p class="b-card__supporting-text">Acute knee injuries, caused by sudden trauma, result in immediate pain, swelling, and limited mobility.</p>
+                    </div>
                 </a>
-                <a href="#anterior-knee-pain" class="filled-card">  
-                    <h3>Anterior knee pain</h3>
-                    <p>Anterior knee pain refers to discomfort localized at the front of the knee, often caused by overuse, muscle imbalance, or injury, and is a common complaint among individuals of all ages.</p>
+                <a href="#anterior-knee-pain" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Anterior knee pain</h3>
+                    <p class="b-card__supporting-text">Anterior knee pain refers to discomfort localized at the front of the knee, often caused by overuse, muscle imbalance, or injury, and is a common complaint among individuals of all ages.</p>
+                    </div>
                 </a>
-                <a href="#lateral-medial-posterior-knee-pain" class="filled-card">  
-                    <h3>Lateral, medial & posterior knee pain</h3>
-                    <p>Lateral, medial, and posterior knee pain refer to discomfort experienced on the outer, inner, and back areas of the knee, respectively, often arising from specific injuries, overuse, or underlying medical conditions.</p>
+                <a href="#lateral-medial-posterior-knee-pain" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Lateral, medial & posterior knee pain</h3>
+                    <p class="b-card__supporting-text">Lateral, medial, and posterior knee pain refer to discomfort experienced on the outer, inner, and back areas of the knee, respectively, often arising from specific injuries, overuse, or underlying medical conditions.</p>
+                    </div>
                 </a>
             </div>
         </section>
         <section class="hip">
-            <h2>Hip</h2>
+            <h2 class="secondary-heading">Hip</h2>
             <p>The hip, a large and intricate ball-and-socket joint, is crucial for mobility and stability, but it is also susceptible to various musculoskeletal injuries. These injuries, ranging from strains and bursitis to fractures and osteoarthritis, can cause pain, limited movement, and discomfort.</p>
-            <div class="card-container">
-                <a href="#anterior-hip-pain" class="filled-card">  
-                    <h3>Anterior hip pain</h3>
-                    <p>Anterior hip pain refers to discomfort experienced at the front of the hip joint and is often caused by conditions such as hip flexor strains, arthritis, or labral tears.</p>
+            <div class="cards-container">
+                <a href="#anterior-hip-pain" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Anterior hip pain</h3>
+                    <p class="b-card__supporting-text">Anterior hip pain refers to discomfort experienced at the front of the hip joint and is often caused by conditions such as hip flexor strains, arthritis, or labral tears.</p>
+                    </div>
                 </a>
-                <a href="#lateral-hip-pain" class="filled-card">  
-                    <h3>Lateral hip pain</h3>
-                    <p>Lateral hip pain, occurring on the outer side of the hip, is commonly associated with conditions like trochanteric bursitis, iliotibial band syndrome, or hip abductor tendonitis.</p>
+                <a href="#lateral-hip-pain" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Lateral hip pain</h3>
+                    <p class="b-card__supporting-text">Lateral hip pain, occurring on the outer side of the hip, is commonly associated with conditions like trochanteric bursitis, iliotibial band syndrome, or hip abductor tendonitis.</p>
+                    </div>
                 </a>
-                <a href="#posterior-hip-pain" class="filled-card">  
-                    <h3>Posterior hip pain (buttock pain)</h3>
-                    <p>Posterior hip pain, located at the back of the hip joint, can stem from various causes such as sciatica, piriformis syndrome, or sacroiliac joint dysfunction.</p>
+                <a href="#posterior-hip-pain" class="b-card b-card--filled">  
+                    <div class="b-card__content-container">
+                    <h3 class="b-card__title">Posterior hip pain (buttock pain)</h3>
+                    <p class="b-card__supporting-text">Posterior hip pain, located at the back of the hip joint, can stem from various causes such as sciatica, piriformis syndrome, or sacroiliac joint dysfunction.</p>
+                    </div>
                 </a>
             </div>
         </section>
         <section>
-            <h2>Pelvis</h2>
+            <h2 class="secondary-heading">Lower back</h2>
+            <p>The lower back, a critical component of the spine, is prone to various musculoskeletal injuries that can lead to pain and reduced functionality. Conditions such as herniated discs, muscle strains, or spinal stenosis can contribute to lower back pain, emphasizing the significance of accurate diagnosis and targeted interventions to alleviate discomfort and improve the overall well-being of individuals affected by these injuries.</p>
+            <div class="cards-container">
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">LBP with specific pathology</h3>
+                        <p class="b-card__supporting-text">Lower back pain (LBP) with specific pathology refers to discomfort caused by identifiable structural issues such as herniated discs, spinal fractures, or degenerative conditions. This type of LBP requires precise diagnosis through imaging and specialized assessments, allowing for targeted treatment strategies such as sports therapy, medications, or surgical interventions to address the underlying pathology and alleviate pain.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Non-specific LBP</h3>
+                        <p class="b-card__supporting-text">Non-specific lower back pain (LBP) is a common musculoskeletal condition characterized by discomfort in the lumbar region without a clear identifiable structural cause. While the exact origin may be elusive, non-specific LBP often involves a combination of factors such as muscle strain, poor posture, and lifestyle choices, prompting the need for holistic approaches including exercise, pain management, and ergonomic adjustments for effective relief and prevention.</p>
+                    </div>
+                </a>
+            </div>
         </section>
         <section>
-            <h2>Lower back</h2>
+            <h2 class="secondary-heading">Upper back & ribs</h2>
+            <p>The upper back and ribs constitute a complex region of the spine susceptible to various musculoskeletal injuries, including strains, vertebral fractures, and rib fractures. These injuries can result from trauma, poor posture, or degenerative conditions, underscoring the importance of accurate diagnosis and targeted interventions to alleviate pain, restore function, and prevent long-term complications in this crucial area of the musculoskeletal system.</p>
+            <div class="cards-container">
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Upper back</h3>
+                        <p class="b-card__supporting-text">The upper back, also known as the thoracic spine, is a crucial section of the spine located between the cervical and lumbar regions. Musculoskeletal issues in the upper back, including strains, herniated discs, or vertebral fractures, can lead to pain and diminished mobility, emphasizing the importance of accurate diagnosis and tailored interventions for effective management and rehabilitation.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Ribs</h3>
+                        <p class="b-card__supporting-text">The ribs form a protective cage around vital organs and play a crucial role in the respiratory system. Musculoskeletal issues involving the ribs, such as fractures or strains, can result in significant pain and discomfort, requiring accurate diagnosis and targeted treatments to promote healing and restore normal function in this integral part of the thoracic region.</p>
+                    </div>
+                </a>
+            </div>
         </section>
         <section>
-            <h2>Upper back & ribs</h2>
+            <h2 class="secondary-heading">Neck</h2>
+            <p>The neck, or cervical spine, is a vital and flexible part of the spine, susceptible to various musculoskeletal injuries that can lead to pain and reduced range of motion. Conditions such as whiplash, herniated discs, or cervical strains may affect this region, necessitating accurate diagnosis and targeted interventions to alleviate discomfort and restore optimal function.</p>
+            <div class="cards-container">
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Cervicogenic headache</h3>
+                        <p class="b-card__supporting-text">Cervicogenic headaches are a distinct type of headache originating from structural issues in the cervical spine, such as arthritis, disc degeneration, or muscle tightness. These headaches often manifest as pain that radiates from the neck to the head, emphasizing the importance of accurate diagnosis and targeted treatments focused on addressing the underlying cervical spine pathology for effective headache management.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Acute wry neck</h3>
+                        <p class="b-card__supporting-text">Acute wry neck, also known as torticollis, is a sudden onset of neck pain and stiffness, often accompanied by the involuntary tilting or turning of the head. This condition can result from muscle spasms, joint dysfunction, or injury, requiring prompt evaluation and appropriate interventions, such as stretches, medications, or sports therapy, for effective relief and restoration of normal neck mobility.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Cervical nerve injury</h3>
+                        <p class="b-card__supporting-text">Cervical nerve injury refers to damage or compression of nerves in the neck region, leading to symptoms such as pain, tingling, or weakness that may radiate into the arms or shoulders. Causes include herniated discs, trauma, or conditions like cervical radiculopathy, necessitating accurate diagnosis and targeted treatments to address the specific nerve involvement and alleviate associated symptoms for improved neck and upper extremity function.</p>
+                    </div>
+                </a>
+            </div>
         </section>
         <section>
-            <h2>Neck</h2>
+            <h2 class="secondary-heading">Shoulder</h2>
+            <p>The shoulder, a highly mobile joint, is susceptible to a range of musculoskeletal injuries involving the bones, muscles, tendons, and ligaments. Conditions such as rotator cuff tears, shoulder impingement, or dislocations can cause pain and limit function, underscoring the importance of precise diagnosis and tailored interventions for effective management and rehabilitation.</p>
+            <div class="cards-container">
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Rotator cuff pathology</h3>
+                        <p class="b-card__supporting-text">
+                            Rotator cuff pathology refers to a group of conditions affecting the muscles and tendons that make up the rotator cuff in the shoulder. These pathologies, including tears, tendonitis, or impingement, often lead to pain, weakness, and limited range of motion, necessitating accurate diagnosis and targeted treatments such as physical therapy, medications, or in some cases, surgical intervention for optimal recovery.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Glenohumeral instability</h3>
+                        <p class="b-card__supporting-text">Glenohumeral instability involves a disruption in the normal stability of the shoulder joint, often resulting from ligament or labral injuries. This condition can lead to recurrent dislocations or subluxations, causing pain and functional impairment, and typically requires careful assessment and tailored interventions, such as physical therapy or surgical procedures, to restore shoulder stability and prevent further instability episodes.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Biceps related pathology</h3>
+                        <p class="b-card__supporting-text">Biceps-related pathology encompasses various conditions affecting the biceps muscle and tendon in the arm, such as tendonitis, tears, or biceps tendon instability. These issues can cause pain, weakness, or a bulging sensation in the upper arm, emphasizing the need for accurate diagnosis and targeted treatments, ranging from conservative approaches like rest and physical therapy to surgical interventions, for effective management and restoration of arm function.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Posterior shoulder stiffness (GIRD)</h3>
+                        <p class="b-card__supporting-text">Posterior shoulder stiffness, often referred to as Glenohumeral Internal Rotation Deficit (GIRD), is a condition characterized by restricted internal rotation of the shoulder joint. Commonly observed in overhead athletes, GIRD can result from adaptive changes in the shoulder structures, highlighting the importance of accurate diagnosis and specialized interventions, including stretching and strengthening exercises, to address the imbalance and maintain shoulder function in this specific population.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Scapular pathology and dysfunction</h3>
+                        <p class="b-card__supporting-text">Scapular pathology and dysfunction involve abnormalities in the structure and movement of the shoulder blade, impacting overall shoulder function. Conditions such as scapular winging, instability, or dyskinesis can contribute to pain and impaired shoulder mechanics, necessitating precise diagnosis and targeted interventions, including exercises and physical therapy, to address the underlying issues and optimize scapular movement for improved shoulder health.</p>
+                    </div>
+                </a>
+            </div>
         </section>
         <section>
-            <h2>Shoulder</h2>
-        </section>
-        <section>
-            <h2>
+            <h2 class="secondary-heading">
                 Elbow & forearm
             </h2>
+            <p>The elbow and forearm play a crucial role in upper limb function and are susceptible to various musculoskeletal injuries. Conditions such as tennis elbow, golfer's elbow, or forearm strains can lead to pain and functional impairment, emphasizing the importance of accurate diagnosis and targeted interventions to promote healing and restore optimal function in this complex joint complex.</p>
+            <div class="cards-container">
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Lateral elbow pain</h3>
+                        <p class="b-card__supporting-text">Lateral elbow pain, commonly known as tennis elbow or lateral epicondylitis, is characterized by discomfort on the outer side of the elbow, often caused by repetitive stress or overuse of the forearm extensor muscles. This condition can lead to pain and limited grip strength, requiring accurate diagnosis and appropriate interventions, such as rest, physiotherapy, or in some cases, anti-inflammatory medications, for effective pain management and recovery.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Medial elbow pain</h3>
+                        <p class="b-card__supporting-text">Medial elbow pain, often referred to as golfer's elbow or medial epicondylitis, involves discomfort on the inner side of the elbow, commonly attributed to repetitive strain or overuse of the forearm flexor muscles. This condition can result in pain, weakness, and difficulty with gripping activities, highlighting the need for accurate diagnosis and targeted interventions, including rest, therapeutic exercises, or, in severe cases, medical procedures, to alleviate symptoms and facilitate recovery.</p>
+                    </div>
+                </a>
+            </div>
         </section>
         <section>
-            <h2>Wrist & hand</h2>
+            <h2 class="secondary-heading">Wrist & hand</h2>
+            <p>The wrist and hand, intricate structures comprising bones, ligaments, tendons, and muscles, are highly susceptible to a range of musculoskeletal injuries. Conditions such as carpal tunnel syndrome, fractures, or tendonitis can cause pain and functional limitations, emphasizing the importance of precise diagnosis and tailored interventions for optimal recovery and restoration of hand and wrist function.</p>
+            <div class="cards-container">
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Wrist pain</h3>
+                        <p class="b-card__supporting-text">Wrist pain, a common complaint, can arise from various musculoskeletal conditions such as carpal tunnel syndrome, tendonitis, or fractures. Accurate diagnosis and targeted treatments, including rest, bracing, or therapeutic exercises, are essential to alleviate pain and restore functionality in the wrist, ensuring an optimal quality of life.</p>
+                    </div>
+                </a>
+                <a href="#" class="b-card b-card--filled">
+                    <div class="b-card__content-container">
+                        <h3 class="b-card__title">Hand & finger injuries</h3>
+                        <p class="b-card__supporting-text">Hand and finger injuries encompass a spectrum of musculoskeletal issues ranging from fractures and dislocations to ligament strains and tendon injuries. These conditions can lead to pain, swelling, and functional impairment, necessitating accurate diagnosis and tailored interventions, including splinting, rehabilitation exercises, or surgical procedures, to optimise healing and restore normal hand and finger function.</p>
+                    </div>
+                </a>
+            </div>
         </section>
         <div class="buttons-container">
-            <a class="outlined-button" href="conditions.html">
-                <h3 class="outlined-button-label-text">Back to Home</h3>
-            </a>
-            <a class="filled-tonal-button" href="why-emeskay.html">
-                <h3 class="filled-tonal-button-label-text">Forward to What is sports therapy?</h3>
-            </a>
+            <a class="button button--outlined" href="conditions.html">Back to Home</a>
+            <a class="button button--tonal" href="why-emeskay.html">Forward to What is sports therapy?</a>
+        </div>
         </div>
     </main>
 
     <footer>
-        <img class="logo-footer" src="images/emeskay-logo/emeskay-logo-on-surface-variant.svg"
+        <img class="logo-footer" src="images/emeskay-logo/emeskay-logo-on-surface-variant-light.svg"
             alt="Emeskay gray logo on a light background" width="92" height="24">
         <div class="contact-info">
-            <h3>Contact Info</h3>
+            <h3 class="footer__sub-heading">Contact Info</h3>
             <p class="address">Moss Side Leisure Centre<br>
                 Moss Ln E<br>
                 Moss Side<br>
@@ -406,7 +332,7 @@
                     <path
                         d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
                 </svg>
-                <a href="tel:07732468826">
+                <a class="link" href="tel:07732468826">
                     <span>07732 468826</span>
                 </a>
             </div>
@@ -415,13 +341,13 @@
                     <path
                         d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm640-480L501-453q-5 3-10.5 4.5T480-447q-5 0-10.5-1.5T459-453L160-640v400h640v-400ZM480-520l320-200H160l320 200ZM160-640v10-59 1-32 32-.5 58.5-10 400-400Z" />
                 </svg>
-                <a href="mailto:info@emeskay.co.uk">
+                <a class="link" href="mailto:info@emeskay.co.uk">
                     <span>info@emeskay.co.uk</span>
                 </a>
             </div>
         </div>
         <div class="social">
-            <h3>Follow me</h3>
+            <h3 class="footer__sub-heading">Follow me</h3>
             <div class="social-icons">
                 <a href="https://facebook.com/emeskaytherapy" aria-label="facebook-icon" class="icons">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1rem"
@@ -440,9 +366,9 @@
             </div>
         </div>
         <div class="legal">
-            <h3>Legal</h3>
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Terms of Service</a></p>
+            <h3 class="footer__sub-heading">Legal</h3>
+            <p><a class="link" href="#">Privacy Policy</a></p>
+            <p><a class="link" href="#">Terms of Service</a></p>
             <p>Copyright © 2023 Emeskay Sports Therapy</p>
         </div>
     </footer>

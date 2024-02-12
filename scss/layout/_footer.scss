@@ -8,7 +8,8 @@ footer {
     grid-template-rows: auto;
     gap: 16px;
     padding: 12px 16px 12px 16px;
-    background-color: $surface-container;
+    margin-block-start: var(--block-flow-lg);
+    background-color: var(--clr-surface-container);
     overflow: hidden;
 
     @media screen and (min-width: 840px) {
@@ -23,43 +24,40 @@ footer {
     }
 }
 
-footer h3 {
-    color: $on-surface-variant;
+.footer__sub-heading {
+    color: var(--clr-on-surface-variant);
 }
 
 footer p {
     margin: 0px;
-    color: $on-surface-variant;
-    font: $label;
-    font-weight: 400;
+    color: var(--clr-on-surface-variant);
     padding: 0;
 }
 
 footer a {
-    font: $label;
-    color: $primary;
+    color: var(--clr-primary);
     text-decoration: underline;
 }
 
 footer a:hover {
-    color: $on-surface-variant;
+    color: var(--clr-on-surface-variant);
 }
 
 footer path {
-    fill: $on-surface-variant;
+    fill: var(--clr-on-surface-variant);
 }
 
 footer a path {
-    fill: $primary;
+    fill: var(--clr-primary);
 }
 
 footer a path:hover {
-    fill: $on-surface-variant;
+    fill: var(--clr-on-surface-variant);
 }
 
 .logo-footer {
-    height: 24px;
-    width: fit-content;
+    width: auto;
+    height: var(--s3);
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -127,7 +125,7 @@ footer svg {
 
 div.social h3 {
     padding: 0px;
-    color: $on-surface-variant;
+    color: var(--clr-on-surface-variant);
 }
 
 .legal {

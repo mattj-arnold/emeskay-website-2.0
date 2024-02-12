@@ -2,51 +2,30 @@
 @use '../base/typography' as *;
 
 //Two Line List
+    .list {
+        & li {
+            background-color: var(--clr-surface);
+            height: 72px;
+            padding: 8px 24px 8px 16px;
+            display: flex;
+            gap: var(--s0);
+            align-items: center;
+            
+            color: var(--clr-on-surface);
+        }
 
+        &__leading-icon-container {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: var(--clr-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            fill: var(--clr-on-primary);
+        }
 
-@mixin two-line-list {
-    ul {
-        margin: 8px 0px;
-        padding-inline-start: 0px;
+        &__divider {
+            color: var(--clr-outline);
+        }
     }
-    
-    li {
-        background-color: $surface;
-        height: 72px;
-        padding: 8px 24px 8px 16px;
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        font: $body-large;
-        color: $on-surface;
-    }
-
-    .leading-icon-container {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        background-color: $primary;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .leading-icon-container path {
-        fill: $on-primary;
-    }
-
-    .leading-icons {
-        color: $surface;
-    }
-
-    li p {
-        color: $on-surface-variant;
-        font: $label;
-        font-weight: 400;
-    }
-
-    .divider {
-        border-top: 1px solid $surface-variant;
-        margin: 0px 24px 0px 16px;
-    }
-}

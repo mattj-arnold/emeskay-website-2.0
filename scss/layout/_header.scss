@@ -5,23 +5,63 @@
 @use '../components/standard-navigation-drawer' as *;
 
 .window-header {
-    grid-area: 1/1/2/4;
-    height: 64px;
-
-    @media screen and (min-width: 840px) {
-        grid-column: 1/2;
-        grid-row: 1/3;
-        height: auto;
-    }
+    position: sticky;
+    top: 0;
+    background-color: var(--clr-surface-container);
+    z-index: 1;
 }
-
-@include top-app-bar;
 
 .top-app-bar {
-    @media screen and (min-width: 840px) {
-        display: none;
+    --fw: var(--fw-medium);
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+
+    &__sub-container {
+        display: flex;
+        align-items: center;
+        gap: var(--s2);
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: var(--s1);
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        width: auto;
+        height: var(--s3);
+    }
+
+    &__label {
+        font-weight: var(--fw);
+    }
+
+    .top-app-bar__label > a {
+        text-decoration: none;
+    }
+
+    &__fab-container {
+        display: flex;
+        gap: var(--s-1);
+        align-items: flex-end;
+
+        @media screen and (max-width: 839px) {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        flex-direction: column;
+        }
     }
 }
+
+
 
 @include modal-navigation-drawer;
 
@@ -47,10 +87,5 @@
     }
 }
 
-@include extended-fab;
+//@include extended-fab;
 
-.extended-fab {
-    @media screen and (min-width: 840px) {
-        display: none;
-    }
-}

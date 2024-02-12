@@ -2,95 +2,41 @@
 @use '../base/utilities' as *;
 @use '../abstracts/' as *;
 
-body {
-    display: grid;
-    grid-template-columns: 16px 1fr 16px;
-    grid-template-rows: repeat(2, auto) 32px auto;
+$minColWidth: 40ch;
+$gridGap: 16px;
 
-    @media screen and (min-width: 840px) {
-        grid-template-columns: 80px 1fr;
-    }
+@media screen and (min-width: 840px) {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($minColWidth, 1fr));
+  gap: 2rem;
 
-    @media screen and (min-width: 1240px) {
-        grid-template-columns: 360px 1fr;
-    }
+  & + .grid {
+    margin-top: $gridGap;
+  }
+}
 }
 
-.body-region {
-    grid-area: 2/1/3/4;
-    display: grid;
-    row-gap: var(--base-spacing);
-    margin-bottom: var(--base-spacing);
-
-    @media screen and (min-width: 600px) and (max-width: 839px) {
-        margin: 0px 24px;
-        gap: 24px;
-        margin: 12px 24px 24px 24px;
-    }
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/2/2/3;
-        margin: 12px 24px 24px 24px;
-        grid-template-columns: repeat(11, 1fr);
-        gap: 24px;
-    }
+.section {
+  &__title {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-700);
+  }
 }
 
-
-
-/*.main-header {
-    width: 100%;
-    aspect-ratio: 16/10;
-    display: grid;
-    gap: 16px;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: stretch;
-    margin-bottom: var(--base-spacing);
-
-    @media screen and (min-width: 600px) and (max-width: 839px) {
-        grid-template-rows: auto;
-    }
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/1/2/12;
-        grid-template: auto/1fr;
-    }
+body > *:not(body > header) + * {
+  margin-block-start: var(--s3);
 }
 
-.main-header-picture {
-    grid-area: 1/1/2/2;
-
-    @media screen and (min-width: 600px) {
-        filter: brightness(0.75);
-        z-index: -1;
-        
-    }
-
-    @media screen and (min-width: 840px) {
-        grid-area: 1/1/2/2;
-    }
-
-    @media screen and (min-width: 1440px) {
-        grid-area: 1/1/5/5;
-    }
-}
-    
-*/
-
-section {
-    display: flex;
-    flex-direction: column;
-    gap: var(--base-spacing);
-    margin: 0 var(--base-spacing);
-
-    header {
-        @include container;
-    }
-
-    h2 {
-        color: $on-surface;
-    }
+header > * + * {
+  margin-block-start: var(--s3);
 }
 
+main > * + * {
+  margin-block-start: var(--s3);
+}
+
+section > * + * {
+  margin-block-start: var(--s1);
+}

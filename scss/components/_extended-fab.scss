@@ -1,22 +1,39 @@
 @use '../base/utilities' as *;
 @use '../base/typography' as *;
 
-@mixin extended-fab {
-.extended-fab-container {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    height: 56px;
-    min-width: 80px;
+
+    .extended-fab-container {
+        display: flex;
+        justify-content: flex-end;
+        height: 56px;
+        min-width: 80px;
+        text-decoration: none;
+        position: relative;
+        isolation: isolate;
+        background-color: var(--clr-primary-container);
+        color: var(--clr-on-primary-container);
+        border-radius: var(--s0);
+
+        &:link::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: inherit;
+            opacity: var(--state-hover);
+            transition: all 250ms;
+        }
     
-}
-  
+        &:hover::after {
+            background-color: var(--clr-on-primary-container);
+        }
+    
+        &:active::after {
+            opacity: var(--state-press);
+        }
+    }
 
 
-
-  
 .extended-fab {
     display: flex;
     flex-direction: row;
@@ -27,16 +44,14 @@
     min-width: 80px;
     padding-left: 16px;
     padding-right: 24px;
-    background-color: $tertiary-container;
-    border: none;
-    border-radius: 16px;
-    font: $label;
-    color: $on-tertiary-container;
-    box-shadow: 0px 3px 1px -2px #808080;
-}
 
-.extended-fab-container:hover {
-    cursor: pointer;
-    text-decoration: none;
-}
+    &__label {
+        font-weight: var(--fw-medium);
+    }
+
+    & > svg {
+        width: auto;
+        height: var(--s1);
+        fill: var(--clr-on-tertiary-container);
+    }
 }

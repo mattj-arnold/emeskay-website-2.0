@@ -1,143 +1,90 @@
 @use '../base/utilities' as *;
 @use '../base/typography' as *;
 
-//Filled Button
-
-.filled-button {
+//Base
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $primary;
     height: 40px;
     width: 100%;
     border-radius: 20px;
-    padding: 24px;
-}
-
-.filled-button:hover {
+    padding: var(--s1);
     text-decoration: none;
-    background:
-        linear-gradient($on-primary-hover, $on-primary-hover),
-        linear-gradient($primary, $primary);
+    position: relative;
+    isolation: isolate;
+    font-weight: var(--fw-medium);
 }
+    
+    //Filled
+    .button--filled {
+        background-color: var(--clr-primary);
+        color: var(--clr-on-primary);
 
-.filled-button:active {
-    background:
-        linear-gradient($on-primary-active, $on-primary-active),
-        linear-gradient($primary, $primary);
-}
+        &:link::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: inherit;
+            opacity: var(--state-hover);
+            transition: all 250ms;
+        }
 
-.filled-button-label-text {
-    color: $on-primary;
-    font: $label;
-}
+        &:hover::after {
+            background-color: var(--clr-on-primary);
+        }
 
-//Filled Tonal Buton
+        &:active::after {
+            opacity: var(--state-press);
+        }
+    }
 
-.filled-tonal-button {
-    @extend .filled-button;
+    //Tonal
+    .button--tonal {
+        background-color: var(--clr-secondary-container);
+        color: var(--clr-on-secondary-container);
 
-    background-color: $secondary-container;
-}
+        &:link::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: inherit;
+            opacity: var(--state-hover);
+            transition: all 250ms;
+        }
 
-.filled-tonal-button:hover {
-    @extend .filled-button;
+        &:hover::after {
+            background-color: var(--clr-on-secondary-container);
+        }
 
-    background:
-        linear-gradient($on-secondary-container-hover, $on-secondary-container-hover),
-        linear-gradient($secondary-container, $secondary-container);
-}
+        &:active::after {
+            opacity: var(--state-press);
+        }
+    }
 
-.filled-tonal-button:active {
-    background:
-        linear-gradient($on-secondary-container-active, $on-secondary-container-active),
-        linear-gradient($secondary-container, $secondary-container);
-}
+    //Outlined
+    .button--outlined {
+        background-color: transparent;
+        color: var(--clr-primary);
+        border: solid 1px var(--clr-outline);
 
-.filled-tonal-button-label-text {
-    @extend .filled-button-label-text;
+        &:link::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: inherit;
+            opacity: var(--state-hover);
+            transition: all 250ms;
+        }
 
-    color: $on-secondary-container;
-}
+        &:hover::after {
+            background-color: var(--clr-primary);
+        }
 
-//Outlined Button
-
-.outlined-button {
-    @extend .filled-button;
-
-    background-color: $surface;
-    outline: $outline solid 1px;
-}
-
-.outlined-button:hover {
-    @extend .filled-button;
-
-    background:
-        linear-gradient($primary-hover, $primary-hover),
-        linear-gradient($surface, $surface);
-}
-
-.outlined-button:active {
-    background:
-        linear-gradient($primary-active, $primary-active),
-        linear-gradient($surface, $surface);
-}
-
-.outlined-button-label-text {
-    @extend .filled-button-label-text;
-
-    color: $primary;
-}
-
-//Segmented Button
-
-.segmented-button {
-    display: grid;
-    grid-template: auto/repeat(3, 1fr);
-    width: 100%;
-    border-radius: 20px 20px 20px 20px;
-    background-color: $surface-container-low;
-    margin: var(--base-spacing);
-}
-
-.left-segment {
-    @extend .outlined-button;
-
-    outline: none;
-    border-radius: 20px 20px 20px 20px;
-    padding: 12px;
-    background-color: $surface-container-low;
-}
-
-.middle-segment {
-    @extend .outlined-button;
-
-    outline: none;
-    border-radius: 20px 20px 20px 20px;
-    padding: 12px;
-    background-color: $surface-container-low;
-}
-
-.right-segment {
-    @extend .outlined-button;
-
-    outline: none;
-    border-radius: 20px 20px 20px 20px;
-    padding: 12px;
-    background-color: $surface-container-low;
-}
-
-.selected-segment {
-    background-color: $secondary-container;
-    border-radius: 20px 20px 20px 20px; 
-}
-
-.segmented-button-label-text {
-    @extend .filled-button-label-text;
-
-    color: $on-surface;
-}
-
-.selected-label-text {
-    color: $on-secondary-container;
-}
+        &:active::after {
+            opacity: var(--state-press);
+        }
+    }

@@ -1,7 +1,11 @@
 .buttons-container {
+    --min: 38ch;
+    --gap: 0.8rem;
+  
     display: grid;
-    width: 100%;
-    grid-template: auto/1fr;
-    gap: 8px;
-    padding: var(--base-spacing);
+    grid-gap: var(--gap);
+    /* min() with 100% prevents overflow
+    in extra narrow spaces */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    margin-block-start: var(--block-flow-sm);
 }

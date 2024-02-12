@@ -1,0 +1,104 @@
+.segmented-button {
+    display: grid;
+    grid-template: auto/repeat(3, 1fr);
+    width: 100%;
+    border-radius: var(--s2);
+    background-color: var(--clr-surface-container-low);
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.segmented-button__left {
+    position: relative;
+    isolation: isolate;
+    outline: none;
+    border-radius: var(--s2);
+    padding: var(--s1);
+    background-color: var(--clr-surface-container-low);
+    text-align: center;
+    color: var(--clr-on-surface);
+
+    &:link::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        border-radius: inherit;
+        opacity: var(--state-hover);
+        transition: all 250ms;
+    }
+
+    &:hover::after {
+        background-color: var(--clr-on-surface);
+    }
+
+    &:active::after {
+        opacity: var(--state-press);
+    }
+}
+
+.segmented-button__middle {
+    outline: none;
+    border-radius: var(--s2);
+    padding: var(--s1);
+    background-color: var(--clr-surface-container-low);
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+    color: var(--clr-on-surface);
+
+    &:link::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        border-radius: inherit;
+        opacity: var(--state-hover);
+        transition: all 250ms;
+    }
+
+    &:hover::after {
+        background-color: var(--clr-on-surface);
+    }
+
+    &:active::after {
+        opacity: var(--state-press);
+    }
+}
+
+.segmented-button__right {
+    outline: none;
+    border-radius: var(--s2);
+    padding: var(--s1);
+    background-color: var(--clr-surface-container-low);
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+    color: var(--clr-on-surface);
+
+    &:link::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        border-radius: inherit;
+        opacity: var(--state-hover);
+        transition: all 250ms;
+    }
+
+    &:hover::after {
+        background-color: var(--clr-on-surface);
+    }
+
+    &:active::after {
+        opacity: var(--state-press);
+    }
+}
+
+.segmented-button__active {
+    background-color: var(--clr-secondary-container);
+    color: var(--clr-on-secondary-container);
+    border-radius: var(--s2);
+}

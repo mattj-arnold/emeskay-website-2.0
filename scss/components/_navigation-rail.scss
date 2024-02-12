@@ -24,6 +24,7 @@
         margin: 0px 12px;
     max-inline-size: 100%;
     block-size: auto;
+    aspect-ratio: auto;
         
     }
 
@@ -31,19 +32,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        Background-color: $primary-container;
-        color: white;
+        background-color: var(--clr-surface-container-highest);
+        color: var(--clr-on-surface);
         height: 56px;
         border-radius: 16px;
         width: 56px;
-        margin: 0px 12px;
         border: none;
         cursor: pointer;
+        position: relative;
+        isolation: isolate;
+
+        &:link::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            border-radius: inherit;
+            opacity: var(--state-hover);
+            transition: all 250ms;
+        }
+    
+        &:hover::after {
+            background-color: var(--clr-on-surface);
+        }
+    
+        &:active::after {
+            opacity: var(--state-press);
+        }
         
     }
 
     .fab svg {
-        fill: $on-primary-container;
+        fill: var(--clr-on-surface);
+        width: auto;
+        height: var(--s1);
     }
 
     .nav-rail-book-now {
@@ -88,7 +110,7 @@
     
     .nav-rail-label {
         color: $on-surface-variant;
-        font: $label;
+        font-weight: var(--fw-medium);
         text-align: center;
     }
 }

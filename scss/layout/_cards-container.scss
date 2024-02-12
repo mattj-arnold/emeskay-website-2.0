@@ -1,5 +1,11 @@
-.cards-container {
+  .cards-container {
+    --min: 38ch;
+    --gap: var(--s-1);
+  
     display: grid;
-    gap: 8px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
+    grid-gap: var(--gap);
+    /* min() with 100% prevents overflow
+    in extra narrow spaces */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    margin-block-start: var(--block-flow-sm);
+  }
