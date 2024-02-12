@@ -126,4 +126,16 @@ header .container:has(h1) {
     color: var(--clr-primary);
   }
 
-  
+  .image-tint {
+    position: relative;
+    isolation: isolate;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: var(--s1);
+      background-color: var(--clr-primary);
+      opacity: 0.1;
+  }
+  }

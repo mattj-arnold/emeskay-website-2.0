@@ -7,7 +7,7 @@
     --margin: 1.61rem;
     --gap: 1.61rem;
 
-    border-radius: var(--s0);
+    border-radius: var(--s1);
     height: auto;
     width: 100%;
     text-decoration: none;
@@ -58,7 +58,7 @@
         object-fit: cover;
         aspect-ratio: 16/10;
         inline-size: 100%;
-        border-radius: 12px;
+        border-radius: var(--s1);
         background-color: var(--clr-primary);
 
         &--ahg, &--sto, &--balens {
@@ -121,6 +121,6 @@
     }
 
     &__video {
-        border-radius: var(--s0);
+        border-radius: var(--s1);
     }
 }

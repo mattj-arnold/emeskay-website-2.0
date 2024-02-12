@@ -788,6 +788,19 @@ header .container:has(h1) {
   color: var(--clr-primary);
 }
 
+.image-tint {
+  position: relative;
+  isolation: isolate;
+}
+.image-tint::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--s1);
+  background-color: var(--clr-primary);
+  opacity: 0.1;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -951,7 +964,7 @@ textarea:not([rows]) {
   --padding: 1.61rem;
   --margin: 1.61rem;
   --gap: 1.61rem;
-  border-radius: var(--s0);
+  border-radius: var(--s1);
   height: auto;
   width: 100%;
   text-decoration: none;
@@ -991,7 +1004,7 @@ textarea:not([rows]) {
      object-fit: cover;
   aspect-ratio: 16/10;
   inline-size: 100%;
-  border-radius: 12px;
+  border-radius: var(--s1);
   background-color: var(--clr-primary);
 }
 .b-card__image--ahg, .b-card__image--sto, .b-card__image--balens {
@@ -1039,7 +1052,7 @@ textarea:not([rows]) {
   grid-area: 3/1/4/3;
 }
 .b-card__video {
-  border-radius: var(--s0);
+  border-radius: var(--s1);
 }
 
 .extended-fab-container {
@@ -1823,7 +1836,7 @@ section > * + * {
 }
 
 .clinic-opening-times__clinic-room-image {
-  border-radius: var(--s0);
+  border-radius: var(--s1);
 }
 
 /*.sports-therapy-main-header {
