@@ -1,3 +1,11 @@
+:root {
+  accent-color: var(--clr-tertiary);
+}
+
+input, textarea {
+  caret-color: var(--clr-tertiary);
+}
+
 //Colour
 /*$primary: #006a6a;
 $on-primary: #ffffff;
@@ -84,7 +92,7 @@ $extra-large-shape: 28px;
   }
 
 
-main > *:not(header) {
+main > *:not(header, .smol-css-grid) {
     width: min(100% - 3.2rem, 240ch);
     margin-inline: auto; 
 }
@@ -139,3 +147,5 @@ header .container:has(h1) {
       opacity: 0.1;
   }
   }
+
+  

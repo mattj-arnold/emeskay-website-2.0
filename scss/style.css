@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 :root {
-  --clr-primary: rgb(7 103 127);
+  --clr-primary: #07677f;
   --clr-surface-tint: rgb(7 103 127);
   --clr-on-primary: rgb(255 255 255);
-  --clr-primary-container: rgb(183 234 255);
+  --clr-primary-container: #b7eaff;
   --clr-on-primary-container: rgb(0 31 40);
   --clr-secondary: rgb(76 98 106);
   --clr-on-secondary: rgb(255 255 255);
@@ -728,6 +728,14 @@ h1, h2, h3, h4 {
   font: 500 clamp(1.4rem, 0.3vw + 1.3rem, 1.9rem)/clamp(1.6rem, 0.3vw + 1.5rem, 2rem) Barlow, sans-serif;
 }
 
+:root {
+  accent-color: var(--clr-tertiary);
+}
+
+input, textarea {
+  caret-color: var(--clr-tertiary);
+}
+
 /*$primary: #006a6a;
 $on-primary: #ffffff;
 $primary-container: #6ff7f6;
@@ -752,7 +760,7 @@ $on-surface-variant: #3f4948;*/
   margin-inline: auto;
 }
 
-main > *:not(header) {
+main > *:not(header, .smol-css-grid) {
   width: min(100% - 3.2rem, 240ch);
   margin-inline: auto;
 }
@@ -845,12 +853,12 @@ button, input, label {
 /* Balance text wrapping on headings */
 h1, h2,
 h3, h4 {
-  max-width: 60ch;
+  max-width: 40ch;
   text-wrap: balance;
 }
 
 p {
-  max-width: 75ch;
+  max-width: 60ch;
   text-wrap: pretty;
 }
 
@@ -890,7 +898,6 @@ textarea:not([rows]) {
   align-items: center;
   justify-content: center;
   height: 40px;
-  width: 100%;
   border-radius: 20px;
   padding: var(--s1);
   text-decoration: none;
@@ -968,6 +975,10 @@ textarea:not([rows]) {
   height: auto;
   width: 100%;
   text-decoration: none;
+}
+.b-card--padding {
+  --padding: min(1.5rem, 8%, 4rem) min(1rem, 5%, 2.5rem);
+  padding: var(--padding);
 }
 .b-card--is-link {
   position: relative;
@@ -1053,6 +1064,85 @@ textarea:not([rows]) {
 }
 .b-card__video {
   border-radius: var(--s1);
+}
+
+.smol-card-component {
+  --img-ratio: 3/2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 0 0.5rem hsla(0, 0%, 0%, 0.35);
+  border-radius: 0.5rem;
+}
+
+.smol-card-component > img {
+  aspect-ratio: var(--img-ratio);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.smol-card-component > img:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.smol-card-component > img:last-child {
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-top: auto;
+}
+
+.smol-card-component > :not(img) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* Prevent typography "orphans" */
+  text-wrap: pretty;
+}
+
+.smol-card-component > :not(img):first-child {
+  margin-top: 1rem;
+}
+
+/* Enhanced `:not()` accepts a selector list,
+but as a fallback you can chain `:not()` instead */
+.smol-card-component > :last-of-type:not(img, h2, h3, h4) {
+  margin-bottom: 1rem;
+}
+
+.smol-card-component > :not(h2, h3, h4) {
+  font-size: var(--fs-400);
+}
+
+.smol-card-component > a {
+  align-self: start;
+}
+
+.smol-unbreakable-box {
+  --color-light: #E0D4F6;
+  --color-dark: #675883;
+  margin: 2rem auto;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  font-size: 1.15rem;
+  /* Smol Responsive Padding FTW! */
+  padding: clamp(0.75rem, 3%, 2rem);
+  /* Provide a max-width and prevent overflow */
+  width: min(50ch, 90%);
+  /* Help prevent overflow of long words/names/URLs */
+  word-break: break-word;
+  /* Optional, not supported for all languages */
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+.smol-unbreakable-box footer {
+  padding: 0.25em 0.5em;
+  margin-top: 1rem;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  font-size: 0.9rem;
+  /* Creates a visual box shrunk to `max-content` */
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .extended-fab-container {
@@ -1411,20 +1501,36 @@ div.social h3 {
   font-size: var(--fs-700);
 }
 
-body > *:not(body > header) + * {
+body > *:not(body > header, .membership) + * {
   margin-block-start: var(--s3);
 }
 
-header > * + * {
+header > * + *:not(.membership) {
   margin-block-start: var(--s3);
 }
 
-main > * + * {
+main > * + *:not(.membership) {
   margin-block-start: var(--s3);
 }
 
 section > * + * {
   margin-block-start: var(--s1);
+}
+
+:root {
+  --padding: 1.5rem;
+  --grid-gap: 1rem;
+  --min-col-width: 40ch;
+}
+
+.smol-css-grid {
+  --min: 40ch;
+  --gap: var(--layout-gap-sm);
+  display: grid;
+  grid-gap: var(--gap);
+  /* min() with 100% prevents overflow
+  in extra narrow spaces */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
 .window-header {
@@ -1468,6 +1574,8 @@ section > * + * {
   display: flex;
   gap: var(--s-1);
   align-items: flex-end;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 @media screen and (max-width: 839px) {
   .top-app-bar__fab-container {

@@ -25,18 +25,38 @@ $gridGap: 16px;
   }
 }
 
-body > *:not(body > header) + * {
+body > *:not(body > header, .membership) + * {
   margin-block-start: var(--s3);
 }
 
-header > * + * {
+header > * + *:not(.membership) {
   margin-block-start: var(--s3);
 }
 
-main > * + * {
+main > * + *:not(.membership) {
   margin-block-start: var(--s3);
 }
 
 section > * + * {
   margin-block-start: var(--s1);
+}
+
+//Layout Grid Wrapper
+
+
+:root {
+  --padding: 1.5rem;
+  --grid-gap: 1rem;
+  --min-col-width: 40ch;
+}
+
+.smol-css-grid {
+  --min: 40ch;
+  --gap: var(--layout-gap-sm);
+
+  display: grid;
+  grid-gap: var(--gap);
+  /* min() with 100% prevents overflow
+  in extra narrow spaces */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }

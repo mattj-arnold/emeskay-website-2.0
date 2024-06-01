@@ -51,12 +51,14 @@
         display: flex;
         gap: var(--s-1);
         align-items: flex-end;
+        min-width: fit-content;
 
         @media screen and (max-width: 839px) {
         position: fixed;
         bottom: 1rem;
         right: 1rem;
         flex-direction: column;
+        
         }
     }
 }
