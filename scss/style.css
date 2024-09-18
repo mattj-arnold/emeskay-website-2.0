@@ -8,8 +8,8 @@
   --clr-on-primary-container: rgb(0 31 40);
   --clr-secondary: rgb(76 98 106);
   --clr-on-secondary: rgb(255 255 255);
-  --clr-secondary-container: rgb(207 230 241);
-  --clr-on-secondary-container: rgb(7 30 38);
+  --clr-secondary-container: #d0e7f1;
+  --clr-on-secondary-container: #071f27;
   --clr-tertiary: rgb(90 92 126);
   --clr-on-tertiary: rgb(255 255 255);
   --clr-tertiary-container: rgb(224 224 255);
@@ -891,6 +891,21 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+.banner {
+  padding-block: var(--padding-lg);
+  margin-block: 5rem;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  background-image: linear-gradient(45deg, var(--clr-primary-container), var(--clr-secondary-container), var(--clr-tertiary-container));
+  position: absolute;
+  inset: 0;
+  transform: skewY(-5deg);
+  z-index: -1;
 }
 
 .button {
@@ -1839,6 +1854,7 @@ section > * + * {
   width: calc(100vw - var(--padding) * 2);
   margin-inline: auto;
   margin-block-start: var(--block-flow-lg);
+  padding-bottom: var(--padding-lg);
 }
 .hero__grid-layout {
   display: grid;
